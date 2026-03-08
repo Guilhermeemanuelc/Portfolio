@@ -8,7 +8,7 @@
 :root {
     --color01: #CACACA;
     --color02: #00BBC9;
-    --color03: #878787;
+    --color03: #4b4949;
     --color04: #6e6d6d;
     --color05: #008F8C;
     --color06: #015958;
@@ -73,22 +73,36 @@ main > article {
 }
 
 main h2 {
-        font-size: 4vw;
+    position: absolute;
+    font-size: 4vw;
     color: var(--color06);
-    padding-bottom: 15px
 }
 
 main p {
+    padding-top: 8vw;
     font-size: 3vw;
     text-indent: 30px;
     color: var(--color01);
     text-align: justify;
-    padding-right: 43vw;
+    padding-right: 41vw;
 }
 
 #imagemprincipal {
+    background-color: var(--color05);
+    padding: 3px;
+    border-radius: 10px;
     position: absolute;
-    margin-top: 14px;
-    width: 29vw;
-    left: 60vw;
+    margin-top: 15px;
+    width: 23vw;
+    left: 63vw;
+}
+
+section {
+    background-image: linear-gradient(to top, var(--color03), var(--color08));
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+section > article {
+    padding: 20px;
 }
