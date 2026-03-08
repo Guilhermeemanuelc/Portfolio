@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color01: #CACACA;
+    --color02: #00BBC9;
+    --color03: #878787;
+    --color04: #6e6d6d;
+    --color05: #008F8C;
+    --color06: #015958;
+    --color07: #023535;
+    --color08: #202022;
+}
+
+body {
+    background-color: var(--color01);
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, var(--color04), var(--color08));
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 40px;
+}
+
+header > h1 {
+    color: var(--color02);
+    font-size: 5vw;
+    text-align: center;
+}
+
+header > p {
+    color: var(--color02);
+    text-align: center;
+}
+
+nav > p {
+    margin-top: -28px;
+    margin-left: 17px;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color02);
+}
+
+nav a:hover {
+    background-color: var(--color05);
+    color: var(--color07);
+    text-decoration: underline;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+main {
+    background-color: var(--color04);
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+main > article {
+    padding: 20px;
+    display: flex;
+    
+}
+
+main h2 {
+        font-size: 4vw;
+    color: var(--color06);
+    padding-bottom: 15px
+}
+
+main p {
+    font-size: 3vw;
+    text-indent: 30px;
+    color: var(--color01);
+    text-align: justify;
+    padding-right: 43vw;
+}
+
+#imagemprincipal {
+    position: absolute;
+    margin-top: 14px;
+    width: 29vw;
+    left: 60vw;
+}
