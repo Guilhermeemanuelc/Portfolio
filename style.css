@@ -101,8 +101,51 @@ section {
     background-image: linear-gradient(to top, var(--color03), var(--color08));
     margin-right: 10px;
     margin-left: 10px;
+    display: flex;
 }
 
 section > article {
     padding: 20px;
+}
+
+section h1 {
+    color: var(--color02);
+    padding-bottom: 3vw;
+}
+
+section ul {
+    columns: 6;
+}
+
+section h2 {
+    padding-right: 1vw;
+    color: var(--color01);
+    padding-bottom: 10px;
+}
+
+#banner {
+    background-attachment: fixed;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 96vw;
+}
+
+footer {
+    background-color: var(--color08);
+    color: white;
+    padding: 30px;
+    margin-top: -4px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color02);
+    text-decoration: underline;
 }
