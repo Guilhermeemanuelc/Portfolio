@@ -74,8 +74,7 @@ main > article {
 
 main h2 {
     position: absolute;
-    font-size: 4vw;
-    color: var(--color06);
+    font-size: 4vw;    color: var(--color06);
 }
 
 main p {
