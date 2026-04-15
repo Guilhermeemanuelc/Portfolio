@@ -18,6 +18,8 @@
 
 body {
     background-color: var(--color01);
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
