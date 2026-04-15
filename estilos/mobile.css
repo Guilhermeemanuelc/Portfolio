@@ -7,8 +7,10 @@
 
 body, html {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
-    
+    background-color: rgb(9, 104, 72);
 }
