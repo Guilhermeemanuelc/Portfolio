@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="estilos/mediamain.css" media="all">
     <link rel="stylesheet" href="estilos/mobile.css">
 </head>
 <body>
     <header>
         <h1>Port<span>folio</span></h1>
-        <nav>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">Aboutime</a></li>
@@ -18,7 +20,7 @@
                 <li><a href="">skills</a></li>
                 <li><a href="">Contact me</a></li>
             </ul>
-        </nav>
+        </menu>
     </header>
     <main>
         <article>
@@ -27,5 +29,14 @@
             <p>I'm a <span>Web Developer</span></p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
