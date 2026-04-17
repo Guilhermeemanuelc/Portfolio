@@ -13,7 +13,7 @@ body, html {
 }
 
 body {
-    background: rgb(0, 0, 0);
+    background-color: rgb(19, 19, 19);
     color: white;
 }
 
@@ -42,6 +42,7 @@ i#burguer:hover {
 menu {
     margin-top: 30px;
     display: none;
+    
 }
 
 menu > ul {
@@ -55,6 +56,7 @@ menu > ul > li > a {
     text-align: left;
     color: white;
     border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 menu a:hover {

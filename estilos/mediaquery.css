@@ -10,15 +10,21 @@ Grandes telas: Acima de 1200px
 */
 
 @media screen and (min-width: 600px) {
-    header > i#burguer {
+    header > div > i#burguer {
         display: none;
+    }
+
+    header > div{
+        display: flex;
     }
 
     menu {
         display: block;
+        padding-left: 55px;
     }
 
     menu > ul > li {
         display: inline-block;
     }
+
 }
