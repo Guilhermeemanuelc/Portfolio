@@ -9,7 +9,7 @@ Desktop: 992px até 1200px
 Grandes telas: Acima de 1200px
 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     header > i#burguer {
         display: none;
     }

@@ -22,24 +22,25 @@ header span {
 }
 
 header h1 {
-    color: aqua;
+    color:rgb(0, 140, 255);
     margin-bottom: 30px;
 }
 
 i#burguer {
-    background-color: rgb(99, 99, 99);
-    color: white;
+    color: rgb(255, 255, 255);
     display: block;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
 }
 
 i#burguer:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(54, 54, 54);
+    width: 24px;
+    color: rgb(163, 163, 163);
 }
 
 menu {
+    margin-top: 30px;
     display: none;
 }
 
@@ -51,21 +52,26 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    text-align: center;
-    background-color: rgb(85, 84, 84);
+    text-align: left;
     color: white;
     border-top: 2px solid black;
 }
 
 menu a:hover {
     background-color: rgb(54, 54, 54);
+    width: 90px;
 }
 
 main > article {
-    margin-top: 50px;
+    margin-top: 100px;
     padding-left: 30px;
 }
 
+main > article > h1 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
 main span {
-    color: aqua;
+    color: rgb(0, 140, 255);
 }
