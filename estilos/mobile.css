@@ -25,6 +25,7 @@ header span {
 header h1 {
     color:rgb(0, 140, 255);
     margin-bottom: 30px;
+    transition: 2s;
 }
 
 i#burguer {
@@ -41,16 +42,6 @@ i#burguer:hover {
     color: rgb(163, 163, 163);
 }
 
-menu {
-    margin-top: 30px;
-    display: none;
-    
-}
-
-menu > ul {
-    list-style-type: none;
-}
-
 nav > ul > li > a {
     display: block;
     padding: 8px;
@@ -58,7 +49,7 @@ nav > ul > li > a {
     text-decoration: none;
     text-align: left;
     color: white;
-    border-top: 2px solid black;
+    border-top: 2px solid rgb(19, 7, 71);
     border-bottom: 1px solid black;
 }
 
@@ -68,8 +59,8 @@ nav a:hover {
 
 main > article {
     margin-top: 20vw;
-    padding-left: 10vw;
-    font-size: clamp(16px, 2vw, 24px);
+    padding-left: 5vw;
+    font-size: clamp(14px, 2vw, 33px);
 
 }
 
@@ -78,6 +69,24 @@ main > article > h1 {
     padding-bottom: 7px;
 }
 
+main > article#imagem {
+    width: 150px;
+    height: 210px;
+    background: radial-gradient(circle, #6b74c2 0%, #052681 40%);
+    border-radius: 500px 120px 400px 300px;
+    opacity: 0.7;
+}
+
+main > article > img {
+    position: relative;
+    width: 170px;
+    
+}
+
 main span {
     color: rgb(0, 140, 255);
+}
+
+.container {
+    display: flex;
 }

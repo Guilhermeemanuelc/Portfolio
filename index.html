@@ -22,11 +22,16 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <article>
-            <p>Olá, Meu nome é</p>
-            <h1>Guilherme <span>Emanuel</span></h1>
-            <p>Eu sou um <span>Dev Full Stack</span></p>
+            <div>
+                <p>Olá, Meu nome é</p>
+                <h1>Guilherme <span>Emanuel</span></h1>
+                <p>Eu sou um <span>Dev Full Stack</span></p>
+            </div>
+        </article>
+        <article id="imagem">
+            <img src="imagens/myimage.png" alt="">
         </article>
     </main>
 
@@ -35,7 +40,7 @@
     <script>
 
         function mudouTamanho() {
-            if (window. innerWidth >= 600) {
+            if (window. innerWidth >= 768) {
                 itens.style.display = 'block'
             }else {
                 itens.style.display = 'none'
