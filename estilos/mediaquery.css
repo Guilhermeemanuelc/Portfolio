@@ -17,21 +17,23 @@ Grandes telas: Acima de 1200px
     header {
         position: relative;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    nav {
-    position: absolute;
-    left: 10%;
-    transform: translate(10%);
-}
 
     nav {
+        margin: auto;
         display: block;
     }
 
     nav > ul > li {
         display: inline-block;
         margin-left: 10px;
+    }
+
+    article#imagem {
+        
     }
 
 
