@@ -39,7 +39,7 @@ nav {
 header > nav > ul > li {
     padding: 12px;
     list-style-type: none;
-    width: 100px;
+    width: 115px;
     border-top: 2px solid rgba(5, 50, 250, 0.397);
 }
 
@@ -47,7 +47,7 @@ header a {
     display: block;
     padding: 3px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: white;
 }
 
@@ -65,14 +65,14 @@ main {
     margin-top: 2vw;
     margin-left: 4vw;
     padding: 10px;
-    font-size: 2vw;
+    font-size: 2.8vw;
     display: flex;
     align-items: center;
 }
 
 
 main > article > img {
-    margin-left: 11vw;
+    margin-left: 9vw;
     width: 27vw;
     border-radius: 100px 400px;
     background: rgb(13, 13, 117);
