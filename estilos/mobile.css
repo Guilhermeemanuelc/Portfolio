@@ -7,91 +7,69 @@
     box-sizing: border-box;
 }
 
-body, html {
-    width: 100vw;
-    height: 100vh;
-}
-
 body {
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(24, 24, 24);
+}
+
+header > h1 {
+    color: rgba(5, 50, 250, 0.884);
+}
+
+header > h1 > span {
     color: white;
 }
 
-
-header span {
-    color: white;
+header.container {
+    
 }
 
-header h1 {
-    color:rgb(0, 140, 255);
-    margin-bottom: 30px;
-}
-
-i#burguer {
-    color: rgb(255, 255, 255);
-    margin-left: 10px;
-    width: 24px;
-    display: block;
-    text-align: left;
+header > i#burguer {
+    background-color: rgba(128, 128, 128, 0.425);
+    margin-top: 3vw;
+    margin-left: 4px;
+    margin-bottom: 2.5vw;
     cursor: pointer;
 }
 
-i#burguer:hover {
-    background-color: rgb(54, 54, 54);
-    color: rgb(163, 163, 163);
-}
-
-nav > ul > li > a {
-    display: block;
-    padding: 8px;
-    width: 90px;
-    text-decoration: none;
-    text-align: left;
-    color: white;
-    border-top: 2px solid rgb(19, 7, 71);
-    border-bottom: 1px solid black;
+header > nav > ul > li {
+    padding: 1vw;
     list-style-type: none;
+    width: 90px;
+    border-top: 2px solid rgba(5, 50, 250, 0.884);
+
 }
 
-nav a:hover {
-    background-color: rgb(54, 54, 54);
+header a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+}
+
+header li:hover {
+    background-color: rgba(128, 128, 128, 0.719);
     transition: 1s;
 }
 
-main > article {
-    margin-top: 20vw;
-    padding-left: 5vw;
-    font-size: clamp(14px, 2vw, 33px);
-
+main > article > div span {
+    color: rgba(5, 50, 250, 0.884);
 }
 
-main > article > h1 {
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-main > article#imagem {
-    width: 159px;
-    height: 229px;
-    margin-left: 3vw;
-    
-    background: radial-gradient(circle, #6b74c2 0%, #052681 40%);
-    border-radius: 600px 120px 400px 500px;
-    opacity: 0.6;
-}
-
-main > article > img {
-    position: relative;
-    width: 170px;
-}
-
-main span {
-    color: rgb(0, 140, 255);
-}
-
-.container {
+main {
+    color: white;
+    margin-top: 2vw;
+    margin-left: 4vw;
+    padding: 10px;
+    font-size: 2vw;
     display: flex;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
+}
+
+
+main > article > img {
+    margin-left: 60px;
+    align-items: center;
+    width: 150px;
+    border-radius: 100px 400px;
+    background: rgb(13, 13, 117);
+    opacity: 0.5;
 }
