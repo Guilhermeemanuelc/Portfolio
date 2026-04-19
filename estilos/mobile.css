@@ -25,21 +25,27 @@ header.container {
 
 header > i#burguer {
     background-color: rgba(128, 128, 128, 0.425);
+    color: rgb(19, 13, 48);
     margin-top: 3vw;
     margin-left: 4px;
     margin-bottom: 2.5vw;
     cursor: pointer;
 }
 
-header > nav > ul > li {
-    padding: 1vw;
-    list-style-type: none;
-    width: 90px;
-    border-top: 2px solid rgba(5, 50, 250, 0.884);
+nav {
+    display: block;
+}
 
+header > nav > ul > li {
+    padding: 12px;
+    list-style-type: none;
+    width: 100px;
+    border-top: 2px solid rgba(5, 50, 250, 0.397);
 }
 
 header a {
+    display: block;
+    padding: 3px;
     text-decoration: none;
     font-size: 1.2em;
     color: white;
@@ -51,7 +57,7 @@ header li:hover {
 }
 
 main > article > div span {
-    color: rgba(5, 50, 250, 0.884);
+    color: rgba(5, 50, 250, 0.678);
 }
 
 main {
@@ -66,9 +72,8 @@ main {
 
 
 main > article > img {
-    margin-left: 60px;
-    align-items: center;
-    width: 150px;
+    margin-left: 11vw;
+    width: 27vw;
     border-radius: 100px 400px;
     background: rgb(13, 13, 117);
     opacity: 0.5;
