@@ -24,8 +24,13 @@ Grandes telas: Acima de 1200px
     }
 
     main > article > div {
-        margin-top: 20vw;
+        margin-top: 2vw;
         margin-left: 2vw;
         font-size: 2vw;
+    }
+
+    main > article > img#imagem {
+        width: 24vw;
+        margin-left: 17vw;
     }
 }

@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color: rgb(24, 24, 24);
+    background-image: linear-gradient(to bottom, rgb(22, 22, 22), rgb(32, 32, 32));
+    height: 960px;
 }
 
 header > h1 {
@@ -19,9 +20,6 @@ header > h1 > span {
     color: white;
 }
 
-header.container {
-    
-}
 
 header > i#burguer {
     background-color: rgba(128, 128, 128, 0.425);
@@ -41,6 +39,10 @@ header > nav > ul > li {
     list-style-type: none;
     width: 119px;
     border-top: 2px solid rgba(5, 50, 250, 0.397);
+}
+
+header > nav > ul {
+    position: fixed;
 }
 
 header a {
@@ -64,7 +66,7 @@ main > article > div span {
 
 main {
     color: white;
-    margin-top: 2vw;
+    margin-top: 207px;
     margin-left: 4vw;
     padding: 10px;
     font-size: 2.8vw;

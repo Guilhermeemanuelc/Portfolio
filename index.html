@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilos/mediaquery.css">
-    <link rel="stylesheet" href="estilos/mobile.css">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 <body onresize="mudouTamanho()">
@@ -22,7 +23,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="bloqueio">
         <article>
             <div>
                 <p>Olá, Meu nome é</p>
@@ -31,7 +32,7 @@
             </div>
         </article>
         <article>
-            <img src="imagens/myimage.png" alt="">
+            <img id="imagem" src="imagens/myimage.png" alt="">
         </article>
     </main>
 
