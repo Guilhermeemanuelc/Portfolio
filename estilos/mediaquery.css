@@ -15,12 +15,12 @@ Grandes telas: Acima de 1200px
     }
 
     .container {
-        display: flex
+        display: flex;
     }
 
     header  ul > li {
         display: inline-block;
-        margin-left: 1.6vw;
+        margin-left: 1.5vw;
     }
 
     main > article > div {
