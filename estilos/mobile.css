@@ -13,6 +13,10 @@ body {
     height: 100vh;
 }
 
+header {
+    margin-bottom: 180px;
+}
+
 header > h1 {
     padding: 5px;
     margin-left: 2vw;
@@ -81,25 +85,29 @@ header a:hover {
     transition: 1s;
 }
 
-main > article > div span {
+#container {
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+main > div > article > div span {
     color: rgb(38, 67, 212);
 }
 
-main {
-    color: white;
-    margin-top: 250px;
-    margin-left: 4vw;
-    padding: 10px;
-    font-size: 2.6vw;
-    display: flex;
-    align-items: center;
+main > div > article > div {
+    margin-top: 3vw;
+    margin-left: 5vw;
+    padding: 5px;
+    font-size: 2.1vw;
 }
 
-
-main > article > img {
+main > div > article > div > img {
     margin-left: 6vw;
-    width: 27vw;
+    width: 26vw;
     border-radius: 100px 400px;
     background: rgba(14, 14, 124, 0.966);
     opacity: 0.4;
 }
+
