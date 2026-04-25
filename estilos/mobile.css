@@ -14,7 +14,9 @@ body {
 }
 
 header > h1 {
-    color: rgba(5, 50, 250, 0.884);
+    padding: 5px;
+    margin-left: 2vw;
+    color: rgba(16, 14, 160, 0.884);
 }
 
 header > h1 > span {
@@ -24,10 +26,12 @@ header > h1 > span {
 
 header > i#burguer {
     background-color: rgba(92, 92, 92, 0.425);
-    color: rgb(13, 9, 63);
+    color: rgb(11, 8, 56);
+    padding: 3px;
     margin-top: 3vw;
     margin-left: 4px;
     margin-bottom: 2.5vw;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -35,11 +39,14 @@ header > i#burguer:hover {
     background-color: rgb(20, 20, 20);
     color: rgb(31, 31, 110);
     transition: 1s;
+    border-radius: 2px;
+    border-radius: 10px;
 }
 
 header > i#burguer:active {
     background-color: rgb(7, 7, 7);
     color: rgb(16, 18, 165);
+    border-radius: 8px;
 }
 
 header > nav {
@@ -69,8 +76,8 @@ header a {
 }
 
 header a:hover {
-    color: rgb(48, 28, 230);
-    background-color: rgb(48, 44, 44);
+    color: rgb(184, 177, 231);
+    background-color: rgb(65, 65, 65);
     transition: 1s;
 }
 
