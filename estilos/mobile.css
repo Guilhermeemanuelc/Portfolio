@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgb(22, 22, 22), rgb(32, 32, 32));
+    background-image: linear-gradient(to bottom, rgb(24, 24, 24), rgba(32, 32, 32, 0.925));
     width: 100vw;
     height: 100vh;
 }
@@ -76,12 +76,12 @@ header a {
     text-decoration: none;
     font-size: 1em;
     color: white;
-    border-top: 2px solid rgb(6, 6, 59);
+    border-top: 2px solid rgb(20, 20, 104);
 }
 
 header a:hover {
     color: rgb(184, 177, 231);
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(88, 88, 88);
     transition: 1s;
 }
 
@@ -89,17 +89,53 @@ header a:hover {
     color: white;
     display: flex;
     align-items: center;
+
+    margin-left: 3.2vw;
+    font-size: 3.3vw;
     
 }
 
 main > div > article > div span {
-    color: rgb(38, 67, 212);
+    color: rgb(34, 55, 163);
 }
 
 main > div > article > div {
-    margin-top: 79px;
-    margin-left: 3vw;
-    font-size: 1.4em;
+    margin-top: 73px;
 }
 
+main div#curriculo a {
+    background-color: rgba(77, 11, 184, 0.74);
+    padding: 9px;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    margin-left: 16px;
+    border-top: 2px solid rgb(52, 52, 54);
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.705);
+}
+
+main div#curriculo a:hover {
+    background-color: rgba(97, 18, 224, 0.74);
+    color: rgb(209, 209, 209);
+    text-decoration: underline;
+}
+
+main div#curriculo a:active {
+    background-color: rgba(68, 4, 172, 0.801);
+    color: rgb(156, 155, 155);
+    transition: 2s;
+}
+
+
+main div#curriculo i {
+    color: rgb(242, 242, 243);
+    padding-right: 3px;
+    transform: translateY(7px);
+}
+
+main div#curriculo i:hover {
+    color: rgb(161, 160, 160);
+    transition: 2s;
+}
 
