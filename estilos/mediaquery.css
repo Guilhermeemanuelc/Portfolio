@@ -9,7 +9,7 @@ Desktop: 992px até 1200px
 Grandes telas: Acima de 1200px
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
     header > i#burguer {
         display: none;
     }
@@ -21,6 +21,10 @@ Grandes telas: Acima de 1200px
     header  ul > li {
         display: inline-block;
         margin-left: 1.5vw;
+    }
+
+    header ul > li > a {
+        margin-left: 40px;
     }
 
     main > article > div {
@@ -35,26 +39,4 @@ Grandes telas: Acima de 1200px
     }
 }
 
-@media screen and (min-width: 992px) {
-    header > i#burguer {
-        display: none;
-    }
 
-    .container {
-        display: flex;
-    }
-
-    header ul > li {
-        display: inline-block;
-        margin-left: 5vw;
-    }
-
-    main > article > div {
-        font-size: 1.9vw;
-    }
-
-    main > article > img#imagem {
-        width: 23vw;
-        margin-left: 15vw;
-    }
-}
