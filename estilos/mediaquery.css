@@ -24,8 +24,7 @@ Grandes telas: Acima de 1200px
 
     body {
         background-image: linear-gradient(to bottom, #181818, #202020ec);
-        width: 100vw;
-        height: 100vh;
+        min-height: 100dvh;
     }
 
     header > i#burguer {
@@ -49,7 +48,7 @@ Grandes telas: Acima de 1200px
 
     header > h1 > span {
         text-shadow: 0px 3px 0px rgba(0, 0, 255, 0.918);
-        color: rgba(16, 14, 160, 0.884);
+        color: rgb(13, 11, 138);
     }
 
     header > nav {
@@ -101,8 +100,8 @@ Grandes telas: Acima de 1200px
     }
 
     main  span {
-        text-shadow: 1px 5px 0px black;
-        color: rgb(34, 55, 163);
+        text-shadow: 1px 6px 0px black;
+        color: rgb(11, 38, 192);
     }
 
     div#curriculo a {
