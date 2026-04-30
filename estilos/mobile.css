@@ -23,11 +23,13 @@ header > h1 {
     font-size: 2.4em;
     padding: 5px;
     margin-left: 2vw;
-    color: rgba(16, 14, 160, 0.884);
+    color: white;
+    text-shadow: 0px 2px 0px rgba(194, 193, 193, 0.993);
 }
 
 header > h1 > span {
-    color: white;
+    text-shadow: 0px 3px 0px rgba(0, 0, 255, 0.918);
+    color: rgba(16, 14, 160, 0.884);
 }
 
 
@@ -59,7 +61,7 @@ header > i#burguer:active {
 header > nav {
     display: none;
     position: absolute;
-    top: 22.5vw;
+    top: 120px;
     left: 0px;
     width: 100%;
 }
