@@ -88,6 +88,10 @@ header a:hover {
     transition: 1s;
 }
 
+main img {
+    display: none;
+}
+
 #container {
     color: white;
     display: flex;
@@ -134,6 +138,7 @@ main div.icons > ul > li > a {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 3px;
+    margin: 2px;
     border-radius: 20px;
 }
 

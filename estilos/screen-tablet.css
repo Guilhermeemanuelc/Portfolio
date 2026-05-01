@@ -87,6 +87,10 @@ Grandes telas: Acima de 1200px
         transition: 1s;
     }
 
+    main img {
+        display: none;
+    }
+
     #container {
         color: white;
         margin-top: 446px;
