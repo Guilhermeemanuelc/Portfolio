@@ -78,7 +78,6 @@
         margin-top: 446px;
         font-size: 2.4em;
         margin-left: 7vw;
-        margin-bottom: 80px;
     }
 
     main h1 {
@@ -89,6 +88,40 @@
     main span {
         color: rgb(11, 38, 192);
         text-shadow: 2px 5px 0px black;
+    }
+
+    main div.icons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* border: 2px solid red; */
+        width: 400px;
+        height: 55px;
+        margin-top: 33px;
+        margin-left: 5vw;
+        margin-bottom: 40px;
+    }
+
+    main div.icons > ul {
+        width: 80%;
+        /* border: 2px solid yellow; */
+        display: flex;
+    }
+
+    main div.icons > ul > li {
+        width: 100%;
+        /* border: 2px solid green; */
+        display: inline-block;
+    }
+
+    main div.icons > ul > li > a {
+        /* border: 2px solid blue; */
+        padding-top: 2px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-bottom: 2px;
+        font-size: 2.4em;
+        border-radius: 20px;
     }
 
     div#curriculo a {

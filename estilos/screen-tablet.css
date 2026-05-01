@@ -96,7 +96,6 @@ Grandes telas: Acima de 1200px
         margin-top: 446px;
         font-size: 3vw;
         margin-left: 6vw;
-        margin-bottom: 80px;
     }
 
     main h1 {
@@ -107,6 +106,36 @@ Grandes telas: Acima de 1200px
     main  span {
         text-shadow: 1px 6px 0px black;
         color: rgb(11, 38, 192);
+    }
+
+    main div.icons {
+        margin-top: 32px;
+        margin-left: 4vw;
+        margin-bottom: 30px;
+        width: 300px;
+        height: 40px;
+        /* border: 2px solid red; */
+    }
+
+    main div.icons > ul {
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 2px solid yellow; */
+    }
+
+    main div.icons > ul > li {
+        /* border: 2px solid green; */
+        display: inline-block;
+    }
+
+    main div.icons > ul > li > a {
+        /* border: 2px solid blue; */
+        font-size: 2em;
+        padding-top: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 2px;
+        border-radius: 17px;
     }
 
     div#curriculo a {

@@ -1,30 +1,75 @@
 @charset "UTF-8";
 
+/* Incons GitHub */
+
 .github {
     background-color: white;
     color: black;
 }
+
+.github:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+/* Icons Facebook */
 
 .facebook {
     background-color: white;
     color: #1877F2;
 }
 
+.facebook:hover {
+    background-color: #1877F2;
+    color: white;
+    transition: 1s;
+}
+
+/* Icons linkedin */
+
 .linkedin {
     background-color: white;
     color: #0A66C2;
 }
 
-.instagram {
-     background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+.linkedin:hover {
+    transition: 1s;
+    background-color: #0A66C2;
+    color: white
 }
+
+/* Icons Instagram */
+
+.instagram {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+}
+
+.instagram:hover {
+    transition: 1s;
+    background: linear-gradient(45deg, #c58a5a, #a31f5a, #9c53c7, #3c47be);
+}
+
+/* Icons Envelope */
 
 .envelope {
     background-color: rgb(115, 114, 182);
     color: white;
 }
 
+.envelope:hover {
+    background-color: rgb(85, 85, 85);
+    color: rgb(7, 6, 71);
+}
+
+/* Icons Whatzaap */
+
 .zap {
     background-color: black;
     color: #25D366;
+}
+
+.zap:hover {
+    background-color: rgb(54, 54, 54);
+    color: #31fd7c;
 }
