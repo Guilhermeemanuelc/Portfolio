@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    margin-bottom: 210px;
+    margin-bottom: 300px;
 }
 
 header > h1 {
@@ -93,7 +93,7 @@ header a:hover {
     display: flex;
     align-items: center;
 
-    margin-left: 4vw;
+    margin-left: 5vw;
     font-size: 3.1vw;
     
 }
@@ -104,8 +104,40 @@ main > div > article > div span {
     text-shadow: 2px 4px 0px rgb(1, 2, 22);
 }
 
-main > div > article > div {
-    margin-top: 18vw;
+
+main div.icons {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-top: 3vw;
+    margin-bottom: 30px;
+    /* border: 2px solid blue; */
+    box-sizing: border-box;
+}
+
+main div.icons > ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+
+main div.icons > ul > li {
+    padding: 4px;
+    /* border: 2px solid green; */
+    display: inline-block;
+}
+
+main div.icons > ul > li > a {
+    /* border: 2px solid yellow; */
+    padding-top: 2.1vw;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+main div.icons > ul > li > a > i {
+    font-size: 5vw;
 }
 
 main div#curriculo a {
