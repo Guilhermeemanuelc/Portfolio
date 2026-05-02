@@ -103,8 +103,8 @@ main img {
 }
 
 main > div > article > div span {
-    font-size: 1em;
-    color: rgb(11, 38, 192);
+    font-size: 1.2em;
+    color: rgb(16, 45, 209);
     text-shadow: 2px 4px 0px rgb(1, 2, 22);
 }
 
