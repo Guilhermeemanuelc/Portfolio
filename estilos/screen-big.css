@@ -23,7 +23,7 @@
     }
 
     header > h1 {
-        font-size: 2.4em;
+        font-size: 2.8em;
         padding: 5px;
         margin-left: 2vw;
         flex: 0 0 170px;
@@ -61,12 +61,14 @@
         text-decoration: none;
         padding: 14px 1.9vw;
         font-size: 1.2em;
+        border-radius: 11px;
     }
 
     header > nav > ul > li > a:hover {
         color: rgb(213, 210, 233);
         background-color: rgb(88, 88, 88);
         transition: 1s;
+        border-radius: 15px;
     }
 
     .inicio {
@@ -90,8 +92,8 @@
     }
 
     main span {
-        color: rgb(11, 38, 192);
-        text-shadow: 2px 5px 0px black;
+        color: rgb(84, 84, 85);
+        text-shadow: 2px 4px 0px rgb(2, 3, 29);
     }
 
     main div.icons {
@@ -129,7 +131,7 @@
     }
 
     div#curriculo a {
-        background-color: rgba(77, 11, 184, 0.74);
+        background-color: rgba(53, 53, 53, 0.74);
         padding: 9px;
         color: white;
         font-size: 1.5em;
@@ -141,13 +143,13 @@
     }
 
     div#curriculo a:hover {
-        background-color: rgba(97, 18, 224, 0.74);
+        background-color: rgba(59, 59, 59, 0.74);
         color: rgb(209, 209, 209);
         text-decoration: underline;
     }
 
     main div#curriculo a:active {
-        background-color: rgba(68, 4, 172, 0.801);
+        background-color: rgba(27, 27, 27, 0.801);
         color: rgb(156, 155, 155);
         transition: 2s;
     }

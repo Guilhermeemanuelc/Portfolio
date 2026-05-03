@@ -84,12 +84,14 @@ Grandes telas: Acima de 1200px
         padding: 11px 2vw;
         color: white;
         text-decoration: none;
+        border-radius: 11px;
     }
 
     header > nav > ul > li > a:hover {
         color: rgb(190, 184, 221);
         background-color: rgb(88, 88, 88);
         transition: 1s;
+        border-radius: 15px;
     }
 
     main img {
@@ -167,7 +169,7 @@ Grandes telas: Acima de 1200px
     }
 
     main div#curriculo a:active {
-        background-color: rgba(68, 4, 172, 0.801);
+        background-color: rgba(27, 27, 27, 0.801);
         color: rgb(156, 155, 155);
         transition: 2s;
     }
