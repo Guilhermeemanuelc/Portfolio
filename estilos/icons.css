@@ -42,19 +42,20 @@
 /* Icons Instagram */
 
 .instagram {
-    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    background-color: white;
+    color: blue;
 }
 
 .instagram:hover {
-    transition: 1s;
     background: linear-gradient(45deg, #c58a5a, #a31f5a, #9c53c7, #3c47be);
+    transition: 1s;
 }
 
 /* Icons Envelope */
 
 .envelope {
     background-color: rgb(255, 255, 255);
-    color: rgb(55, 66, 211);
+    color: rgb(63, 71, 179);
 }
 
 .envelope:hover {
@@ -66,12 +67,12 @@
 /* Icons Whatzaap */
 
 .zap {
-    background-color: rgb(0, 0, 0);
-    color: #25D366;
+    background-color: white;
+    color: rgb(21, 21, 219);
 }
 
 .zap:hover {
-    background-color: rgb(54, 54, 54);
-    color: #31fd7c;
+    background-color: rgb(0, 0, 0);
+    color: #25D366;
     transition: 1s;
 }

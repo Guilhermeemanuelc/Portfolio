@@ -24,6 +24,8 @@ Grandes telas: Acima de 1200px
 
     body {
         background-image: linear-gradient(to bottom, #181818, #202020ec);
+        background-size: contain;
+        background-position: center center;
         min-height: 100dvh;
     }
 
@@ -32,9 +34,12 @@ Grandes telas: Acima de 1200px
     }
 
     header {
+        /* border: 2px solid red; */
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        width: 100%;
     }
 
     header > h1 {
@@ -92,9 +97,14 @@ Grandes telas: Acima de 1200px
     }
 
     #container {
+        background-size: contain;
+        background-position: right center;
+        display: flex;
+        align-items: flex-end;
+        height: 53vh;
+        /* border: 2px solid green; */
         color: white;
-        margin-top: 446px;
-        font-size: 3vw;
+        font-size: 3.2vw;
         margin-left: 6vw;
     }
 
@@ -104,8 +114,9 @@ Grandes telas: Acima de 1200px
     }
 
     main span {
-        text-shadow: 1px 6px 0px black;
-        color: rgb(22, 25, 167);
+    font-size: 1em;
+    color: rgb(84, 84, 85);
+    text-shadow: 2px 4px 0px rgb(2, 3, 29);
     }
 
     main div.icons {
@@ -139,19 +150,18 @@ Grandes telas: Acima de 1200px
     }
 
     div#curriculo a {
-        background-color: rgba(77, 11, 184, 0.74);
+       background-color: rgba(53, 53, 53, 0.74);
         padding: 9px;
         color: white;
         font-size: 1em;
         text-decoration: none;
         margin-left: 6vw;
-        border-top: 2px solid rgb(52, 52, 54);
+        border-top: 3px solid rgb(63, 63, 63);
         border-radius: 7px;
-        box-shadow: 2px 2px 7px rgba(63, 63, 63, 0.932);
     }
 
     div#curriculo a:hover {
-        background-color: rgba(97, 18, 224, 0.74);
+        background-color: rgba(59, 59, 59, 0.74);
         color: rgb(209, 209, 209);
         text-decoration: underline;
     }

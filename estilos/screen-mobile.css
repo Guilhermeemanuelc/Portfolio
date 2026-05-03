@@ -10,13 +10,15 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #181818, #202020ec);
+    background: url(../imagens/teste2.png) no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
 }
 
 header {
-    margin-bottom: 300px;
+    width: 97%;
+    height: 40%;
 }
 
 header > h1 {
@@ -78,42 +80,46 @@ header a {
     padding: 2vw;
     text-decoration: none;
     font-size: 1.2em;
-    color: white;
-    border-top: 2px solid rgb(20, 20, 104);
+    color: rgb(221, 221, 221);
+    border-top: 2px solid rgb(21, 21, 88);
+    border-radius: 6px;
 }
 
 header a:hover {
     color: rgb(213, 210, 233);
     background-color: rgb(88, 88, 88);
-    transition: 1s;
+    transition: .7s;
+    border-radius: 15px;
 }
 
-main img {
+img {
     display: none;
-}
+    }
 
 #container {
     color: white;
     display: flex;
     align-items: center;
 
+    margin-top: 9vw;
     margin-left: 5vw;
-    font-size: 3.1vw;
+    font-size: 3.2vw;
     
 }
 
 main > div > article > div span {
-    font-size: 1.2em;
-    color: rgb(16, 45, 209);
-    text-shadow: 2px 4px 0px rgb(1, 2, 22);
+    font-size: 1em;
+    color: rgb(84, 84, 85);
+    text-shadow: 2px 4px 0px rgb(2, 3, 29);
 }
 
 
 main div.icons {
     display: flex;
     align-items: center;
-    width: 270px;
+    width: 315px;
     margin-top: 3vw;
+    margin-left: 1vw;
     margin-bottom: 30px;
     /* border: 2px solid blue; */
     box-sizing: border-box;
@@ -128,6 +134,7 @@ main div.icons > ul {
 }
 
 main div.icons > ul > li {
+    margin: 0.4vw;
     /* border: 2px solid green; */
     display: inline-block;
 }
@@ -147,18 +154,18 @@ main div.icons > ul > li > a > i {
 }
 
 main div#curriculo a {
-    background-color: rgba(77, 11, 184, 0.74);
+    background-color: rgba(53, 53, 53, 0.74);
     padding: 9px;
     color: white;
     font-size: 1em;
     text-decoration: none;
-    margin-left: 4vw;
+    margin-left: 6vw;
     border-top: 3px solid rgb(63, 63, 63);
     border-radius: 7px;
 }
 
 main div#curriculo a:hover {
-    background-color: rgba(97, 18, 224, 0.74);
+    background-color: rgba(59, 59, 59, 0.74);
     color: rgb(209, 209, 209);
     text-decoration: underline;
 }
