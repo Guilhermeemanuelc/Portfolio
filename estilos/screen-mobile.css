@@ -6,11 +6,10 @@
     font-family: 'inter';
     margin: 0px;
     padding: 0px;
-    
 }
 
 body {
-    background: url(../imagens/teste2.png) no-repeat;
+    background: url(../imagens/designareia.png) no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -92,7 +91,9 @@ header a:hover {
     border-radius: 15px;
 }
 
-
+main img {
+    display: none;
+}
 
 #container {
     color: white;
@@ -106,8 +107,8 @@ header a:hover {
 }
 
 main > div > article > div span {
-    font-size: 1em;
-    color: rgb(84, 84, 85);
+    font-size: 1.1em;
+    color: rgb(85, 85, 85);
     text-shadow: 2px 4px 0px rgb(2, 3, 29);
 }
 
@@ -152,24 +153,24 @@ main div.icons > ul > li > a > i {
 }
 
 main div#curriculo a {
-    background-color: rgba(53, 53, 53, 0.74);
+    background-color: rgba(27, 27, 27, 0.74);
     padding: 9px;
     color: white;
     font-size: 1em;
     text-decoration: none;
     margin-left: 6vw;
-    border-top: 3px solid rgb(63, 63, 63);
+    border-top: 2px solid rgb(16, 26, 70);
     border-radius: 7px;
 }
 
 main div#curriculo a:hover {
-    background-color: rgba(59, 59, 59, 0.74);
+    background-color: rgba(31, 31, 31, 0.74);
     color: rgb(209, 209, 209);
     text-decoration: underline;
 }
 
 main div#curriculo a:active {
-    background-color: rgba(68, 4, 172, 0.801);
+    background-color: rgba(0, 0, 0, 0.801);
     color: rgb(156, 155, 155);
     transition: 2s;
 }

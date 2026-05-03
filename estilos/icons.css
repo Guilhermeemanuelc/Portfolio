@@ -17,7 +17,7 @@
 
 .facebook {
     background-color: white;
-    color: #1877F2;
+    color: #414141;
 }
 
 .facebook:hover {
@@ -30,7 +30,7 @@
 
 .linkedin {
     background-color: white;
-    color: #0A66C2;
+    color: #313131;
 }
 
 .linkedin:hover {
@@ -43,7 +43,7 @@
 
 .instagram {
     background-color: white;
-    color: blue;
+    color: rgb(41, 41, 41);
 }
 
 .instagram:hover {
@@ -55,11 +55,11 @@
 
 .envelope {
     background-color: rgb(255, 255, 255);
-    color: rgb(63, 71, 179);
+    color: rgb(66, 66, 66);
 }
 
 .envelope:hover {
-    background-color: rgb(69, 78, 204);
+    background-color: rgb(86, 86, 87);
     color: white;
     transition: 1s;
 }
@@ -68,7 +68,7 @@
 
 .zap {
     background-color: white;
-    color: rgb(21, 21, 219);
+    color: rgb(95, 95, 95);
 }
 
 .zap:hover {
