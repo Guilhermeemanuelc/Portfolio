@@ -93,9 +93,11 @@ header > nav > ul {
 }
 
 header > nav > ul > li {
+    
+    /* border: 2px solid green; */
     list-style-type: none;
-    width: calc(80px + 26vw);
-    padding: 4px 0px;
+    width: calc(60px + 24vw);
+    padding: 4px -10px;
 }
 
 header a {
