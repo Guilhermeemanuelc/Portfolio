@@ -93,7 +93,7 @@ header > nav > ul {
 
 header > nav > ul > li {
     list-style-type: none;
-    width: 100px;
+    width: calc(100px + 10vw);
     padding: 4px 0px;
 }
 
