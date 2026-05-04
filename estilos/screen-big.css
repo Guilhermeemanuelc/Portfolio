@@ -80,8 +80,10 @@
     }
 
     #container {
+        display: flex;
+        justify-content: space-between;
         color: white;
-        margin-top: 446px;
+        margin-top: 416px;
         font-size: 2.4em;
         margin-left: 7vw;
     }
