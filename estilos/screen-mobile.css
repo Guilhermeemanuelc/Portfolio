@@ -10,9 +10,22 @@
 }
 
 body {
-    background: black url(../imagens/Designareiadude.png) no-repeat;
+    background: linear-gradient(to bottom, #181818, #202020ec) black;
     background-size: cover;
     min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    background: url(../imagens/Designareiadude.png);
+    background-size: cover;
+    background-position: center;
+    content: "";
+    inset: 0;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.8;
 }
 
 header {
@@ -69,7 +82,7 @@ header > nav {
 
 header > nav > ul > li {
     list-style-type: none;
-    width: 79px;
+    width: 100px;
 }
 
 header a {
@@ -104,13 +117,13 @@ main img {
     height: 380px;
     margin-top: 3vw;
     margin-left: 5vw;
-    font-size: 3vw;
+    font-size: 1.5em;
     
 }
 
 main > div > article > div span {
     font-size: 1.1em;
-    color: rgb(85, 85, 85);
+    color: rgb(73, 73, 73);
     text-shadow: 2px 4px 0px rgb(2, 3, 29);
 }
 
