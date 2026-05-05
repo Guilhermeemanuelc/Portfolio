@@ -1,3 +1,6 @@
+let items = document.getElementById('items')
+let burguer = document.getElementById('burguer')
+
 function clickMenu() {
     if (items.style.display == 'block') {
         items.style.display = 'none'
@@ -6,18 +9,18 @@ function clickMenu() {
         items.style.display = 'block'
         burguer.innerHTML = 'close'
     }
-
-window.addEventListener("load", () => {
-  const hash = window.location.hash;
-
-  if (hash) {
-    const el = document.querySelector(hash);
-
-    if (el) {
-      setTimeout(() => {
-        el.scrollIntoView();
-      }, 200);
-    }
-  }
-});
 }
+
+// FORA da função
+function goToHash() {
+    if (!window.location.hash) return;
+
+    const el = document.querySelector(window.location.hash);
+    if (!el) return;
+
+    setTimeout(() => {
+        el.scrollIntoView({ behavior: "auto" });
+    }, 100);
+}
+
+document.addEventListener("DOMContentLoaded", goToHash);

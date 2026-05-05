@@ -9,14 +9,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-     overflow-x: hidden;
-}
-
 body > section#inicio {
     background: linear-gradient(to bottom, #181818, #3a3a3aec) black;
     min-height: 100dvh;
@@ -32,7 +24,7 @@ body > section#inicio::before{
     position: absolute;
     inset: 0;
     z-index: -3;
-    opacity: .9;
+    opacity: 0.9;
 }
 
 header {
@@ -238,22 +230,42 @@ main div#curriculo i:hover {
 body > section#sobre {
     font-family: 'inter';
     color: white;
-    background: linear-gradient(to bottom, #181818, #3a3a3aec) black;
+    background: linear-gradient(to bottom, #131313, #2c2c2cec) black;
     min-height: 100dvh;
-}
-
-body > section#sobre > div > h1 {
-    text-align: center;
 }
 
  div#alinharsobre {
     display: flex;
+    flex-direction: column;
 }
 
 div.sobreimagem {
-    background: url(../imagens/myimage.png);
-    height: 100vw;
-    
+    background: url(../imagens/photodark.png) no-repeat ;
+    background-position: center top;
+    background-size: 200px;
+    height: 200px;
+}
+
+body > section#sobre > div > h1 {
+    padding: 40px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+div.sobretexto > h2 {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+div.sobretexto > p {
+    font-family: 'inter';
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 1.1em;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 }
