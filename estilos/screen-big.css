@@ -7,8 +7,10 @@
         font-family: 'inter';
     }
 
-    body {
+    body section#inicio {
         background-image: linear-gradient(to bottom, #181818, #202020ec);
+        background-size: contain;
+        background-position: center center;
         min-height: 100dvh;
     }
 
@@ -17,16 +19,22 @@
     }
 
     header {
+        background-color: #0b2441;
+        /* border: 2px solid red; */
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: fixed;
+
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 
     header > h1 {
         font-size: 2.8em;
         padding: 5px;
         margin-left: 2vw;
-        flex: 0 0 170px;
         text-shadow: rgba(194, 193, 193, 0.993);
         color: white;
     }
@@ -71,21 +79,23 @@
         border-radius: 15px;
     }
 
-    .inicio {
-        padding: 14px 2.7vw;
-    }
-
     main img {
         display: none;
     }
 
     #container {
+        /* border: 2px solid red; */
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         color: white;
-        margin-top: 416px;
+        padding-top: 180px;
         font-size: 2.4em;
-        margin-left: 7vw;
+        margin-left: 5%;
+        width: 70vw;
+        height: 67vh;
+
+
     }
 
     main h1 {
@@ -94,7 +104,7 @@
     }
 
     main span {
-        color: rgb(84, 84, 85);
+        color: #0077ff;
         text-shadow: 2px 4px 0px rgb(2, 3, 29);
     }
 
@@ -105,7 +115,7 @@
         /* border: 2px solid red; */
         width: 400px;
         height: 55px;
-        margin-top: 33px;
+        margin-top: 32px;
         margin-left: 5vw;
         margin-bottom: 40px;
     }
