@@ -32,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin-bottom: 380px;
+    margin-bottom: 200px;
 }
 
 
@@ -164,7 +164,7 @@ section#container article > div {
 }
 
 section#container article > p {
-    max-width: 410px;
+    max-width: 340px;
     width: 100%;
     font-size: 1.2em;
     text-align: left;
