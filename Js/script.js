@@ -1,26 +1,13 @@
-let items = document.getElementById('items')
-let burguer = document.getElementById('burguer')
+const btnMenu = document.getElementById('btn-menu');
+const nav = document.getElementById('itens');
+const icon = document.getElementById('burguer');
 
-function clickMenu() {
-    if (items.style.display == 'block') {
-        items.style.display = 'none'
-        burguer.innerHTML = 'menu'
+btnMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+
+    if (nav.classList.contains('active')) {
+        icon.textContent = 'close';
     } else {
-        items.style.display = 'block'
-        burguer.innerHTML = 'close'
+        icon.textContent = 'menu';
     }
-}
-
-// FORA da função
-function goToHash() {
-    if (!window.location.hash) return;
-
-    const el = document.querySelector(window.location.hash);
-    if (!el) return;
-
-    setTimeout(() => {
-        el.scrollIntoView({ behavior: "auto" });
-    }, 100);
-}
-
-document.addEventListener("DOMContentLoaded", goToHash);
+});

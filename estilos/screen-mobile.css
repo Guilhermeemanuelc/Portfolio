@@ -1,49 +1,40 @@
-@charset "UTF-8";
-* {
-    font-family: 'inter';
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-
 @media screen and (max-width: 768px) {
 
+    @font-face {
+        font-family: 'inter';
+        src: url(../fonte/inter/static/Inter_18pt-Regular.ttf);
+    }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --fundo01: rgb(26, 26, 26);
+    --fundo02: rgb(41, 41, 41);
+    --principal: #0077ff;
+    --destaque: white;
+}
+
 body {
-    background: black;
-    overflow-x: hidden;
-}
-
-body > section#inicio {
-    background: linear-gradient(to bottom, #181818, #3a3a3aec) black;
-    height: 100dvh;
-    position: relative;
-    z-index: 0;
-}
-
-body > section#inicio::before{
-    background: black url(../imagens/Designareiadude.png);
-    background-size: cover;
-    background-position: center;
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -3;
-    opacity: 0.9;
+    font-family: 'inter';
+    background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
+    min-height: 100dvh;
+    color: white;
 }
 
 header {
-    background-color: #0c1335;
-    top: 0;
-    left: 0;
+    /* border: 2px solid red; */
+    background-color: #101527;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 10;
-    /* border: 2px solid red; */
-    width: 100%;
+    align-content: center;
+    margin-bottom: 380px;
 }
+
 
 header > h1 {
     font-size: calc(1.6em + 1.5vw);
@@ -59,18 +50,45 @@ header > h1 > span {
     color: #0077ff;
 }
 
+#btn-menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 
-header > i#burguer {
+#itens {
+    background-color: #0077ff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+
+    width: 180px;
+    background: #111;
+    border-radius: 10px;
+    padding: 10px;
+
+    display: none;
+    visibility: hidden;
+    z-index: 999;
+}
+
+#itens.active {
+    display: block;
+    visibility: visible;
+}
+
+
+header i#burguer {
     background-color: rgba(92, 92, 92, 0.425);
     color: rgb(11, 8, 56);
     padding: 3px;
     font-size: calc(2em + 1vw);
     margin-right: 2vw;
-    border-radius: 18px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
-header > i#burguer:hover {
+header i#burguer:hover {
     background-color: rgb(20, 20, 20);
     color: rgb(31, 31, 110);
     transition: 1s;
@@ -78,7 +96,7 @@ header > i#burguer:hover {
     border-radius: 10px;
 }
 
-header > i#burguer:active {
+header i#burguer:active {
     background-color: rgb(7, 7, 7);
     color: rgb(16, 18, 165);
     border-radius: 8px;
@@ -106,9 +124,9 @@ header > nav > ul > li {
     list-style-type: none;
     width: calc(60px + 24vw);
     padding: 4px -10px;
-}
+} 
 
-section > header > nav a {
+header > nav a {
     display: block;
     width: 100%;
     height: 100%;
@@ -122,7 +140,7 @@ section > header > nav a {
     border-radius: 4px;
 }
 
-section > header > nav a:hover {
+header > nav a:hover {
     color: rgb(213, 210, 233);
     background-color: rgb(88, 88, 88);
     transition: .7s;
@@ -130,130 +148,103 @@ section > header > nav a:hover {
     text-decoration: underline;
 }
 
-#container {
+section#container {
     /* border: 2px solid green; */
     color: white;
-    display: flex;
-    align-items: flex-end;
-
-    height: 490px;
-    margin-top: 6vw;
-    margin-left: 5vw;
-    font-size: calc(0.9em + 0.8vw);
-    
+    display: grid;
+    grid-template-rows: auto 7em 1fr;
+    padding: 10px;
 }
 
-main > div > article > div > h1 > span {
+section#container article > div {
+    margin-left: calc(1vw + 10px);
+    font-size: calc(0.9em + 0.8vw);
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+section#container article > p {
+    max-width: 410px;
+    width: 100%;
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.4;
+    margin-left: 15px;
+}
+
+article > div > h1 > span {
     font-size: 1em;
     color: #0077ff;
     text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.966);
 }
 
-main > div > article > div >p > span {
+article > div >p > span {
     font-size: 1.3em;
     color: #0077ff;
     text-shadow: 0px 4px 0px black;
 }
 
 
-main div.icons {
-    display: flex;
-    align-items: center;
-    width: 315px;
-    margin-top: 3vw;
-    margin-left: 1vw;
-    margin-bottom: 30px;
-    /* border: 2px solid blue; */
-    box-sizing: border-box;
-    border-radius: 18px;
-}
-
-main div.icons > ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+article div.icons {
+    display: grid;
+    grid-template-rows: auto ;
     /* border: 2px solid red; */
-    padding: 20px;
 }
 
-main div.icons > ul > li {
-    margin: calc(-9px + 2vw);
-    /* border: 2px solid green; */
-    display: inline-block;
-}
+article div.icons > ul {
+    margin-left: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    
 
-main div.icons > ul > li > a {
     /* border: 2px solid yellow; */
-    padding-top: 15.3px;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-bottom: 5px;
-    margin: 2px;
-    border-radius: 22px;
-    border: 1.7px solid rgb(20, 20, 105);
 }
 
-main div.icons > ul > li > a > i {
-    font-size: 2em;
+article div.icons > ul > li {
+    list-style: none;
 }
 
-main div#curriculo a {
+article div.icons > ul > li > a {
+    padding: 1px 5px;
+    border-radius: 26px;
+    font-size: 1.8em;
+}
+
+article div#curriculo a {
     background-color: rgba(27, 27, 27, 0.74);
     padding: 9px;
     color: white;
     font-size: 1em;
+    margin-left: 3px;
     text-decoration: none;
-    margin-left: 6vw;
-    border-top: 2px solid rgb(23, 39, 109);
+    border-top: 2px solid var(--principal);
     border-radius: 7px;
 }
 
-main div#curriculo a:hover {
+article div#curriculo a:hover {
     background-color: rgba(31, 31, 31, 0.74);
     color: rgb(209, 209, 209);
     text-decoration: underline;
 }
 
-main div#curriculo a:active {
+article div#curriculo a:active {
     background-color: rgba(0, 0, 0, 0.801);
     color: rgb(156, 155, 155);
     transition: 2s;
 }
 
 
-main div#curriculo i {
+article div#curriculo i {
     color: rgb(242, 242, 243);
     padding-right: 3px;
     transform: translateY(7px);
 }
 
-main div#curriculo i:hover {
-    color: rgb(161, 160, 160);
+article div#curriculo i:hover {
+    color: var(--principal);
     transition: 2s;
-}
-
-/* Segunda pagina 'sobre'  */
-
-body > section#sobre {
-    font-family: 'inter';
-    color: white;
-    background: linear-gradient(to bottom, #111111, #313131ec) black;
-    min-height: 100dvh;
-}
-
-div.sobretexto > h2 {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: left;
-    padding-left: 20px;
-    padding-top: 30px;
-}
-
-div.sobretexto > p {
-    font-size: calc(1em + 1vw);
-    padding-top: 50px;
-    padding-left: 14px;
-    padding-right: 50px;
 }
 
 }

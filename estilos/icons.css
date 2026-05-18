@@ -4,7 +4,7 @@
 
 .github {
     background-color: white;
-    color: black;
+    color: var(--principal);
 }
 
 .github:hover {
@@ -17,7 +17,7 @@
 
 .facebook {
     background-color: white;
-    color: #414141;
+    color: var(--principal);
 }
 
 .facebook:hover {
@@ -30,7 +30,7 @@
 
 .linkedin {
     background-color: white;
-    color: #313131;
+    color: var(--principal);
 }
 
 .linkedin:hover {
@@ -43,23 +43,24 @@
 
 .instagram {
     background-color: white;
-    color: rgb(41, 41, 41);
+    color: var(--principal);
 }
 
 .instagram:hover {
+    color: rgb(155, 154, 154);
     background: linear-gradient(45deg, #c58a5a, #a31f5a, #9c53c7, #3c47be);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /* Icons Envelope */
 
 .envelope {
     background-color: rgb(255, 255, 255);
-    color: rgb(66, 66, 66);
+    color: var(--principal);
 }
 
 .envelope:hover {
-    background-color: rgb(86, 86, 87);
+    background-color: var(--principal);
     color: white;
     transition: 1s;
 }
