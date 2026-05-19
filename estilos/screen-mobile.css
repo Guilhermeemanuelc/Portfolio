@@ -12,7 +12,7 @@
 
 :root {
     --fundo01: rgb(26, 26, 26);
-    --fundo02: rgb(41, 41, 41);
+    --fundo02: rgb(48, 47, 47);
     --principal: #0077ff;
     --destaque: white;
 }
@@ -20,7 +20,7 @@
 body {
     font-family: 'inter';
     background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
-    min-height: 100dvh;
+    min-height: 100vh;
     color: white;
 }
 
@@ -38,7 +38,6 @@ header {
 header > h1 {
     font-size: calc(1.6em + 1.5vw);
     padding: 5px;
-    margin-top: 0.6vw;
     margin-left: 2vw ;
     color: white;
     text-shadow: 0px 2px 0px rgba(194, 193, 193, 0.993);
@@ -79,8 +78,8 @@ header > h1 > span {
 
 header i#burguer {
     background-color: rgba(92, 92, 92, 0.425);
-    color: rgb(11, 8, 56);
-    padding: 3px;
+    color: rgb(184, 184, 187);
+    padding: 4px 3px 3px 3px;
     font-size: calc(2em + 1vw);
     margin-right: 2vw;
     border-radius: 15px;
@@ -90,15 +89,15 @@ header i#burguer {
 header i#burguer:hover {
     background-color: rgb(20, 20, 20);
     color: rgb(31, 31, 110);
-    transition: 1s;
+    transition: 0.8s;
     border-radius: 3px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 header i#burguer:active {
     background-color: rgb(7, 7, 7);
     color: rgb(16, 18, 165);
-    border-radius: 8px;
+    border-radius: 19px;
 }
 
 header > nav {
@@ -188,7 +187,7 @@ article div.icons > ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     
 
     /* border: 2px solid yellow; */
@@ -199,16 +198,16 @@ article div.icons > ul > li {
 }
 
 article div.icons > ul > li > a {
-    padding: 1px 5px;
+    padding: 3px 7px;
     border-radius: 26px;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 article div#curriculo a {
     background-color: rgba(27, 27, 27, 0.74);
     padding: 9px;
     color: white;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-left: 3px;
     text-decoration: none;
     border-top: 2px solid var(--principal);
