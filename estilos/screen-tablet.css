@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --fundo01: rgb(26, 26, 26);
+    --fundo02: rgb(48, 47, 47);
+    --principal: #0077ff;
+    --destaque: white;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
+    min-height: 100dvh;
+}
+
+header i#burguer {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: calc(1.6em + 1.5vw);
+    padding: 5px;
+    margin-left: 2vw ;
+    color: white;
+    text-shadow: 0px 2px 0px rgba(194, 193, 193, 0.993);
+}
+
+header > h1 > span {
+    text-shadow: 0px 3px 0px rgba(46, 46, 173, 0.918);
+    color: #0077ff;
+}
+
+header > nav {
+    background-color: #181818;
+    text-align: center;
+    top: 80px;
+}
+
+header > nav > ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+
+}
