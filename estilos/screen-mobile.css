@@ -26,7 +26,7 @@ body {
 
 header {
     /* border: 2px solid red; */
-    background-color: #101527;
+    background-color: #0a153a;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -150,8 +150,10 @@ header > nav a:hover {
 section#container {
     /* border: 2px solid green; */
     color: white;
-    display: grid;
-    grid-template-rows: auto 7em 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 75vh;
     padding: 10px;
 }
 
@@ -165,13 +167,13 @@ section#container article > div {
 article > div > h1 > span {
     font-size: 1em;
     color: #0077ff;
-    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.966);
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.966);
 }
 
 article > div >p > span {
     font-size: 1.3em;
     color: #0077ff;
-    text-shadow: 0px 4px 0px black;
+    text-shadow: 0px 2px 0px black;
 }
 
 
