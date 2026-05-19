@@ -24,6 +24,11 @@ body {
     color: white;
 }
 
+.inicio {
+    background: black url(../imagens/Designareiadude.png);
+    background-size: cover;
+}
+
 header {
     /* border: 2px solid red; */
     background-color: #0a153a;
@@ -236,6 +241,10 @@ article div#curriculo i {
 article div#curriculo i:hover {
     color: var(--principal);
     transition: 2s;
+}
+
+section#sobre {
+    height: 100vh;
 }
 
 }
