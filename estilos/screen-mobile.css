@@ -333,7 +333,7 @@ section article#caixa {
     /* border: 2px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 10px;
     width: 90%;
     margin: auto;
@@ -358,12 +358,16 @@ section div.secao > i {
 }
 
 section div.secao > h3 {
+    font-size: calc(1em + 0.5vw);
     margin-top: 5px;
     text-align: center;
     font-weight: bold;
 }
 
 section div.secao > p {
+    font-size: calc(0.7em + 1vw);
+    width: 80%;
+    margin: auto;
     text-align: center;
     padding: 10px;
     color: rgb(136, 136, 136);
