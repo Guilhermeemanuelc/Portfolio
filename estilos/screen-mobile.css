@@ -25,14 +25,30 @@ body {
 }
 
 .inicio {
-    background: black url(../imagens/Designareiadude.png);
+    position: relative;
+    background: url(../imagens/myphotodesign.jpg.webp);
     background-size: cover;
-    background-position: center;
+    background-position: center left;
+}
+
+.inicio::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(31, 31, 31, 0.623);
+    z-index: 0;
+    backdrop-filter: blur(0.5px);
+}
+
+.inicio > * {
+    position: relative;
+    z-index: 1;
 }
 
 header {
     /* border: 2px solid red; */
-    background-color: #0a153a;
+    background-color: #1a1d25;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -154,6 +170,8 @@ header > nav a:hover {
 
 section#container {
     /* border: 2px solid green; */
+    position: relative;
+    z-index: 1;
     color: white;
     display: flex;
     flex-direction: column;
@@ -163,10 +181,10 @@ section#container {
 }
 
 section#container article > div {
+    /* border: 2px solid orange; */
     margin-left: calc(1vw + 10px);
-    font-size: calc(0.8em + 0.8vw);
+    font-size: calc(0.9em + 0.9vw);
     margin-top: 30px;
-    margin-bottom: 15px;
 }
 
 article > div > h1 > span {
