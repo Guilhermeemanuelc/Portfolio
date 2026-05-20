@@ -106,7 +106,7 @@ header i#burguer {
     color: rgb(184, 184, 187);
     padding: 4px 3px 3px 3px;
     font-size: calc(2em + 1vw);
-    margin-right: 2vw;
+    margin-right: 10px;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -144,8 +144,9 @@ header > nav > ul > li {
     
     /* border: 2px solid green; */
     list-style-type: none;
-    width: calc(60px + 24vw);
-    padding: 4px -10px;
+    width: 100%;
+    max-width: 250px;
+    padding: 4px;
 } 
 
 header > nav a {
@@ -178,7 +179,7 @@ section#container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100dvh;
+    min-height: calc(100dvh - 70px);
     gap: 10px;
 }
 
