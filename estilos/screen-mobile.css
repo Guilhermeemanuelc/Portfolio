@@ -297,7 +297,7 @@ section div.texto {
     margin: auto;
     background-color: rgb(27, 27, 27);
     width: 85%;
-    height: 52vh;
+    height: 50vh;
     border-radius: 12px;
 }
 
@@ -333,7 +333,7 @@ section article#caixa {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 13px;
+    gap: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -341,7 +341,7 @@ section article#caixa {
 section div.secao {
     border: 1px solid rgb(58, 58, 58);
     background-color: #272727;
-    width: 29%;
+    width: 120px;
     border-radius: 10px;
 }
 
