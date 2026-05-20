@@ -20,7 +20,7 @@
 body {
     font-family: 'inter';
     background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
-    min-height: 100vh;
+    min-height: 100dvh;
     color: white;
 }
 
@@ -176,15 +176,14 @@ section#container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    min-height: 100dvh;
     padding: 10px;
 }
 
 section#container article > div {
     /* border: 2px solid orange; */
-    margin-left: calc(1vw + 10px);
-    font-size: calc(0.9em + 0.9vw);
-    margin-top: 30px;
+    font-size: calc(0.8em + 0.9vw);
+    margin-top: 40px;
 }
 
 article > div > h1 > span {
