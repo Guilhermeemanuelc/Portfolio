@@ -277,7 +277,7 @@ article div#curriculo i:hover {
 
 
 section#sobre {
-    color: white;
+    color: rgb(180, 180, 180);
     background-color: black;
     min-height: 100dvh;
 }
@@ -297,7 +297,7 @@ section div.texto {
     margin: auto;
     background-color: rgb(27, 27, 27);
     width: 85%;
-    height: 50vh;
+    min-height: 50vh;
     border-radius: 12px;
 }
 
@@ -310,7 +310,7 @@ section div.texto:hover {
 
 
 section div.texto i {
-    color: white;
+    color: rgb(182, 182, 182);
     padding-right: 15px;
 }
 
@@ -322,20 +322,19 @@ section div.texto > h2 {
 }
 
 section div.texto > p {
-    color: rgb(212, 211, 211);
+    color: rgb(150, 150, 150);
     text-align: left;
     padding: 15px;
-    width: 55%;
+    width: calc(30% + 140px);
+    font-size: calc(0.4em + 60%);
 }
 
 section article#caixa {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 90%;
+    margin: auto;
 }
 
 section div.secao {
@@ -364,6 +363,7 @@ section div.secao > h3 {
 section div.secao > p {
     text-align: center;
     padding: 10px;
+    color: rgb(136, 136, 136);
 }
 
 

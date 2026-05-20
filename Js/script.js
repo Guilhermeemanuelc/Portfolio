@@ -11,3 +11,4 @@ btnMenu.addEventListener('click', () => {
         icon.textContent = 'menu';
     }
 });
+
