@@ -29,7 +29,7 @@ body {
 .inicio {
     position: relative;
 
-    min-height: 100svh;
+    min-width: 100svw;
     background: url(../imagens/myphotodesign.jpg.webp);
     background-size: cover;
     background-position: center left;
