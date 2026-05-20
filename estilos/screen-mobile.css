@@ -8,7 +8,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 :root {
@@ -179,7 +179,6 @@ section#container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100dvh - 70px);
     gap: 10px;
 }
 
