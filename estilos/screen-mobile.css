@@ -8,6 +8,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    /* outline: 1px solid red; */
 }
 
 :root {
@@ -21,6 +22,7 @@ body {
     font-family: 'inter';
     background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
     min-height: 100dvh;
+    overflow-x: hidden;
 }
 
 .inicio {
@@ -29,6 +31,7 @@ body {
     background-size: cover;
     background-position: center left;
     background-repeat: no-repeat;
+    min-height: 100dvh;
 }
 
 .inicio::before {
@@ -176,7 +179,7 @@ section#container {
     flex-direction: column;
     justify-content: center;
     min-height: 100dvh;
-    padding: 10px;
+    gap: 10px;
 }
 
 section#container article > div {
