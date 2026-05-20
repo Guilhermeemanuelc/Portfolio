@@ -28,10 +28,14 @@ body {
 
 .inicio {
     position: relative;
+
+    min-height: 100svh;
     background: url(../imagens/myphotodesign.jpg.webp);
     background-size: cover;
     background-position: center left;
     background-repeat: no-repeat;
+
+    overflow: hidden;
 }
 
 .inicio::before {
@@ -185,6 +189,7 @@ section#container {
 
 section#container article > div {
     /* border: 2px solid orange; */
+    margin-left: 10px;
     font-size: calc(0.4em + 2vw);
     margin-top: 40px;
 }
