@@ -19,6 +19,7 @@
 }
 
 body {
+    background-color: var(--fundo01);
     font-family: 'inter';
     background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
     min-height: 100dvh;
@@ -171,7 +172,7 @@ header > nav a:hover {
 }
 
 section#container {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     position: relative;
     z-index: 1;
     color: white;
@@ -179,12 +180,12 @@ section#container {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    min-height: 80dvh;
+    min-height: 100dvh;
 }
 
 section#container article > div {
     /* border: 2px solid orange; */
-    font-size: calc(0.8em + 0.9vw);
+    font-size: calc(0.4em + 2vw);
     margin-top: 40px;
 }
 
@@ -263,6 +264,8 @@ article div#curriculo i:hover {
     transition: 2s;
 }
 
-
+section#sobre {
+    min-height: 100dvh;
+}
 
 }
