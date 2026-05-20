@@ -21,7 +21,6 @@ body {
     font-family: 'inter';
     background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
     min-height: 100dvh;
-    color: white;
 }
 
 .inicio {
@@ -29,6 +28,7 @@ body {
     background: url(../imagens/myphotodesign.jpg.webp);
     background-size: cover;
     background-position: center left;
+    background-repeat: no-repeat;
 }
 
 .inicio::before {
@@ -127,8 +127,7 @@ header > nav {
     display: none;
     position: absolute;
     text-align: center;
-    top: 80px;
-    width: 100vw;
+    width: 100%;
     border-radius: 33px;
 }
 
@@ -262,7 +261,7 @@ article div#curriculo i:hover {
 }
 
 section#sobre {
-    height: 100vh;
+    min-height: 100dvh;
 }
 
 }
