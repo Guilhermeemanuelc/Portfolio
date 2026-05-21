@@ -298,7 +298,7 @@ section div.texto {
     margin: auto;
     background-color: rgb(27, 27, 27);
     width: 100%;
-    max-width: calc(200px + 30%);
+    max-width: calc(200px + 10%);
     min-height: 500px;
     padding: 20px;
     border-radius: 12px;
@@ -369,7 +369,7 @@ section div.secao > h3 {
 }
 
 section div.secao > p {
-    font-size: 1em;
+    font-size: 0.8em;
     width: 83%;
     text-align: center;
     margin-top: 10px;
