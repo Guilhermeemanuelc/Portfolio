@@ -333,16 +333,17 @@ section article#caixa {
     /* border: 2px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     width: 90%;
+    padding-bottom: 20px;
     margin: auto;
 }
 
 section div.secao {
     border: 1px solid rgb(58, 58, 58);
     background-color: #272727;
-    min-height: 170px;
+    min-height: calc(10vh + 70px);
     border-radius: 14px;
 }
 
