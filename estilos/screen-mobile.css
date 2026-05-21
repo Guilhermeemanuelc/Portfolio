@@ -375,12 +375,12 @@ section div.dados2-1 {
 section div.dados2-1 > h2 {
     color: white;
     margin-left: 10px;
-    font-size: 0.9em;
+    font-size: 10px;
 }
 
 section div.dados2-1 > p {
     margin-left: 6px;
-    margin-top: 10px;
+    margin-top: 11px;
     font-size: 8px;
     width: 220px;
     color: rgb(185, 185, 185);
@@ -404,7 +404,7 @@ section div.dados2-2 > p {
 section div.dados2-2 > h2 {
     color: white;
     margin-left: 10px;
-    font-size: 0.9em;
+    font-size: 10px;
 }
 
 section div.dados2-3 {
@@ -417,7 +417,7 @@ section div.dados2-3 {
 section div.dados2-3 > h2 {
     color: white;
     margin-left: 10px;
-    font-size: 0.9em;
+    font-size: 10px;
 }
 
 section div.dados2-3 > p {
