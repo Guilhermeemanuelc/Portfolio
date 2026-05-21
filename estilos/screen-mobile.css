@@ -279,13 +279,13 @@ article div#curriculo i:hover {
 section#sobre {
     font-family: 'inter';
     color: rgb(180, 180, 180);
-    background-image: linear-gradient(to right, rgb(31, 31, 31), rgb(44, 44, 44));
+    background-image: linear-gradient(to bottom, rgb(29, 29, 29), rgb(44, 44, 44));
     min-height: 100dvh;
 }
 
 section#sobre > h1 {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
 }
 section#sobre > h1 > span {
     color: var(--principal);
@@ -298,8 +298,8 @@ section div.texto {
     margin: auto;
     background-color: rgb(27, 27, 27);
     width: 100%;
-    max-width: 370px;
-    min-height: 5px;
+    max-width: calc(200px + 30%);
+    min-height: 500px;
     padding: 20px;
     border-radius: 12px;
     margin: auto;
@@ -307,9 +307,7 @@ section div.texto {
 
 section div.texto:hover {
     border-color: rgba(15, 15, 212, 0.486);
-    border-radius: 12px;
     transition: 1s;
-    cursor: pointer;
 }
 
 
@@ -336,7 +334,8 @@ section div.texto > p {
 section article#caixa {
     /* border: 2px solid red; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    width: 100%;
     justify-content: space-around;
     gap: 15px;
 }
@@ -346,9 +345,9 @@ section div.secao {
     flex-direction: column;
     border: 1px solid rgb(65, 65, 65);
     background-color: #272727;
-    width: 100%;
-    min-height: 150px;
-    border-radius: 18px;
+    min-height: 190px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 section div.secao:hover {
@@ -373,7 +372,7 @@ section div.secao > p {
     font-size: 1em;
     width: 83%;
     text-align: center;
-    margin-top: auto;
+    margin-top: 10px;
     padding: 10px;
     color: rgb(196, 196, 196);
     
