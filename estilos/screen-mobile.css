@@ -271,7 +271,7 @@ article div#curriculo i:hover {
     color: var(--principal);
     transition: 2s;
 }
-
+}
 
                             /* Area sobre */
 
@@ -292,92 +292,141 @@ section#sobre > h1 > span {
     text-align: center;
 }
 
-section div.texto {
-    border: 1px solid rgb(73, 73, 73);
-    display: block;
-    margin: auto;
-    background-color: rgb(27, 27, 27);
+section div#caixa {
+    background-color: rgb(44, 44, 44);
     width: 100%;
-    max-width: calc(240px + 25%);
-    min-height: 500px;
-    padding: 20px;
+    max-width: 410px;
+    min-height: 550px;
+    margin: auto;
     border-radius: 12px;
-    margin: auto;
+    border-top-right-radius: 13px;
+    border: 1px solid rgb(85, 85, 85);
 }
 
-section div.texto:hover {
-    border-color: rgba(15, 15, 212, 0.486);
-    transition: 1s;
-}
-
-
-section div.texto i {
-    color: rgb(182, 182, 182);
-    padding-right: 15px;
-}
-
-section div.texto > h2 {
-    font-size: 1.2em;
-    padding-top: 14px;
-    margin-left: 20px;
-
-}
-
-section div.texto > p {
-    color: rgb(150, 150, 150);
-    text-align: left;
-    padding: 15px;
-    width: calc(30% + 140px);
-    font-size: calc(0.4em + 60%);
-}
-
-section article#caixa {
-    /* border: 2px solid red; */
+section div.elementos {
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
-    width: 100%;
-    justify-content: space-around;
-    gap: 15px;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 55% 45%;
+    height: 550px;
+    gap: 10px;
+    border-radius: 12px;
+    border-top-right-radius: 13px;
+    background-color: rgb(22, 22, 22);
 }
 
-section div.secao {
+section div.dados1 {
+    border-radius: 7px;
+    border-top-left-radius: 13px;
+    background-color: #292929;
+    height: 290px;
+}
+
+section div.dados1 div.imagem{
+    background: url(../imagens/myimage.favicon.jpeg);
+    background-size: cover;
+    background-color: #111213;
+    border-top-left-radius: 12px;
+    width: 100%;
+    height: 110px;
+}
+
+section div.dados1 h2 {
+    margin-left: 8px;
+    font-size: 0.9em;
+    color: white;
+}
+
+section div.dados1 p {
+    width: 110px;
+    margin-left: 7px;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: rgb(196, 196, 196);
+}
+
+section div.dados1 h2 > span {
+    color: var(--principal);
+}
+
+
+section div.dados2 {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(65, 65, 65);
-    background-color: #272727;
-    min-height: 190px;
-    border-radius: 10px;
-    box-sizing: border-box;
+    gap: 5px;
+    background-color: #070707;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 12px;
 }
 
-section div.secao:hover {
-    border-color: var(--principal);
-    transition: 1.5s ease;
-    cursor: pointer;
+section div.dados2 i {
+    color: #0077ff;
 }
 
-section div.secao > i {
-    margin-left: 45%;
-    margin-top: 20px;
-}
-
-section div.secao > h3 {
-    font-size: 1em;
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bolder;
-}
-
-section div.secao > p {
-    font-size: 0.7em;
-    width: 83%;
-    text-align: center;
-    margin-top: 10px;
-    padding: 10px;
-    color: rgb(196, 196, 196);
+section div.dados2-1 {
+    padding: 6px;
+    height: 40%;
+    background-color: #292929;
+    border-radius: 7px;
+    border-top-right-radius: 11px;
     
 }
 
-
-
+section div.dados2-1 > h2 {
+    color: white;
+    margin-left: 10px;
+    font-size: 1.1em;
 }
+
+section div.dados2-1 > p {
+    margin-left: 6px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    width: 250px;
+    color: rgb(185, 185, 185);
+}
+
+section div.dados2-2 {
+    padding: 7px;
+    height: 30%;
+    background-color: #292929;
+    border-radius: 5px;
+}
+
+section div.dados2-2 > p {
+    margin-left: 7px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    width: 250px;
+    color: rgb(185, 185, 185);
+}
+
+section div.dados2-2 > h2 {
+    color: white;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+section div.dados2-3 {
+    padding: 5px;
+    height: 30%;
+    border-radius: 7px;
+    background-color: #292929;
+}
+
+section div.dados2-3 > h2 {
+    color: white;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+section div.dados2-3 > p {
+    margin-left: 6px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    width: 240px;
+    color: rgb(185, 185, 185);
+}
+
+
+
+
