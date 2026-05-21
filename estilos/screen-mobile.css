@@ -294,7 +294,7 @@ section#sobre > h1 > span {
 section div#caixa {
     background-color: rgb(44, 44, 44);
     width: 100%;
-    max-width: 370px;
+    max-width: 365px;
     min-height: 550px;
     margin: auto;
     border-radius: 12px;
@@ -304,7 +304,7 @@ section div#caixa {
 
 section div.elementos {
     display: grid;
-    grid-template-columns: 110px 254px;
+    grid-template-columns: 110px 250px;
     grid-template-rows: 302px 302px;
     height: 550px;
     gap: 6px;
@@ -314,10 +314,11 @@ section div.elementos {
 }
 
 section div.dados1 {
+    border: 10px solid rgb(51, 51, 51);
     border-radius: 7px;
     border-top-left-radius: 13px;
     background-color: #292929;
-    height: 290px;
+    border: 1px solid rgb(77, 77, 77);
 }
 
 section div.dados1 div.imagem{
@@ -330,8 +331,8 @@ section div.dados1 div.imagem{
 }
 
 section div.dados1 h2 {
-    margin-left: 7px;
-    font-size: 0.7em;
+    margin-left: 5px;
+    font-size: 0.6em;
     color: white;
 }
 
@@ -340,11 +341,11 @@ section div.dados1 h2 > span {
 }
 
 section div.dados1 p {
-    width: 95px;
-    margin-left: 7px;
+    width: 98px;
+    margin-left: 5px;
     margin-top: 10px;
-    font-size: 0.8em;
-    color: rgb(196, 196, 196);
+    font-size: 0.7em;
+    color: rgb(161, 161, 161);
 }
 
 
@@ -363,6 +364,7 @@ section div.dados2 i {
 }
 
 section div.dados2-1 {
+    border: 1px solid rgb(77, 77, 77);
     padding: 6px;
     background-color: #292929;
     border-radius: 7px;
@@ -385,6 +387,7 @@ section div.dados2-1 > p {
 }
 
 section div.dados2-2 {
+    border: 1px solid rgb(77, 77, 77);
     padding: 7px;
     background-color: #292929;
     border-radius: 5px;
@@ -405,6 +408,7 @@ section div.dados2-2 > h2 {
 }
 
 section div.dados2-3 {
+    border: 1px solid rgb(77, 77, 77);
     padding: 5px;
     border-radius: 7px;
     background-color: #292929;
