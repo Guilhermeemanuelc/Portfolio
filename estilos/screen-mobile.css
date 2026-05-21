@@ -298,7 +298,7 @@ section div.texto {
     margin: auto;
     background-color: rgb(27, 27, 27);
     width: 100%;
-    max-width: calc(200px + 20%);
+    max-width: calc(240px + 25%);
     min-height: 500px;
     padding: 20px;
     border-radius: 12px;
