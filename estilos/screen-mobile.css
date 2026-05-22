@@ -302,10 +302,10 @@ section div#caixa {
     border: 1px solid rgb(85, 85, 85);
 }
 
-section div.elementos {
+section#sobre div.elementos {
     display: grid;
     grid-template-columns: 115px 246px;
-    grid-template-rows: 242px 274px;
+    grid-template-rows: 242px 270px;
     height: 550px;
     gap: 4px;
     border-radius: 12px;
@@ -436,7 +436,7 @@ section div.dados3 {
     border: 1px solid rgb(100, 100, 100);
     border-radius: 7px;
     background-color: #292929;
-    padding: 6px;
+    padding: 3px;
 }
 
 section div.dados3 i {
@@ -444,6 +444,7 @@ section div.dados3 i {
 }
 
 section div.dados3 div.rotina > h2 {
+    margin-left: 6px;
     color: white;
     font-size: 11px;
     
@@ -452,18 +453,23 @@ section div.dados3 div.rotina > h2 {
 section div.dados3 h2 {
     color: white;
     font-size: 7px;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
 section div.dados3 p {
-    margin-top: 2px;
+    margin-top: 3px;
     margin-left: 12px;
     width: 83px;
     color: rgb(185, 185, 185);
     font-size: 6.5px;
 }
 
-
+section div.dados4 {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 7px;
+    background-color: #292929;
+    padding: 3px;
+}
 
 
 
