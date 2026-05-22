@@ -304,21 +304,21 @@ section div#caixa {
 
 section div.elementos {
     display: grid;
-    grid-template-columns: 110px 250px;
-    grid-template-rows: 250px 250px;
+    grid-template-columns: 110px 251px;
+    grid-template-rows: 242px 250px;
     height: 550px;
-    gap: 6px;
+    gap: 4px;
     border-radius: 12px;
     border-top-right-radius: 13px;
     background-color: rgb(22, 22, 22);
 }
 
 section div.dados1 {
-    border: 10px solid rgb(51, 51, 51);
+    border: 1px solid rgb(100, 100, 100);
     border-radius: 7px;
     border-top-left-radius: 13px;
     background-color: #292929;
-    border: 1px solid rgb(77, 77, 77);
+    height: 235px;
 }
 
 section div.dados1 div.imagem{
@@ -326,6 +326,7 @@ section div.dados1 div.imagem{
     background-size: cover;
     background-color: #111213;
     border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     width: 100%;
     height: 110px;
 }
@@ -355,7 +356,6 @@ section div.dados2 {
     flex-direction: column;
     justify-content: space-between;
     background-color: #070707;
-    border: 1px solid rgb(70, 70, 70);
     border-radius: 12px;
 }
 
@@ -366,9 +366,11 @@ section div.dados2 i {
 section div.dados2-1 {
     border: 1px solid rgb(77, 77, 77);
     padding: 6px;
+    height: 62px;
     background-color: #292929;
     border-radius: 7px;
     border-top-right-radius: 11px;
+    border: 1px solid rgb(100, 100, 100);
     
 }
 
@@ -387,9 +389,10 @@ section div.dados2-1 > p {
 }
 
 section div.dados2-2 {
-    border: 1px solid rgb(77, 77, 77);
     padding: 7px;
+    height: 60px;
     background-color: #292929;
+    border: 1px solid rgb(100, 100, 100);
     border-radius: 5px;
 }
 
@@ -408,8 +411,9 @@ section div.dados2-2 > h2 {
 }
 
 section div.dados2-3 {
-    border: 1px solid rgb(77, 77, 77);
+    border: 1px solid rgb(100, 100, 100);
     padding: 5px;
+    height: 71px;
     border-radius: 7px;
     background-color: #292929;
 }
@@ -427,6 +431,16 @@ section div.dados2-3 > p {
     width: 215px;
     color: rgb(185, 185, 185);
 }
+
+section div.dados3 {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 7px;
+    border-top-left-radius: 13px;
+    background-color: #292929;
+    height: 235px;
+}
+
+section div.
 
 
 
