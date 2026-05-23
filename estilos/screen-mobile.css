@@ -22,7 +22,7 @@ body {
     background-color: var(--fundo01);
     font-family: 'inter';
     background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
-    min-height: 100dvh;
+    
     overflow-x: hidden;
 }
 
