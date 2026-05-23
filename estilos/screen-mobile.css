@@ -187,7 +187,7 @@ section#container {
     justify-content: center;
     
     gap: 10px;
-    min-height: 100dvh;
+    min-height: 100vh;
 }
 
 section#container article > div {
@@ -273,7 +273,7 @@ section#sobre {
     font-family: 'inter';
     color: rgb(180, 180, 180);
     background-image: linear-gradient(to bottom, rgb(29, 29, 29), rgb(44, 44, 44));
-    min-height: 100dvh;
+    min-height: 100vh;
 }
 
 section#sobre > h1 {
