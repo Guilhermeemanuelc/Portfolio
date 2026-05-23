@@ -485,10 +485,10 @@ div.dados4 i {
 div.componentes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 2.5fr 2.5fr;
+    grid-template-rows: 1fr 102px 102px;
     gap: 3px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 div.faculdade {
@@ -503,7 +503,7 @@ div.faculdade {
 
 div.faculdade > p {
     margin-left: 7px;
-    font-size: 9.2px;
+    font-size: 8px;
     color: white;
     width: 180px;
 }
@@ -546,8 +546,8 @@ div.registros > h2:after {
 
 div.registros > p {
     color: rgb(185, 185, 185);
-    margin-top: 11px;
-    font-size: 1px;
+    margin-top: 17px;
+    font-size: 4.3px;
     text-align: center;
 }
 
