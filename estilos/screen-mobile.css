@@ -284,7 +284,7 @@ section#sobre {
 
 section#sobre > h1 {
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 section#sobre > h1 > span {
     color: var(--principal);
