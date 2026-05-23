@@ -485,7 +485,7 @@ div.dados4 i {
 div.componentes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 102px 102px;
+    grid-template-rows: 1fr 112px 112px;
     gap: 3px;
     padding-left: 2px;
     padding-right: 2px;
