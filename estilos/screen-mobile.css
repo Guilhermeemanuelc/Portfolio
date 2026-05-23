@@ -192,10 +192,10 @@ section#container {
 
 section#container article > div {
     /* border: 2px solid orange; */
-    transform: translateY(20px);
+    transform: translateY(70px);
     margin-left: calc(2px + 1vw);
-    font-size: calc(1px + 3vw);
-    margin-top: 40px;
+    font-size: calc(6px + 3vw);
+    margin-top: 30px;
 }
 
 article > div > h1 > span {
