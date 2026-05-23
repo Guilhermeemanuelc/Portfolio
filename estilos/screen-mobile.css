@@ -518,12 +518,12 @@ div.registros {
     justify-content: space-between;
     background-color: #2c2c2cb6;
     border-radius: 6px;
-    padding: 8px;
+    padding: 5px;
     border: 1px solid rgb(100, 100, 100);
 }
 
 div.registros > i {
-    margin-left: 21px;
+    margin-left: 23px;
     font-size: 15px;
 }
 
@@ -550,7 +550,7 @@ div.registros > h2:after {
 div.registros > p {
     color: rgb(185, 185, 185);
     margin-top: 17px;
-    font-size: 4.3px;
+    font-size: 6px;
     text-align: center;
 }
 
