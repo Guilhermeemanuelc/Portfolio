@@ -540,7 +540,7 @@ div.registros > h2:after {
     position: absolute;
     left: 0;
     bottom: -6px;
-    width: 13px;
+    width: 17px;
     height: 1px;
     margin-left: 22px;
     background: var(--principal);
