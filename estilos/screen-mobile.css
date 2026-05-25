@@ -83,13 +83,13 @@ header > h1 > span {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 22px 150px 45% 100px;
-    background-color: #14ad99;
+    background: linear-gradient(180deg, #050816 0%, #091224 45%, #0b1730 100%);
     position: fixed;
     top: 0;
     right: -100%;
-    width: 320px;
+    width: calc(240px + 20vw);
     height: 100vh;
-    /* transition: .5s ease; */
+    transition: .5s ease;
 }
 
 #menu.active {
@@ -106,18 +106,34 @@ header i#burguer {
 }
 
 header i#close {
+font-size: 2.2em;
 color: white;
+display: flex;
 justify-content: flex-end;
 cursor: pointer;
+margin-top: 14px;
+margin-right: 14px;
 }
 
 nav div#imgandnome {
-    display: block;
-    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 14px;
+    width: 50%;
+    height: 230px;
+    margin-top: 40px;
 }
 
 nav div#imagem {
-    background: url(../imagens/);
+    background: url(../imagens/myimage.favicon.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+    border: 2px solid rgb(17, 17, 48);
+    border-radius: 50%;
 }
 nav div#nome {
     color: white;
@@ -128,15 +144,50 @@ nav div#explorar {
     margin: auto;
     width: 90%;
     height: 100%;
-    background-color: #1a1d25;
-
+    margin-top: 100px;
 }
 
 nav div#explorar > ul {
     display: flex;
     flex-direction: column;
+    gap: 8px;
+    margin-top: 25px;
+}
 
+nav div#explorar li {
     list-style: none;
+}
+
+nav div#explorar a {
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+
+    background: rgba(10, 15, 28, 0.82);
+
+    border: 1px solid rgba(59, 130, 246, .12);
+    border-radius: 18px;
+    color: #e5e7eb;
+    font-weight: 500;
+    transition: .3s ease;
+    backdrop-filter: Blur(12px);
+}
+
+nav div#explorar a:hover {
+    transform: rotateX(6px);
+    border: 1px solid rgba(59, 130, 246, .35);
+    background: rgba(18, 30, 55, 0, .95);
+    box-shadow: 0 0 20px rgba(37, 99, 235, .15);
+}
+
+nav div#explorar a:active {
+    background: linear-gradient(90deg, rgba(37, 99, 235, .25), rgb(15, 23, 42, .95));
+    border: 1px solid rgba(59, 130, 246, .4) !important;
+    color: #3b82f6;
+    box-shadow: 0 0 25px rgba(37, 99, 235, .18);
 }
 
 section#container {
