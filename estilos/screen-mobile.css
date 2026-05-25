@@ -392,7 +392,7 @@ section div.dados1 p {
     width: 80%;
     margin-left: 5px;
     margin-top: 8px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: rgba(185, 185, 185);
     letter-spacing: 0.3px;
 }
@@ -431,7 +431,7 @@ section div.dados2-1 > h2 {
 section div.dados2-1 > p {
     margin-left: 6px;
     margin-top: 11px;
-    font-size: 0.85rem;
+    font-size: 0.70rem;
     width: 90%;
     color: rgb(185, 185, 185);
 }
@@ -447,7 +447,7 @@ section div.dados2-2 {
 section div.dados2-2 > p {
     margin-left: 7px;
     margin-top: 10px;
-    font-size: 0.85rem;
+    font-size: 0.70rem;
     width: 90%;
     color: rgb(185, 185, 185);
 }
@@ -475,7 +475,7 @@ section div.dados2-3 > h2 {
 section div.dados2-3 > p {
     margin-left: 6px;
     margin-top: 10px;
-    font-size: 0.84rem;
+    font-size: 0.70rem;
     width: 90%;
     color: rgb(185, 185, 185);
 }
@@ -509,7 +509,7 @@ section div.dados3 p {
     margin-left: 12px;
     width: 80%;
     color: rgb(185, 185, 185);
-    font-size: 0.80rem;
+    font-size: 0.77rem;
 }
 
 section div.dados4 {
@@ -520,7 +520,7 @@ section div.dados4 {
 }
 
 div.dados4 > h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 5px;
     margin-left: 12px;
     color: white;
@@ -587,7 +587,7 @@ div.registros > h2 {
 div.registros > p {
     color: rgb(185, 185, 185);
     margin-top: 12px;
-    font-size: 0.60rem;
+    font-size: 0.52rem;
     text-align: center;
 }
 
