@@ -426,7 +426,7 @@ section div.dados2-1 > h2 {
 section div.dados2-1 > p {
     margin-left: 6px;
     margin-top: 11px;
-    font-size: calc(2px + 1.1vw);
+    font-size: calc(3px + 1.1vw);
     width: 90%;
     color: rgb(185, 185, 185);
 }
@@ -442,7 +442,7 @@ section div.dados2-2 {
 section div.dados2-2 > p {
     margin-left: 7px;
     margin-top: 10px;
-    font-size: calc(2px + 1.1vw);
+    font-size: calc(3px + 1.1vw);
     width: 90%;
     color: rgb(185, 185, 185);
 }
@@ -470,7 +470,7 @@ section div.dados2-3 > h2 {
 section div.dados2-3 > p {
     margin-left: 6px;
     margin-top: 10px;
-    font-size: calc(2px + 1.1vw);
+    font-size: calc(3px + 1.1vw);
     width: 90%;
     color: rgb(185, 185, 185);
 }
@@ -504,7 +504,7 @@ section div.dados3 p {
     margin-left: 12px;
     width: 80%;
     color: rgb(185, 185, 185);
-    font-size: calc(8.7px + 0.2vw);
+    font-size: calc(8.5px + 0.2vw);
 }
 
 section div.dados4 {
@@ -515,7 +515,7 @@ section div.dados4 {
 }
 
 div.dados4 > h2 {
-    font-size: calc(1px + 1em);
+    font-size: calc(1px + 0.8em);
     margin-top: 5px;
     margin-left: 12px;
     color: white;
@@ -546,7 +546,7 @@ div.faculdade {
 
 div.faculdade > p {
     margin-left: 1.7vw;
-    font-size: 1.6vw;
+    font-size: 1.7vw;
     color: white;
     width: 90%;
 }
@@ -581,8 +581,8 @@ div.registros > h2 {
 
 div.registros > p {
     color: rgb(185, 185, 185);
-    margin-top: 12px;
-    font-size: calc(1vw + 1px);
+    margin-top: 7px;
+    font-size: calc(0.9vw + 1px);
     text-align: center;
 }
 
@@ -591,7 +591,7 @@ div.dots {
     flex-direction: row;
     justify-content: center;
     gap: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 div.dots span {
