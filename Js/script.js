@@ -1,16 +1,24 @@
-const btnMenu = document.getElementById('btn-menu');
-const nav = document.getElementById('itens');
-const icon = document.getElementById('burguer');
 
-btnMenu.addEventListener('click', () => {
-    nav.classList.toggle('active');
+// Abre e Fecha menu 
+const burguer = document.getElementById('burguer')
+const menu = document.getElementById('menu')
+const close = document.getElementById('close')
+const links = document.querySelectorAll('.link')
 
-    if (nav.classList.contains('active')) {
-        icon.textContent = 'close';
-    } else {
-        icon.textContent = 'menu';
-    }
-});
+burguer.addEventListener('click', () => {
+  menu.classList.add('active')
+})
+
+close.addEventListener('click', () => {
+  menu.classList.remove('active')
+})
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active')
+  })
+})
+
 
 // Scroll suave para links de navegação
 const navLinks = document.querySelectorAll('.menu ul a.link');

@@ -79,102 +79,64 @@ header > h1 > span {
     color: #0077ff;
 }
 
-#btn-menu {
-    background: transparent;
-    border: none;
-    cursor: pointer;
+#menu {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 22px 150px 45% 100px;
+    background-color: #14ad99;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    /* transition: .5s ease; */
 }
 
-#itens {
-    background-color: #0077ff;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-
-    width: 180px;
-    background: #111;
-    border-radius: 10px;
-    padding: 10px;
-
-    display: none;
-    visibility: hidden;
-    z-index: 999;
+#menu.active {
+    right: 0;
 }
-
-#itens.active {
-    display: block;
-    visibility: visible;
-}
-
 
 header i#burguer {
-    background-color: rgba(92, 92, 92, 0.425);
-    color: rgb(184, 184, 187);
-    padding: 4px 3px 3px 3px;
-    font-size: calc(2em + 1vw);
-    margin-right: 10px;
-    border-radius: 15px;
+    font-size: 2.2em;
+    color: white;
     cursor: pointer;
+    margin-top: 8px;
+    margin-right: 10px;
+    
 }
 
-header i#burguer:hover {
-    background-color: rgb(20, 20, 20);
-    color: rgb(31, 31, 110);
-    transition: 0.8s;
-    border-radius: 3px;
-    border-radius: 15px;
+header i#close {
+color: white;
+justify-content: flex-end;
+cursor: pointer;
 }
 
-header i#burguer:active {
-    background-color: rgb(7, 7, 7);
-    color: rgb(16, 18, 165);
-    border-radius: 19px;
+nav div#imgandnome {
+    display: block;
+    margin: auto;
 }
 
-header > nav {
-    background-color: #181818;
-    display: none;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    border-radius: 33px;
+nav div#imagem {
+    background: url(../imagens/);
+}
+nav div#nome {
+    color: white;
 }
 
-header > nav > ul {
+nav div#explorar {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    background-color: #1a1d25;
+
+}
+
+nav div#explorar > ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
 
-header > nav > ul > li {
-    
-    /* border: 2px solid green; */
-    list-style-type: none;
-    width: 100%;
-    max-width: 250px;
-    padding: 4px;
-} 
-
-header > nav a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 2vw;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2em;
-    color: rgb(221, 221, 221);
-    /* border-top: 2px solid rgb(26, 22, 78);  */
-    
-    border-radius: 4px;
-}
-
-header > nav a:hover {
-    color: rgb(213, 210, 233);
-    background-color: rgb(88, 88, 88);
-    transition: .7s;
-    border-radius: 15px;
-    text-decoration: underline;
+    list-style: none;
 }
 
 section#container {
