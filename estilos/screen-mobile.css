@@ -564,7 +564,7 @@ div.registros {
     border-radius: 6px;
     padding: 5px;
     border: 1px solid rgb(100, 100, 100);
-    height: 129.5px;
+    height: 128px;
 }
 
 div.registros > i {
@@ -581,8 +581,7 @@ div.registros > h2 {
 
 div.registros > p {
     color: rgb(185, 185, 185);
-    margin-top: 7px;
-    font-size: calc(0.9vw + 1px);
+    font-size: calc(0.9vw + 2.5px);
     text-align: center;
 }
 
@@ -604,6 +603,14 @@ div.dots span {
 div.dots span.active {
     background-color: var(--principal);
     box-shadow: 0 0 4px #171247;
+}
+
+
+                            /* Area Habilidades */
+
+
+section#habilidades {
+    min-height: 100vh;
 }
 
 }
