@@ -63,7 +63,7 @@
         position: absolute;
         inset: 0;
 
-        background-color: rgba(32, 32, 32, 0.678);
+        background-color: rgba(32, 32, 32, 0.651);
         z-index: 0;
         backdrop-filter: blur(1px);
 }
@@ -96,14 +96,14 @@
     }
 
     header div#explorar {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 70vw;
         height: 45px;
         margin-right: 5vw;
     }
 
     header div#explorar > ul {
-        border: 1px solid green;
+        /* border: 1px solid green; */
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -136,6 +136,7 @@
     border: 1px solid rgba(59, 130, 246, .35);
     background: rgba(18, 30, 55, 0, .95);
     box-shadow: 0 0 20px rgba(37, 99, 235, .15);
+    transition: 1s;
     }
 
     nav div#explorar a:active {
@@ -143,10 +144,18 @@
     border: 1px solid rgba(59, 130, 246, .4) !important;
     color: #3b82f6;
     box-shadow: 0 0 25px rgba(37, 99, 235, .18);
+    transition: 1s;
+}
+
+    nav div#explorar a:focus {
+    background: linear-gradient(90deg, rgba(37, 99, 235, .25), rgb(15, 23, 42, .95));
+    border: 1px solid rgba(59, 130, 246, .4) !important;
+    color: #3b82f6;
+    box-shadow: 0 0 25px rgba(37, 99, 235, .18);
 }
 
 section#container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,9 +164,9 @@ section#container {
 }
 
 section#container div.texto {
-    padding-top: 120px;
+    padding-top: 80px;
     margin-left: 2vw;
-    font-size: calc(6px + 2vw);
+    font-size: calc(8px + 2vw);
 }
 
 section#container div.texto h1 > span{
@@ -168,5 +177,77 @@ section#container div.texto p span {
     color: var(--principal);
     font-weight: 900;
 }
+
+div.icons {
+    margin-left: 2vw;
+    margin-top: 35px;
+}
+
+div.icons > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+div.icons li {
+    list-style: none;
+}
+
+div.icons a {
+    font-size: calc(2.5vw + 6px);
+    border-radius: 33px;
+    padding: 3px 10px;
+}
+
+div#curriculo {
+    margin-top: 35px;
+}
+
+div#curriculo a {
+    background-color: rgb(51, 51, 51);
+    padding: 9px;
+    color: white;
+    margin-left: 3px;
+    width: 150px;
+    text-decoration: none;
+    border-top: 2px solid var(--principal);
+    border-radius: 7px;
+    margin-left: calc(2px + 1vw);
+    font-size: calc(6px + 1.5vw);
+}
+
+div#curriculo a:hover {
+    background-color: rgba(31, 31, 31, 0.74);
+    color: rgb(209, 209, 209);
+    text-decoration: underline;
+}
+
+div#curriculo a:active {
+    background-color: rgba(0, 0, 0, 0.801);
+    color: rgb(156, 155, 155);
+    transition: 1s;
+}
+
+
+
+
+                           /* Area Sobre  */
+
+
+
+section#sobre {
+    min-height: 100vh;
+}
+
+section#sobre > h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+section#sobre > h1 > span {
+    color: var(--principal);
+}
+
+
 
 }
