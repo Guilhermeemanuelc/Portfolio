@@ -248,6 +248,46 @@ section#sobre > h1 > span {
     color: var(--principal);
 }
 
+section#sobre div#caixa {
+    margin: auto;
+    background-color: rgb(44, 44, 44);
+    width: 92vw;
+    min-height: 88vh;
+}
+
+section#sobre div.elementos {
+    height: 850px;
+    background-color: rgb(22, 22, 22);
+    display: grid;
+    grid-template-columns: 170px 55% 1fr;
+    grid-template-rows: 370px;
+    gap: 7px
+}
+
+section#sobre div.dados1 {
+    background-color: #292929;
+    grid-column: 1 / 2
+}
+
+
+
+section#sobre div.dados2 {
+    background-color: #292929;
+    grid-column: 2 / 3
+}
+
+section#sobre div.dados3 {
+    background-color: #292929;
+    grid-column: 3 / 4
+}
+
+section#sobre div.dados4 {
+    background-color: #292929;
+    grid-column: 1 / 4
+}
+
+
+
 
 
 }
