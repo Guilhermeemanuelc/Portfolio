@@ -351,10 +351,10 @@ section div#caixa {
 
 section#sobre div.elementos {
     display: grid;
-    grid-template-columns: 35% 64.5%;
+    grid-template-columns: 35% 64%;
     grid-template-rows: 285px 361px;
     height: 650px;
-    gap: 4px;
+    gap: 5px;
     border-radius: 12px;
     border-top-right-radius: 13px;
     background-color: rgb(22, 22, 22);
@@ -403,7 +403,6 @@ section div.dados2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #292929;
     border-radius: 16px;
 }
 
@@ -412,9 +411,8 @@ section div.dados2 i {
 }
 
 section div.dados2-1 {
-    border: 1px solid rgb(77, 77, 77);
     padding: 7px;
-    height: 79px;
+    height: 82px;
     background-color: #292929;
     border-radius: 7px;
     border-top-right-radius: 15px;
@@ -425,7 +423,7 @@ section div.dados2-1 {
 section div.dados2-1 > h2 {
     color: white;
     margin-left: 10px;
-    font-size: 11px;
+    font-size: 1.1em;
 }
 
 section div.dados2-1 > p {
@@ -455,7 +453,7 @@ section div.dados2-2 > p {
 section div.dados2-2 > h2 {
     color: white;
     margin-left: 10px;
-    font-size: 11px;
+    font-size: 1.1em;
 }
 
 section div.dados2-3 {
@@ -469,7 +467,7 @@ section div.dados2-3 {
 section div.dados2-3 > h2 {
     color: white;
     margin-left: 10px;
-    font-size: 10px;
+    font-size: 1.1em;
 }
 
 section div.dados2-3 > p {
@@ -554,6 +552,10 @@ div.faculdade > p {
     font-size: 1.7vw;
     color: white;
     width: 90%;
+}
+
+div.faculdade p.p2 {
+    margin-left: 15px;
 }
 
 div.faculdade > p > span {
