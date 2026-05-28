@@ -45,16 +45,10 @@
 
         width: 100%;
         min-height: 100vh;
-        background: url(../imagens/MyDesignSanddude.jpeg); 
+        background: url(../imagens/MyDesignSandbigdude.jpeg); 
         background-size: cover;
-        background-position: 33% center ;
+        background-position: 79% center ;
         background-repeat: no-repeat;
-    }
-
-
-@media screen and (min-width: 900px) {
-    .inicio {
-        background-position: 25% center;
     }
 }
 
@@ -236,6 +230,8 @@ div#curriculo a:active {
 
 
 section#sobre {
+    /* border: 1px solid #3b82f6; */
+    width: 100vw;
     min-height: 100vh;
 }
 
@@ -251,7 +247,7 @@ section#sobre > h1 > span {
 section#sobre div#caixa {
     margin: auto;
     background-color: rgb(44, 44, 44);
-    width: 92vw;
+    width: 86vw;
     min-height: 60vh;
 }
 

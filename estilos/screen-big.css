@@ -1,5 +1,68 @@
 @media screen and (min-width: 992px) {
-    body {
-        color: brown;
-    }
+.inicio {
+    background: url(../imagens/MyDesignSandbigdude.jpeg); 
+    background-position: 73% center ;
+    background-size: cover;
+}
+
+    section#container div.texto {
+    padding-top: 13vw;
+    margin-left: 2.5vw;
+    font-size: calc(23px + 0.5vw);
+}
+
+div.icons {
+    margin-top: 2vw;
+    margin-left: 2.5vw;
+}
+
+div.icons a {
+    font-size: calc(1.2vw + 18px);
+    border-radius: 33px;
+    padding: 3px 10px;
+}
+
+div#curriculo {
+    margin-top: 3vw;
+}
+
+div#curriculo a {
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 2vw;
+    margin-left: calc(2px + 2.5vw);
+    font-size: calc(10px + 0.5vw);
+}
+
+
+                        /* Area Sobre  */
+
+
+
+section#sobre div.dados1 {
+    padding-left: 15px;
+    padding-right: 25px;
+    
+}
+
+div.dados1 h2 {
+    text-align: center;
+    margin-left: 7px;
+    font-size: 1.4em;
+    margin-top: 5px;
+}                  
+
+div.dados1 p.pequeno{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+div.dados1 p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 22px;
+    width: 100%;
+    color: rgb(185, 185, 185);
+}
 }
