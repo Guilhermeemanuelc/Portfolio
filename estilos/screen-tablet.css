@@ -1,4 +1,5 @@
-@media screen and (min-width: 768.1px) {
+@media screen and (min-width: 768px) 
+ {
 
     header i#burguer {
         display: none;
@@ -50,7 +51,6 @@
         background-position: 79% center ;
         background-repeat: no-repeat;
     }
-}
 
     .inicio::before {
         content: '';
@@ -530,8 +530,5 @@ div.dots span.active {
     background-color: var(--principal);
     box-shadow: 0 0 4px #171247;
 }
-
-
-
 
 }
