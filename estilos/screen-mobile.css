@@ -341,7 +341,7 @@ section#sobre > h1 > span {
 section div#caixa {
     background-color: rgb(44, 44, 44);
     width: 92vw;
-    min-height: 100vh;
+    min-height: 61vh;
     margin: auto;
     border-radius: 12px;
     border-top-right-radius: 15px;
