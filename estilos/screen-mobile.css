@@ -326,7 +326,7 @@ section#sobre {
     font-family: 'inter';
     color: rgb(180, 180, 180);
     background-image: linear-gradient(to bottom, rgb(29, 29, 29), rgb(44, 44, 44));
-    min-height: 60vh;
+    min-height: 100vh;
 }
 
 section#sobre > h1 {
