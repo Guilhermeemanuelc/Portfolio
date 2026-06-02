@@ -617,7 +617,58 @@ div.dots span.active {
 
 
 section#habilidades {
+    background: linear-gradient(180deg, #00060e 0%, #020b18 50%, #00040c 100%);
+    color: white;
     min-height: 100vh;
+    font-family: 'inter';
+}
+
+section#habilidades > h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: var(--destaque);
+}
+
+section#habilidades > h1 > span {
+    color: var(--principal);
+}
+
+section#habilidades div.caixa {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px;
+    margin: auto;
+    width: 89vw;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+section#habilidades div.bolha {
+    border-radius: 15px;
+    background-color: rgba(8, 17, 29, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+section#habilidades div.icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 7px;
+    }
+
+section#habilidades div.bolha > h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section#habilidades div.icons > p {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 15px ;
+    background: rgb(63, 63, 63);
+    border-radius: 6px;
 }
 
 }
