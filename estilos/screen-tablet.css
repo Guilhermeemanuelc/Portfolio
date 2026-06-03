@@ -531,4 +531,29 @@ div.dots span.active {
     box-shadow: 0 0 4px #171247;
 }
 
+
+
+
+                      /* Area Habilidades  */
+
+
+
+section#habilidades {
+    background: linear-gradient(180deg, #00060e 0%, #020b18 50%, #00040c 100%);
+    color: white;
+    min-height: 100vh;
+    font-family: 'inter';
+}   
+
+section#habilidades > h1 {
+    font-size: 1.9em;
+    padding: 30px;
+    text-align: center;
+    color: var(--destaque);
+}
+
+section#habilidades > h1 > span {
+    color: var(--principal);
+}
+
 }

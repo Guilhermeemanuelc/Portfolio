@@ -624,9 +624,8 @@ section#habilidades {
 }
 
 section#habilidades > h1 {
-    font-size: 1.7em;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    font-size: 1.8em;
+    padding: 30px;
     text-align: center;
     color: var(--destaque);
 }
