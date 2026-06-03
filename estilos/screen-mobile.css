@@ -429,7 +429,7 @@ section div.dados2-1 > h2 {
 section div.dados2-1 > p {
     margin-left: 6px;
     margin-top: 11px;
-    font-size: calc(3px + 1.1vw);
+    font-size: calc(3.5px + 1.1vw);
     width: 90%;
     color: rgb(185, 185, 185);
 }
@@ -445,7 +445,7 @@ section div.dados2-2 {
 section div.dados2-2 > p {
     margin-left: 7px;
     margin-top: 10px;
-    font-size: calc(3px + 1.1vw);
+    font-size: calc(3.5px + 1.1vw);
     width: 90%;
     color: rgb(185, 185, 185);
 }
@@ -473,7 +473,7 @@ section div.dados2-3 > h2 {
 section div.dados2-3 > p {
     margin-left: 6px;
     margin-top: 10px;
-    font-size: calc(3px + 1.1vw);
+    font-size: calc(3.5px + 1.1vw);
     width: 90%;
     color: rgb(185, 185, 185);
 }
@@ -588,7 +588,7 @@ div.registros > h2 {
 
 div.registros > p {
     color: rgb(185, 185, 185);
-    font-size: calc(0.9vw + 2.5px);
+    font-size: calc(0.9vw + 2.7px);
     text-align: center;
 }
 
@@ -657,7 +657,7 @@ section#habilidades div.bolha {
 
 section#habilidades div.icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 11px;
     column-gap: 8px;
     padding-left: 8px;
@@ -673,6 +673,7 @@ section#habilidades div.icons i {
 }
 
 section#habilidades div.bolha > h2 {
+    color: white;
     margin-top: 10px;
     margin-left: 15px;
     margin-bottom: 10px;
@@ -681,12 +682,13 @@ section#habilidades div.bolha > h2 {
 }
 
 section#habilidades div.bolha > h2 > i {
-    color: #0c66dda6;
+    color: #0c67ddad;
     margin-right: 10px;
 }
 
 section#habilidades div.icons > p {
-    font-size: 11px;
+    color: white;
+    font-size: calc(1vw + 4px);
     font-weight: 500;
     padding: 13px 0px;
     background: rgba(48, 48, 48, 0.233);
