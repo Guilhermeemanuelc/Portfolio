@@ -638,7 +638,7 @@ section#habilidades > h1 > span {
 section#habilidades div.caixa {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 180px);
     gap: 12px;
     margin: auto;
     width: 89vw;
@@ -657,18 +657,18 @@ section#habilidades div.bolha {
 
 section#habilidades div.icons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     row-gap: 11px;
     column-gap: 8px;
     padding-left: 8px;
     padding-right: 8px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 section#habilidades div.icons i {
-    font-size: 1.9em;
-    margin-right: 10px;
+    font-size: 1.6em;
+    margin-right: 7px;
     vertical-align: middle;
 }
 
@@ -676,7 +676,7 @@ section#habilidades div.bolha > h2 {
     color: white;
     margin-top: 10px;
     margin-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     font-size: 18px;
     font-weight: 600;
 }
@@ -687,10 +687,11 @@ section#habilidades div.bolha > h2 > i {
 }
 
 section#habilidades div.icons > p {
+    text-align: center;
     color: white;
-    font-size: calc(1vw + 4px);
+    font-size: 11px;
     font-weight: 500;
-    padding: 13px 0px;
+    padding: 12px 0px;
     background: rgba(48, 48, 48, 0.233);
     border-radius: 6px;
 }
