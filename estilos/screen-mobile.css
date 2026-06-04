@@ -619,7 +619,7 @@ div.dots span.active {
 section#habilidades {
     background: linear-gradient(180deg, #00060e 0%, #020b18 50%, #00040c 100%);
     color: white;
-    min-height: 100vh;
+
     height: auto;
     font-family: 'inter';
 }
@@ -637,13 +637,13 @@ section#habilidades > h1 > span {
 
 section#habilidades div.caixa {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, 180px);
+    grid-template-rows: repeat(4, 1fr);
     gap: 12px;
     margin: auto;
     width: 89vw;
-    height: 80vh;
+    min-height: 90vh;
     border-radius: 15px;
+    padding-bottom: 30px;
 }
 
 section#habilidades div.bolha {
@@ -694,6 +694,16 @@ section#habilidades div.icons > p {
     padding: 12px 0px;
     background: rgba(48, 48, 48, 0.233);
     border-radius: 6px;
+}
+
+
+
+                            /* Area Projetos  */
+
+
+
+section#projetos {
+    min-height: 100vh;
 }
 
 }
