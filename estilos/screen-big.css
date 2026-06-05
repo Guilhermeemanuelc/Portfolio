@@ -219,4 +219,22 @@ div.dots span.active {
     box-shadow: 0 0 4px #171247;
 }
 
+
+
+                            /* Area Habilidades  */
+
+
+
+section#habilidades div.caixa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px;
+    margin: auto;
+    width: 89vw;
+    min-height: 90vh;
+    border-radius: 15px;
+    padding-bottom: 30px;
+}
+
 }

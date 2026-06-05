@@ -556,4 +556,61 @@ section#habilidades > h1 > span {
     color: var(--principal);
 }
 
+section#habilidades div.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+    width: 90vw;
+    min-height: 70vh;
+}
+
+section#habilidades div.bolha {
+    display: grid;
+    grid-template-rows: repeat(4, 40px);
+    width: 90vw;
+    background-color: rgba(8, 17, 29, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.274);
+}
+
+section#habilidades div.icons {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    column-gap: 8px;
+    padding: 0px 15px;
+}
+
+section#habilidades div.bolha > h2 {
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section#habilidades div.bolha > h2 > i {
+    color: #0c67ddad;
+    margin-right: 10px;
+}
+
+section#habilidades div.icons > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px 8px;
+    font-weight: 500;
+    background: rgba(48, 48, 48, 0.281);
+}
+
+section#habilidades div.icons i {
+    font-size: 1.9em;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
 }

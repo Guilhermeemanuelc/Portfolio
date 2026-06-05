@@ -666,12 +666,6 @@ section#habilidades div.icons {
     margin-bottom: 35px;
 }
 
-section#habilidades div.icons i {
-    font-size: 1.6em;
-    margin-right: 7px;
-    vertical-align: middle;
-}
-
 section#habilidades div.bolha > h2 {
     color: white;
     margin-top: 10px;
@@ -696,9 +690,15 @@ section#habilidades div.icons > p {
     border-radius: 6px;
 }
 
+section#habilidades div.icons i {
+    font-size: 1.6em;
+    margin-right: 7px;
+    vertical-align: middle;
+}
 
 
                             /* Area Projetos  */
+
 
 
 
