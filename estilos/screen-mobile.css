@@ -697,6 +697,7 @@ section#habilidades div.icons i {
 }
 
 
+
                             /* Area Projetos  */
 
 
@@ -705,5 +706,20 @@ section#habilidades div.icons i {
 section#projetos {
     min-height: 100vh;
 }
+
+section#projetos > h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+
+                        /* Area contatos  */
+
+
+
+.
+
 
 }
