@@ -858,12 +858,65 @@ section#contato div.mensagem {
     flex-direction: column;
     justify-self: center;
     width: 88vw;
-    background: linear-gradient(to right, #0a142c, rgba(2, 18, 56, 0.219));
+    background: linear-gradient(to right, #051835cb, rgba(1, 12, 37, 0.295));
     border: 1px solid #1e293b;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
     padding: 10px;
 }
+
+section#contato div.formulario > form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+section#contato div.form-group {
+    display: flex;
+    color: white;
+    background: transparent;
+} 
+
+section#contato div.form-group i{
+    background: rgba(12, 12, 12, 0.541);
+    padding: 11px;
+    border-top: 1px solid rgb(66, 66, 66);
+    border-left: 1px solid rgb(66, 66, 66);
+    border-bottom: 1px solid rgb(66, 66, 66);
+    
+} 
+
+section#contato div.form-group input{
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    background: rgba(12, 12, 12, 0.541);
+    border-top: 1px solid rgb(66, 66, 66);
+    border-right: 1px solid rgb(66, 66, 66);
+    border-bottom: 1px solid rgb(66, 66, 66);
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+section#contato div.form-group textarea{
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    background: rgba(12, 12, 12, 0.541);
+    border: 1px solid rgb(66, 66, 66);
+    resize: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+} 
+
+section#contato button[type="submit"] {
+    border: 0px;
+    padding: 13px;
+    color: white;
+    background-color: rgb(12, 33, 80);
+    cursor: pointer;
+} 
 
 
 
