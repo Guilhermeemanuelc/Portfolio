@@ -753,17 +753,17 @@ section#contato div.texto {
 
 section#contato div.texto > h2 {
     color: var(--principal);
-    font-size: 1.2em;
+    font-size: calc(1vw + 8px);
     margin-bottom: 10px;
 }
 
 section#contato div.texto > p {
     color: rgb(214, 213, 213);
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.3;
+    font-size: calc(0.5vw + 8px);
+    line-height: 1.5;
     width: 100%;
-    max-width: 250px;
+    max-width: 43vw;
     margin-bottom: 25px;
 }
 
@@ -779,7 +779,7 @@ section#contato div.informacoes .contato-card {
     display: grid;
     grid-template-columns: 60px 1fr 30px;
     align-items: center;
-    padding: 8px;
+    padding: 1.5vw;
     border: 1px solid #1e293b;
     border-radius: 15px;
 
@@ -789,15 +789,56 @@ section#contato div.informacoes .contato-card {
 }
 
 section#contato div.informacoes div.icon {
-    font-size: 1.7em;
-    width: 34px;
-    height: 34px;
+    font-size: 21px;
+    width: 32px;
+    padding-top: 7px;
+    padding-right: 3px;
+    padding-left: 2.5px;
+    padding-bottom: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     background: var(--principal);
-    border-radius: 28px;
+    border-radius: 22px;
+    transition: all 0.3s ease;
+}
+
+section#contato div.informacoes div.icon:hover {
+    transition: translate(-3px);
+}
+
+section#contato #email {
+    padding-right: 4px;
+    background: #ea4335;
+}
+
+section#contato #email:hover {
+    box-shadow: 0 0 20px #ea4339;
+}
+
+section#contato #whatsapp {
+    background: #25d366;
+}
+
+section#contato #github {
+    background: rgb(2, 2, 2);
+}
+
+section#contato #github:hover {
+    box-shadow: 0 0 20px #ffffff;
+}
+
+section#contato #linkedin {
+    background: #0a66c2;
+}
+
+section#contato #linkedin:hover {
+    box-shadow: 0 0 20px #0a66c2;
+}
+
+section#contato #whatsapp:hover {
+    box-shadow: 0 0 20px #25d366;
 }
 
 section#contato div.informacoes h3 {
@@ -807,7 +848,7 @@ section#contato div.informacoes h3 {
 }
 
 section#contato div.informacoes p {
-    font-size: 11px;
+    font-size: calc(0.8vw + 5px);
     color: var(--principal);
 }
     
