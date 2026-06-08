@@ -740,9 +740,9 @@ section#contato div.contatos {
     flex-direction: column;
     justify-self: center;
     width: 88vw;
-    background: linear-gradient(to right, #0b1220, rgba(0, 8, 29, 0.219));
+    background: linear-gradient(to right, #0f1930, rgba(0, 0, 0, 0.288));
     border: 1px solid #1e293b;
-    border-radius: 14px;
+    border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
     padding: 10px;
 }
@@ -759,18 +759,19 @@ section#contato div.texto > h2 {
 
 section#contato div.texto > p {
     color: rgb(214, 213, 213);
-    font-weight: 400;
-    font-size: calc(0.5vw + 8px);
-    line-height: 1.5;
+    font-weight: 500;
+    font-size: calc(0.5vw + 9.5px);
+    line-height: 1.4;
     width: 100%;
-    max-width: 43vw;
-    margin-bottom: 25px;
+    max-width: 44vw;
+    margin-bottom: 10vw;
 }
 
 section#contato div.informacoes {
     display: flex;
     flex-direction: column;
     margin: auto;
+    gap: 0px;
     width: 98%;
     background: rgba(7, 19, 44, 0.514);
 }
@@ -779,9 +780,9 @@ section#contato div.informacoes .contato-card {
     display: grid;
     grid-template-columns: 60px 1fr 30px;
     align-items: center;
-    padding: 1.5vw;
+    padding: 1.7vw;
     border: 1px solid #1e293b;
-    border-radius: 15px;
+    border-radius: 8px;
 
     text-decoration: none;
     color: white;
@@ -848,8 +849,50 @@ section#contato div.informacoes h3 {
 }
 
 section#contato div.informacoes p {
-    font-size: calc(0.8vw + 5px);
+    font-size: calc(0.8vw + 7px);
     color: var(--principal);
+}
+
+section#contato div.mensagem {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 88vw;
+    background: linear-gradient(to right, #0a142c, rgba(2, 18, 56, 0.219));
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
+    padding: 10px;
+}
+
+
+
+section#contato div.friends {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 88vw;
+    background: linear-gradient(to right, #00030862, rgba(4, 19, 56, 0.979));
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
+    padding: 10px;
+}
+
+section#contato div.friends > h2 {
+    color: var(--principal);
+    font-size: calc(1vw + 8px);
+    margin-bottom: 8px;
+}
+
+section#contato div.friends > p {
+    color: rgb(214, 213, 213);
+    font-weight: 400;
+    font-size: calc(0.5vw + 9.5px);
+    line-height: 1.4;
+    width: 100%;
+    max-width: 47vw;
+    margin-bottom: 0vw;
 }
     
 
