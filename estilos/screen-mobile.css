@@ -745,6 +745,7 @@ section#contato div.contatos {
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 section#contato div.texto {
@@ -853,6 +854,7 @@ section#contato div.informacoes p {
     color: var(--principal);
 }
 
+
 section#contato div.mensagem {
     display: flex;
     flex-direction: column;
@@ -863,6 +865,7 @@ section#contato div.mensagem {
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 section#contato div.formulario > form {
@@ -873,50 +876,70 @@ section#contato div.formulario > form {
 
 section#contato div.form-group {
     display: flex;
+    align-items: stretch;
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 8px;
+    overflow: hidden;
     color: white;
-    background: transparent;
+    background: linear-gradient(to right, rgba(2, 6, 23, 0.95), rgba(5, 15, 35, 0.85));
 } 
 
 section#contato div.form-group i{
-    background: rgba(12, 12, 12, 0.541);
-    padding: 11px;
-    border-top: 1px solid rgb(66, 66, 66);
-    border-left: 1px solid rgb(66, 66, 66);
-    border-bottom: 1px solid rgb(66, 66, 66);
-    
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    color: white;
+    border-right: 1px solid rgb(66, 66, 66);
+    margin-top: 12px;
 } 
 
 section#contato div.form-group input{
-    box-sizing: border-box;
     width: 100%;
+    border: none;
+    background: transparent;
     color: white;
-    background: rgba(12, 12, 12, 0.541);
-    border-top: 1px solid rgb(66, 66, 66);
-    border-right: 1px solid rgb(66, 66, 66);
-    border-bottom: 1px solid rgb(66, 66, 66);
-    padding: 10px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    padding: calc(1vw + 9px);
+    outline: none;
 }
 
-section#contato div.form-group textarea{
-    box-sizing: border-box;
+section#contato div.form-group textarea {
     width: 100%;
+    border: none;
+    background: transparent;
     color: white;
-    background: rgba(12, 12, 12, 0.541);
-    border: 1px solid rgb(66, 66, 66);
+    padding: 14px;
+    min-height: 90px;
     resize: none;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-} 
+    outline: none;
+}
+
+section#contato input::placeholder {
+    color: #8b96b1;
+    font-size: 0.95rem;
+}
+
+section#contato textarea::placeholder {
+    color: #8b96b1;
+    font-size: 0.95rem;
+}
 
 section#contato button[type="submit"] {
-    border: 0px;
-    padding: 13px;
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #0c2150, #1d4ed8);
     color: white;
-    background-color: rgb(12, 33, 80);
+    font-weight: 600;
     cursor: pointer;
-} 
+    transition: 0.3s;
+}
+
+section#contato button[type="submit"]:hover {
+    transform: translateY(-2px);
+}
 
 
 
