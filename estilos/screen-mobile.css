@@ -749,12 +749,13 @@ section#contato div.contatos {
 }
 
 section#contato div.texto {
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 section#contato div.texto > h2 {
     color: var(--principal);
-    font-size: calc(1vw + 8px);
+    font-size: calc(1vw + 12px);
     margin-bottom: 10px;
 }
 
@@ -765,7 +766,7 @@ section#contato div.texto > p {
     line-height: 1.4;
     width: 100%;
     max-width: 44vw;
-    margin-bottom: 10vw;
+    margin-bottom: 6vw;
 }
 
 section#contato div.informacoes {
@@ -890,9 +891,9 @@ section#contato div.form-group i{
     align-items: center;
     justify-content: center;
     min-width: 50px;
-    color: white;
+    color: rgba(255, 255, 255, 0.671);
     border-right: 1px solid rgb(66, 66, 66);
-    margin-top: 12px;
+    margin-top: 10px;
 } 
 
 section#contato div.form-group input{
@@ -900,7 +901,7 @@ section#contato div.form-group input{
     border: none;
     background: transparent;
     color: white;
-    padding: calc(1vw + 9px);
+    padding: calc(1vw + 6px);
     outline: none;
 }
 
@@ -909,20 +910,20 @@ section#contato div.form-group textarea {
     border: none;
     background: transparent;
     color: white;
-    padding: 14px;
-    min-height: 90px;
+    padding: 12px;
+    min-height: 50px;
     resize: none;
     outline: none;
 }
 
 section#contato input::placeholder {
     color: #8b96b1;
-    font-size: 0.95rem;
+    font-size: 0.88rem;
 }
 
 section#contato textarea::placeholder {
     color: #8b96b1;
-    font-size: 0.95rem;
+    font-size: 0.88rem;
 }
 
 section#contato button[type="submit"] {
@@ -957,7 +958,7 @@ section#contato div.friends {
 
 section#contato div.friends > h2 {
     color: var(--principal);
-    font-size: calc(1vw + 8px);
+    font-size: calc(1vw + 11px);
     margin-bottom: 8px;
 }
 
