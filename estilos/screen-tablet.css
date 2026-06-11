@@ -621,264 +621,112 @@ section#habilidades div.icons i {
 
 
 
-section#contato {
-    background: linear-gradient(180deg, #050816 0%, #070b1a 50%, #050816 100%);
-    color: white;
-    min-height: 100vh;
-    font-family: 'inter';
-}
-
-section#contato > h1 {
-    font-size: 2em;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-section#contato > h1 > span {
-    color: var(--principal);
-}
-
-section#contato > h1 > span {
-    color: var(--principal);
-}
-section#contato div.container {
-    border: 2px solid red;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px;
-}
-
-section#contato div.contatos {
-    background: linear-gradient(to right, #0f1930, rgba(0, 0, 0, 0.288));
-    border: 1px solid #1e293b;
-    grid-column: 1 / 2;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
-    padding: 10px;
-}
-
-section#contato div.texto {
-    margin-top: 10px;
-    margin-left: 15px;
-}
-
-section#contato div.texto > h2 {
-    color: var(--principal);
-    font-size: calc(1vw + 12px);
-    margin-bottom: 10px;
-}
-
-section#contato div.texto > p {
-    color: rgb(214, 213, 213);
-    font-weight: 500;
-    font-size: calc(0.5vw + 9.5px);
-    line-height: 1.4;
-    width: 100%;
-    max-width: 44vw;
-    margin-bottom: 15px;
-}
-
-section#contato div.informacoes {
-    
-    
-}
-
-section#contato div.informacoes .contato-card {
-    display: grid;
-    grid-template-columns: 60px 1fr 30px;
-    align-items: center;
-    padding: 1.7vw;
-    border: 1px solid #1e293b;
-    border-radius: 8px;
-
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-
-section#contato div.informacoes div.icon {
-    font-size: 21px;
-    width: 32px;
-    padding-top: 7px;
-    padding-right: 3px;
-    padding-left: 2.5px;
-    padding-bottom: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: var(--principal);
-    border-radius: 22px;
-    transition: all 0.3s ease;
-}
-
-section#contato div.informacoes div.icon:hover {
-    transition: translate(-3px);
-}
-
-section#contato #email {
-    padding-right: 4px;
-    background: #ea4335;
-}
-
-section#contato #email:hover {
-    box-shadow: 0 0 20px #ea4339;
-}
-
-section#contato #whatsapp {
-    background: #25d366;
-}
-
-section#contato #github {
-    background: rgb(2, 2, 2);
-}
-
-section#contato #github:hover {
-    box-shadow: 0 0 20px #ffffff;
-}
-
-section#contato #linkedin {
-    background: #0a66c2;
-}
-
-section#contato #linkedin:hover {
-    box-shadow: 0 0 20px #0a66c2;
-}
-
-section#contato #whatsapp:hover {
-    box-shadow: 0 0 20px #25d366;
-}
-
-section#contato div.informacoes h3 {
-    color: white;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-section#contato div.informacoes p {
-    font-size: calc(0.8vw + 7px);
-    color: var(--principal);
-}
 
 
-section#contato div.mensagem {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    background: linear-gradient(to right, #051835cb, rgba(1, 12, 37, 0.295));
-    grid-column: 2 / 4;
-    border: 1px solid #1e293b;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
-    padding-right: 15px;
-}
+    section#contato {
+        padding: 100px 0;
+    }
 
-section#contato div.formulario > form {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
+    section#contato .container {
+        width: 90%;
+        max-width: 1250px;
+        margin: auto;
 
-section#contato div.form-group {
-    display: flex;
-    align-items: stretch;
-    border: 1px solid rgb(66, 66, 66);
-    border-radius: 8px;
-    overflow: hidden;
-    color: white;
-    background: linear-gradient(to right, rgba(2, 6, 23, 0.95), rgba(5, 15, 35, 0.85));
-} 
-
-section#contato div.form-group i{
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 50px;
-    color: rgba(255, 255, 255, 0.671);
-    border-right: 1px solid rgb(66, 66, 66);
-    margin-top: 10px;
-} 
-
-section#contato div.form-group input{
-    width: 100%;
-    border: none;
-    background: transparent;
-    color: white;
-    padding: calc(1vw + 6px);
-    outline: none;
-}
-
-section#contato div.form-group textarea {
-    width: 100%;
-    border: none;
-    background: transparent;
-    color: white;
-    padding: 12px;
-    min-height: 50px;
-    resize: none;
-    outline: none;
-}
-
-section#contato input::placeholder {
-    color: #8b96b1;
-    font-size: 0.88rem;
-}
-
-section#contato textarea::placeholder {
-    color: #8b96b1;
-    font-size: 0.88rem;
-}
-
-section#contato button[type="submit"] {
-    margin-top: 10px;
-    padding: 14px;
-    border: none;
-    border-radius: 8px;
-    background: linear-gradient(90deg, #0c2150, #1d4ed8);
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-section#contato button[type="submit"]:hover {
-    transform: translateY(-2px);
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 
 
+    /* Não alterar os gradientes originais */
+    section#contato .contatos,
+    section#contato .mensagem {
+        width: 100%;
+        margin: 0;
+        padding: 25px;
+        box-sizing: border-box;
+    }
 
-section#contato div.friends {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    background: linear-gradient(to right, #00030862, rgba(4, 19, 56, 0.979));
-    grid-column: 1 / 3;
-    border: 1px solid #1e293b;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
-    padding: 10px;
-}
+    section#contato .texto {
+        margin: 0;
+    }
 
-section#contato div.friends > h2 {
-    color: var(--principal);
-    font-size: calc(1vw + 11px);
-    margin-bottom: 8px;
-}
+    section#contato div.texto > h2 {
+        font-size: 1.6rem;
+    }
 
-section#contato div.friends > p {
-    color: rgb(214, 213, 213);
-    font-weight: 400;
-    font-size: calc(0.5vw + 9.5px);
-    line-height: 1.4;
-    width: 100%;
-    max-width: 47vw;
-    margin-bottom: 0vw;
-}
+    section#contato div.texto > p {
+        width: 100%;
+        max-width: none;
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 40px;
+    }
 
+    /* Espaço entre os cards */
+    section#contato div.informacoes {
+        gap: 15px;
+        background: transparent;
+    }
 
+    section#contato .contato-card {
+        padding: 18px;
+        transition: .3s;
+    }
 
+    section#contato .contato-card:hover {
+        transform: translateY(-4px);
+        background: rgba(255,255,255,.03);
+    }
 
+    /* Formulário */
+    section#contato .formulario {
+        margin-top: 30px;
+    }
 
+    section#contato .form-group {
+        margin-bottom: 15px;
+    }
+
+    section#contato .form-group input {
+        padding: 18px;
+    }
+
+    section#contato .form-group textarea {
+        min-height: 180px;
+        padding: 18px;
+    }
+
+    section#contato button[type="submit"] {
+        width: 100%;
+        padding: 18px;
+        font-size: 1rem;
+    }
+
+    /* Caixa inferior */
+    section#contato .friends {
+
+        grid-column: 1 / -1;
+
+        width: 100%;
+        margin: 0;
+        padding: 40px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section#contato .friends h2 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    section#contato .friends p {
+        margin: 0;
+        width: auto;
+        max-width: 450px;
+        text-align: right;
+        line-height: 1.8;
+    }
 }
