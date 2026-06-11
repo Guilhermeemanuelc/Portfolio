@@ -22,7 +22,6 @@ body {
     background-color: var(--fundo01);
     font-family: 'inter';
     background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
-    
     overflow-x: hidden;
 }
 
@@ -723,9 +722,11 @@ section#contato {
     background: linear-gradient(180deg, #050816 0%, #070b1a 50%, #050816 100%);
     color: white;
     min-height: 100vh;
+    font-family: 'inter';
 }
 
 section#contato > h1 {
+    font-size: 1.9em;
     color: white;
     text-align: center;
     padding: 30px;
