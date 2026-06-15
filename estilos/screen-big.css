@@ -294,6 +294,32 @@ section#habilidades div.icons i {
 
 
 
+                    /* Area Projetos  */
 
 
+
+
+
+
+
+
+                    /* Area Contatos  */
+
+
+
+
+section#contato div.friends > h2 {
+    color: var(--principal);
+    font-size: calc(0.2vw + 20px);
+}
+
+section#contato div.friends > p {
+    color: rgb(214, 213, 213);
+    font-weight: 400;
+    font-size: calc(0.2vw + 10px);
+    line-height: 1.3;
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 0vw;
+}                    
 }

@@ -632,7 +632,9 @@ section#projetos {
 
 
 
-
+section#contato {
+    min-height: 100vh;
+}
 section#contato .container{
         width: 90%;
         max-width: 1200px;
@@ -641,7 +643,7 @@ section#contato .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
-        align-items: star;
+        margin-top: 50px;
 }
 
 section#contato > h1 {
@@ -655,14 +657,14 @@ section#contato > h1 > span {
 
 section#contato .contatos {
     background: linear-gradient(to right, #00030862, rgba(4, 19, 56, 0.979));
-    border: 1px solid #1e293b;
+    border: 1px solid #262f3f;
     border-radius: 8px;
     backdrop-filter: blur(10px);
     padding: 10px;
 }
 section#contato .mensagem {
     background: linear-gradient(to right, #051835cb, rgba(2, 10, 29, 0.87));
-    border: 1px solid #1e293b;
+    border: 1px solid #262f3f;
     border-radius: 8px;
     backdrop-filter: blur(10px);
     padding: 10px;
@@ -796,10 +798,11 @@ section#contato textarea::placeholder {
 
 section#contato button[type="submit"] {
     width: 100%;
-    height: 47px;
+    height: calc(0.6vw + 44px);
 
     border: none;
-    border-radius: 12px;
+    border-radius: 8px;
+    margin-top: 1vw;
 
     background: linear-gradient(
         90deg,
@@ -830,6 +833,7 @@ section#contato div.friends{
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    border: 1px solid #262f3f;
 }
 
 section#contato div.friends > h2 {
