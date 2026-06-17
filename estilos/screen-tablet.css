@@ -36,9 +36,8 @@
     }
 
     body {
-        color: white;
+        background-color: var(--fundo01);
          background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
-
          overflow-x: hidden;
     }
 
@@ -159,6 +158,7 @@ section#container {
 }
 
 section#container div.texto {
+    color: white;
     padding-top: 80px;
     margin-left: 2vw;
     font-size: calc(8px + 2vw);
@@ -237,6 +237,7 @@ section#sobre {
 }
 
 section#sobre > h1 {
+    color: white;
     text-align: center;
     padding: 30px;
 }
@@ -280,6 +281,7 @@ div.dados1 div.imagem {
 }
 
 div.dados1 h2 {
+    color: white;
     margin-left: 7px;
     font-size: 1.1em;
     margin-top: 5px;
@@ -473,6 +475,7 @@ div.faculdade > p.p1 {
 }
 
 div.faculdade > p.p2 {
+    color: white;
     font-size: 1.7vw;
     margin-left: 9px;
     font-weight: 700;
@@ -634,6 +637,7 @@ section#projetos {
 
 section#contato {
     min-height: 100vh;
+    background: linear-gradient(180deg, #080220 0%, #04152c 50%, #010c22 100%);
 }
 section#contato .container{
         width: 90%;
@@ -647,6 +651,7 @@ section#contato .container{
 }
 
 section#contato > h1 {
+    color: white;
     text-align: center;
     padding: 30px;
 }
