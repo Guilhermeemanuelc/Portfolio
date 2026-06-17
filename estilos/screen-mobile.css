@@ -707,9 +707,16 @@ section#projetos {
 }
 
 section#projetos > h1 {
+    color: white;
     text-align: center;
     padding: 30px;
 }
+
+section#projetos > h1 > span {
+    color: var(--principal);
+}
+
+
 
 
 
