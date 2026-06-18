@@ -703,6 +703,7 @@ section#habilidades div.icons i {
 
 
 section#projetos {
+    background: linear-gradient(180deg, #010b18 0%, #02081afa 50%, #030a18 100%);
     min-height: 100vh;
 }
 
@@ -715,6 +716,27 @@ section#projetos > h1 {
 section#projetos > h1 > span {
     color: var(--principal);
 }
+
+section#projetos div.filtro {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section#projetos div.filtro > button {
+    background: #010b18e7;
+    border: 1px solid rgb(36, 36, 36);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+section#projetos div.filtro p {
+    color: white;
+    font-size: 1.3em;
+    width: 18vw;
+    padding: 8px 0px;
+}
+
+
 
 
 
