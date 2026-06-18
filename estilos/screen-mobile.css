@@ -720,6 +720,7 @@ section#projetos > h1 > span {
 section#projetos div.filtro {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 25px;
 }
 
 section#projetos div.filtro > button {
@@ -731,9 +732,47 @@ section#projetos div.filtro > button {
 
 section#projetos div.filtro p {
     color: white;
-    font-size: 1.3em;
-    width: 18vw;
-    padding: 8px 0px;
+    font-size: 13px;
+    font-weight: 600;
+    width: 20vw;
+    padding: 10px 0px;
+}
+
+section#projetos div.card-projeto {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+    background-color: rgba(8, 17, 29, 0.9);
+    width: 90%;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+section#projetos div.card-projeto div.imagem {
+    background-image: url(../imagens/projetosIMG/Tela-de-Cadastro.png);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    grid-row: 1 / 5;
+}
+
+section#projetos div.card-projeto h3 {
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+section#projetos div.card-projeto > p {
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 1em;
+    font-weight: 500;
+    width: 100%;
+    max-width: 240px;
 }
 
 
