@@ -702,110 +702,147 @@ section#habilidades div.icons i {
 
 
 
-section#projetos {
-    background: #040c1f;
+section#projetos{
     min-height: 100vh;
+    background: linear-gradient(180deg,#01091a,#03122c,#020817);
 }
 
-section#projetos > h1 {
-    font-size: 2rem;
+section#projetos > h1{
     color: white;
+    font-size: 2rem;
     text-align: center;
     padding: 30px;
 }
 
-section#projetos > h1 > span {
-    color: var(--principal);
+section#projetos > h1 span{
+    color: #0d6efd;
 }
 
-section#projetos div.filtro {
+/* CARD */
+
+section#projetos div.filtro{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 25px;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 10px auto;
 }
 
-section#projetos div.filtro > button {
-    background: #010b18e7;
-    border: 1px solid rgb(36, 36, 36);
+section#projetos div.filtro button{
+
+    width: 92px;
+    height: 48px;
+    background: rgba(255,255,255,.02);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 16px;
     cursor: pointer;
-    border-radius: 8px;
+    transition: .3s;
+    backdrop-filter: blur(10px);
 }
 
-section#projetos div.filtro p {
+section#projetos div.filtro button:hover{
+    transform: translateY(-3px);
+    border-color: #0d6efd;
+    background: rgba(13,110,253,.12);
+}
+
+section#projetos div.filtro button.filtro-ativo{
+    background: rgba(13,110,253,.2);
+    border: 1px solid #0d6efd;
+    box-shadow:
+    0 0 20px rgba(13,110,253,.25);
+}
+
+section#projetos div.filtro button p{
+
     color: white;
-    font-size: 13px;
-    font-weight: 600;
-    width: 20vw;
-    padding: 10px 0px;
+    font-size: .95rem;
+    font-weight: 500;
 }
 
-section#projetos div.card-projeto {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-self: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.205);
+section#projetos .card-projeto{
     width: 90%;
-    border-radius: 8px;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    margin: 25px auto;
+
+    display: flex;
+    gap: 20px;
+
+    padding: 18px;
+
+    background: rgba(255,255,255,.03);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
 
-section#projetos div.card-projeto div.imagem {
+section#projetos .imagem{
+
+    width: 120px;
+    height: 180px;
+
+    border-radius: 18px;
+
+    flex-shrink: 0;
+
     background-image: url(../imagens/projetosIMG/Tela-de-Cadastro.png);
     background-size: cover;
     background-position: center;
-    width: calc(100px + 3vw);
-    height: calc(100px + 3vw);
-    border-radius: 12px;
-    grid-row: 1 / 5;
+
+    border: 1px solid rgba(255,255,255,.1);
 }
 
-section#projetos div.card-projeto h3 {
+section#projetos .conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+section#projetos .conteudo h3{
     color: white;
-    font-size: calc(8px + 1vw);
-    font-weight: 600;
+    font-size: 1.4rem;
 }
 
-section#projetos div.card-projeto > p {
-    color: rgb(158, 158, 158);
-    font-size: calc(4px + 1vw);
-    font-weight: 500;
-    width: 100%;
-    max-width: 80%;
-    line-height: 1.1;
+section#projetos .conteudo p{
+    color: #b5bfd3;
+    line-height: 1.7;
 }
 
-section#projetos div.tecnologias {
+section#projetos .tecnologias{
     display: flex;
     gap: 10px;
-    color: rgb(47, 86, 194);
+    flex-wrap: wrap;
 }
 
-section#projetos div.tecnologias span {
-    font-size: 10px;
-    text-align: center;
-    background: #040c29;
-    border: 1px solid #3d3d3d;
-    width: 65px;
-    padding: 5px 0px;
-    border-radius: 6px;
+section#projetos .tecnologias span{
+    background: rgba(13,110,253,.12);
+
+    color: #4f93ff;
+
+    padding: 8px 14px;
+
+    border-radius: 10px;
+
+    font-size: .8rem;
 }
 
-section#projetos div.links-projeto {
+section#projetos .links-projeto{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 60px;
+    gap: 35px;
 }
 
-section#projetos div.links-projeto a {
-    color: white;
+section#projetos .links-projeto a{
     text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+section#projetos .links-projeto a:hover{
+    color: #0d6efd;
 }
 
 
