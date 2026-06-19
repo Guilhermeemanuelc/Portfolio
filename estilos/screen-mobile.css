@@ -703,11 +703,12 @@ section#habilidades div.icons i {
 
 
 section#projetos {
-    background: linear-gradient(180deg, #010b18 0%, #02081afa 50%, #030a18 100%);
+    background: #040c1f;
     min-height: 100vh;
 }
 
 section#projetos > h1 {
+    font-size: 2rem;
     color: white;
     text-align: center;
     padding: 30px;
@@ -740,39 +741,71 @@ section#projetos div.filtro p {
 
 section#projetos div.card-projeto {
     display: grid;
-    grid-template-columns: 165px 1fr;
+    grid-template-columns: 220px 1fr;
     grid-template-rows: 1fr 1fr;
     justify-self: center;
     align-items: center;
-    background-color: rgba(8, 17, 29, 0.9);
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.205);
     width: 90%;
     border-radius: 8px;
     margin-top: 20px;
+    padding-top: 10px;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 section#projetos div.card-projeto div.imagem {
     background-image: url(../imagens/projetosIMG/Tela-de-Cadastro.png);
     background-size: cover;
     background-position: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
+    width: calc(100px + 3vw);
+    height: calc(100px + 3vw);
+    border-radius: 12px;
     grid-row: 1 / 5;
 }
 
 section#projetos div.card-projeto h3 {
     color: white;
-    font-size: 1em;
+    font-size: calc(8px + 1vw);
     font-weight: 600;
 }
 
 section#projetos div.card-projeto > p {
-    color: rgba(255, 255, 255, 0.808);
-    font-size: 1em;
+    color: rgb(158, 158, 158);
+    font-size: calc(4px + 1vw);
     font-weight: 500;
     width: 100%;
-    max-width: 240px;
+    max-width: 80%;
+    line-height: 1.1;
+}
+
+section#projetos div.tecnologias {
+    display: flex;
+    gap: 10px;
+    color: rgb(47, 86, 194);
+}
+
+section#projetos div.tecnologias span {
+    font-size: 10px;
+    text-align: center;
+    background: #040c29;
+    border: 1px solid #3d3d3d;
+    width: 65px;
+    padding: 5px 0px;
+    border-radius: 6px;
+}
+
+section#projetos div.links-projeto {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+}
+
+section#projetos div.links-projeto a {
+    color: white;
+    text-decoration: none;
 }
 
 
