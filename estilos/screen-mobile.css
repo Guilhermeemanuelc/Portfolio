@@ -723,21 +723,20 @@ section#projetos > h1 span{
 section#projetos div.filtro{
     display: flex;
     justify-content: space-between;
-    gap: 0px;
+    gap: 7px;
     flex-wrap: wrap;
-    width: 85%;
+    width: 92%;
     margin: 10px auto;
 }
 
 section#projetos div.filtro button{
 
-    width: 85px;
-    height: 40px;
+    width: 20vw;
+    height: 45px;
     background: rgba(255,255,255,.02);
     border: 1px solid rgba(255,255,255,.08);
     border-radius: 6px;
     cursor: pointer;
-    transition: .3s;
     backdrop-filter: blur(10px);
 }
 
@@ -793,6 +792,7 @@ section#projetos .imagem{
     margin-left: 3px;
 
     border: 1px solid rgba(255, 255, 255, 0.164);
+    opacity: .6;
 }
 
 section#projetos .conteudo{
@@ -805,7 +805,7 @@ section#projetos .conteudo{
 section#projetos .conteudo h3{
     color: white;
     margin-top: 10px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 section#projetos .conteudo h3 i{
@@ -815,10 +815,10 @@ section#projetos .conteudo h3 i{
 }
 
 section#projetos .conteudo p{
-    font-size: calc(5px + 1vw);
+    font-size: calc(7px + 0.6vw);
     color: #b3b3b3;
     line-height: 1.2;
-    max-width: 92%;
+    max-width: 90%;
 }
 
 section#projetos .tecnologias{
