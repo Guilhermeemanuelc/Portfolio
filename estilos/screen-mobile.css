@@ -765,10 +765,15 @@ section#projetos div.filtro button p i{
     margin-right: 5px;
 }
 
+section#projetos div.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 section#projetos .card-projeto{
     width: 92%;
-    max-width: 550px;
-    margin: 25px auto;
+    margin: 0px auto;
     display: flex;
     align-items: center;
     gap: 20px;
