@@ -722,16 +722,16 @@ section#projetos > h1 span{
 
 section#projetos div.filtro{
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 0px;
     flex-wrap: wrap;
-    width: 95%;
+    width: 85%;
     margin: 10px auto;
 }
 
 section#projetos div.filtro button{
 
-    width: 80px;
+    width: 85px;
     height: 40px;
     background: rgba(255,255,255,.02);
     border: 1px solid rgba(255,255,255,.08);
@@ -761,7 +761,7 @@ section#projetos div.filtro button p{
 }
 
 section#projetos div.filtro button p i{
-    font-size: 0.90rem;
+    font-size: 0.86rem;
     color: white;
     margin-right: 5px;
 }
@@ -816,9 +816,9 @@ section#projetos .conteudo h3 i{
 
 section#projetos .conteudo p{
     font-size: calc(5px + 1vw);
-    color: #b5bfd3;
+    color: #b3b3b3;
     line-height: 1.2;
-    max-width: 87%;
+    max-width: 92%;
 }
 
 section#projetos .tecnologias{
@@ -838,7 +838,7 @@ section#projetos .tecnologias span{
 section#projetos .links-projeto{
     display: flex;
     justify-content: space-between;
-    margin-right: 80px;
+    margin-right: 40px;
 }
 
 section#projetos .links-projeto a{
@@ -852,13 +852,13 @@ section#projetos .links-projeto a{
 section#projetos .links-projeto a i#verprojeto{
     font-size: 10px;
     color: var(--principal);
-    margin-right: 1px;
+    margin-right: 5px;
 }
 
 section#projetos .links-projeto a i#vercodigo{
     font-size: 10px;
     background: #00040c;
-    margin-right: 1px;
+    margin-right: 5px;
 }
 
 section#projetos .links-projeto a:hover{
