@@ -731,7 +731,7 @@ section#projetos div.filtro{
 
 section#projetos div.filtro button{
 
-    width: 25vw;
+    width: calc(100px + 10vw);
     height: 45px;
     background: rgba(255,255,255,.02);
     border: 1px solid rgba(255,255,255,.08);
