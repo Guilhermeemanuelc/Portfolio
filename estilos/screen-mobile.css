@@ -723,15 +723,15 @@ section#projetos > h1 span{
 section#projetos div.filtro{
     display: flex;
     justify-content: space-between;
-    gap: 7px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 12px;
     width: 92%;
-    margin: 10px auto;
+    margin: 18px auto;
 }
 
 section#projetos div.filtro button{
 
-    width: 20vw;
+    width: 25vw;
     height: 45px;
     background: rgba(255,255,255,.02);
     border: 1px solid rgba(255,255,255,.08);
@@ -755,7 +755,7 @@ section#projetos div.filtro button.filtro-ativo{
 section#projetos div.filtro button p{
 
     color: white;
-    font-size: .80rem;
+    font-size: .63rem;
     font-weight: 500;
 }
 
@@ -784,14 +784,30 @@ section#projetos .card-projeto{
     box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
 
-section#projetos .imagem{
+section#projetos .imagem1{
 
-    width: 130px;
-    height: 130px;
+    width: 135px;
+    height: 140px;
     border-radius: 10px;
 
     flex-shrink: 0;
     background-image: url(../imagens/projetosIMG/Tela-de-Cadastro.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 3px;
+
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    opacity: .6;
+}
+
+section#projetos .imagem2{
+
+    width: 135px;
+    height: 140px;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+    background-image: url(../imagens/projetosIMG/tela-de-login-one.png);
     background-size: cover;
     background-position: center;
     margin-left: 3px;
@@ -820,10 +836,10 @@ section#projetos .conteudo h3 i{
 }
 
 section#projetos .conteudo p{
-    font-size: calc(7px + 0.6vw);
+    font-size: calc(6.5px + 0.6vw);
     color: #b3b3b3;
     line-height: 1.2;
-    max-width: 90%;
+    max-width: 85%;
 }
 
 section#projetos .tecnologias{
