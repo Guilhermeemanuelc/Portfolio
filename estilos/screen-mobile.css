@@ -816,6 +816,70 @@ section#projetos .imagem2{
     opacity: .6;
 }
 
+section#projetos .imagem3{
+
+    width: 135px;
+    height: 140px;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+    background-image: url(../imagens/projetosIMG/projeto-em-desenvolvimento.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 3px;
+
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    opacity: .6;
+}
+
+section#projetos .imagem4{
+
+    width: 135px;
+    height: 140px;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+    background-image: url(../imagens/projetosIMG/projeto-em-desenvolvimento.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 3px;
+
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    opacity: .6;
+}
+
+section#projetos .imagem5{
+
+    width: 135px;
+    height: 140px;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+    background-image: url(../imagens/projetosIMG/projeto-em-desenvolvimento.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 3px;
+
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    opacity: .6;
+}
+
+section#projetos .imagem6{
+
+    width: 135px;
+    height: 140px;
+    border-radius: 10px;
+
+    flex-shrink: 0;
+    background-image: url(../imagens/projetosIMG/projeto-em-desenvolvimento.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 3px;
+
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    opacity: .6;
+}
+
 section#projetos .conteudo{
     display: flex;
     flex-direction: column;
@@ -826,7 +890,7 @@ section#projetos .conteudo{
 section#projetos .conteudo h3{
     color: white;
     margin-top: 10px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 section#projetos .conteudo h3 i{
@@ -886,7 +950,9 @@ section#projetos .links-projeto a:hover{
     color: #0d6efd;
 }
 
-
+.hide {
+    display: none !important;
+}
 
 
 

@@ -28,7 +28,6 @@ overlay.addEventListener('click', () => {
 })
 })
 
-
 // Scroll suave para links de navegação
 const navLinks = document.querySelectorAll('#menu ul a.link');
 navLinks.forEach(link => {
@@ -44,4 +43,45 @@ navLinks.forEach(link => {
       });
     }
   });
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    const botoes = document.querySelectorAll(".filtro button");
+    const projetos = document.querySelectorAll(".card-projeto");
+
+    console.log("JS rodando");
+    console.log("Botoes:", botoes.length);
+    console.log("Cards:", projetos.length);
+
+    if (botoes.length === 0 || projetos.length === 0) {
+        console.log("ERRO: HTML não encontrado corretamente");
+        return;
+    }
+
+    botoes.forEach(botao => {
+
+        botao.addEventListener("click", () => {
+
+            const filtro = botao.dataset.filtro;
+
+            botoes.forEach(b => b.classList.remove("filtro-ativo"));
+            botao.classList.add("filtro-ativo");
+
+            projetos.forEach(projeto => {
+
+                const categoria = projeto.dataset.filtro;
+
+                if (filtro === "todos" || filtro === categoria) {
+                    projeto.classList.remove("hide");
+                } else {
+                    projeto.classList.add("hide");
+                }
+
+            });
+
+        });
+
+    });
+
 });
