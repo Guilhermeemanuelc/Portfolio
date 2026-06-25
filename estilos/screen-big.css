@@ -299,7 +299,45 @@ section#habilidades div.icons i {
 
 
 
+section#projetos div.filtro{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: 92%;
+    margin: 18px auto;
+}                
 
+section#projetos div.filtro button{
+
+    width: calc(100px + 3vw);
+    height: 45px;
+    background: rgba(255,255,255,.02);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 6px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+
+section#projetos div.filtro button p{
+
+    color: white;
+    font-size: .79rem;
+    font-weight: 500;
+}
+
+section#projetos div.projetos {
+   display: grid;
+   grid-template-columns: repeat(3, calc(200px + 10vw));
+   gap: calc(8px + 1vw);
+}
+
+section#projetos div.conteudo > p {
+    font-size: calc(8.5px + 0.2vw);
+    color: #b3b3b3;
+    line-height: 1.2;
+    max-width: 85%;
+}
 
 
 
