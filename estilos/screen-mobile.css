@@ -1219,4 +1219,43 @@ section#contato div.friends > p {
 }
     
 
+footer {
+    color: white;
+    background: linear-gradient(180deg, #0D1117 0%, #0B0D12 100%);
+    min-height: 240px;
+}
+
+footer div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+footer div.logo {
+    font-size: 15px;
+}
+
+footer div.nome{
+    font-size: 10px;
+    color: #C9CCD1;
+}
+
+footer div.nome span{
+    color: #F2F2F2;
+}
+
+footer div.paragrafo {
+    font-size: 10px;
+    color: #8A8F98;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background: #2a2d35;
+    width: 80%;
+}
+
+
 }
