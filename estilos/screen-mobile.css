@@ -1222,7 +1222,7 @@ section#contato div.friends > p {
 footer {
     color: white;
     background: linear-gradient(180deg, #0D1117 0%, #0B0D12 100%);
-    min-height: 240px;
+    min-height: 260px;
 }
 
 footer div.container {
@@ -1233,12 +1233,28 @@ footer div.container {
 }
 
 footer div.logo {
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 30px;
+}
+
+footer div.logo span.g {
+    margin-right: -8px;
+    color: #d9d9d9;
+}
+
+footer div.logo span.e {
+    color: #d9d9d9;
 }
 
 footer div.nome{
-    font-size: 10px;
-    color: #C9CCD1;
+    font-size: calc(6px + 0.6vw);
+    color: #c9ccd1af;
 }
 
 footer div.nome span{
@@ -1246,8 +1262,9 @@ footer div.nome span{
 }
 
 footer div.paragrafo {
-    font-size: 10px;
+    font-size: 8px;
     color: #8A8F98;
+    letter-spacing: 4px;
 }
 
 footer hr {
@@ -1255,6 +1272,38 @@ footer hr {
     height: 1px;
     background: #2a2d35;
     width: 80%;
+    margin-top: 15px;
+}
+
+footer div.graca {
+    color: #c7c8ca;
+    width: 70%;
+    font-size: 8px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+footer div.final {
+    color: #8A8F98;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer p.p1 {
+    text-align: center;
+    font-size: 10px;
+}
+
+footer p.p1 span{
+    color: rgb(199, 199, 199);
+}
+
+footer p.p2 {
+font-size: 10px;
 }
 
 
