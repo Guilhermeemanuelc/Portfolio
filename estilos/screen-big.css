@@ -359,5 +359,30 @@ section#contato div.friends > p {
     width: 100%;
     max-width: 550px;
     margin-bottom: 0vw;
-}                    
+}
+
+
+
+
+
+                        /* Area Descriçao  */
+
+
+
+
+
+footer div.nome{
+    font-size: calc(6px + 0.4vw);
+    color: #c9ccd1af;
+}
+
+footer div.graca {
+    color: #c7c8ca;
+    width: 40%;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: 30px;
+}                        
 }
