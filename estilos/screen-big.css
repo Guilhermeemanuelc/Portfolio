@@ -164,8 +164,8 @@ div.dados4 > h2 {
 
 div.dados4 div.componentes {
     display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(6, calc(77px + 4%));
+    gap: 4px;
+    grid-template-columns: repeat(6, calc(75px + 4vw));
     justify-content: space-evenly;
 }
 

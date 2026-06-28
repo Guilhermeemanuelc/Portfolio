@@ -308,7 +308,7 @@ div.dados1 p.pequeno{
 
 div.dados1 p {
     margin-left: 6px;
-    font-size: 1.1em;
+    font-size: 12px;
     width: 90%;
     margin-top: 15px;
     color: rgb(185, 185, 185);
@@ -963,7 +963,7 @@ section#contato div.icon{
     justify-content: center;
 
     border-radius: 50%;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
 }
 
 #email{

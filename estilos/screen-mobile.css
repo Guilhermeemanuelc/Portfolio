@@ -60,6 +60,7 @@ header {
     position: sticky;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 999;
     top: 0;
 }
@@ -136,6 +137,20 @@ margin-top: 14px;
 margin-right: 14px;
 }
 
+header i#moon {
+    transform: translateY(-5px);
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border-radius: 12px;
+    color: rgb(243, 228, 200);
+}
+
+header i#moon:hover {
+    color: var(--principal);
+}
+
 nav div#imgandnome {
     /* border: 1px solid red; */
     display: flex;
@@ -159,7 +174,7 @@ nav div#imagem {
     border-radius: 50%;
 }
 nav div#nome {
-    font-size: 12px;
+    font-size: 10px;
     color: rgb(207, 207, 207);
 }
 
@@ -422,7 +437,7 @@ section div.dados2-1 {
 section div.dados2-1 > h2 {
     color: white;
     margin-left: 10px;
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
 
 section div.dados2-1 > p {
@@ -452,7 +467,7 @@ section div.dados2-2 > p {
 section div.dados2-2 > h2 {
     color: white;
     margin-left: 10px;
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
 
 section div.dados2-3 {
@@ -466,7 +481,7 @@ section div.dados2-3 {
 section div.dados2-3 > h2 {
     color: white;
     margin-left: 10px;
-    font-size: 1.1em;
+    font-size: 0.8em;
 }
 
 section div.dados2-3 > p {
@@ -548,7 +563,7 @@ div.faculdade {
 
 div.faculdade > p {
     margin-left: 1.7vw;
-    font-size: 1.7vw;
+    font-size: 1.8vw;
     color: white;
     width: 90%;
 }
