@@ -14,7 +14,7 @@
 :root{
 
     /* fundo */
-    --fundobody: linear-gradient(to right, rgb(24, 24, 24), rgb(41, 41, 41)); 
+    /* --fundobody: linear-gradient(to right, rgb(24, 24, 24), rgb(41, 41, 41));  */
 
     /* Header */
     --header-bg: #111520;
