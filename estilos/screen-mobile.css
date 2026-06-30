@@ -15,7 +15,7 @@
 
     /* fundo */
 
-    --fundo01: rgb(71, 71, 71);
+    --fundo01: rgb(39, 39, 39);
     --fundo02: rgb(24, 24, 24);
 
     /* Header */
@@ -52,8 +52,8 @@
 
 body.light{
 
-    --body-dark1: rgb(206, 206, 206);
-    --body-dark2: rgb(155, 155, 155);
+    --body-lightclaro1: rgb(231, 231, 231);
+    --body-lightclaro2: rgb(197, 195, 195);
 
     --header-bg: #4b6d94;
 
@@ -87,8 +87,8 @@ body {
     overflow-x: hidden;
 }
 
-body.dark {
-    background: linear-gradient(to bottom, var(--body-dark1), var(--body-dark2));
+body.light {
+    background: linear-gradient(to right, var(--body-lightclaro1), var(--body-lightclaro2));
 }
 
 .inicio {
