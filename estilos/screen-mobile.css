@@ -14,9 +14,7 @@
 :root{
 
     /* fundo */
-
-    --fundo01: rgb(39, 39, 39);
-    --fundo02: rgb(24, 24, 24);
+    --fundobody: linear-gradient(to right, rgb(24, 24, 24), rgb(41, 41, 41));
 
     /* Header */
     --header-bg: #111520;
@@ -52,10 +50,7 @@
 
 body.light{
 
-    --body-lightclaro1: rgb(114, 114, 114);
-    --body-lightclaro2: rgb(197, 195, 195);
-
-    background: linear-gradient(to bottom, var(--body-lightclaro1), var(--body-lightclaro2));
+    --fundobody: linear-gradient(to bottom, rgb(187, 187, 187), rgb(116, 116, 116));
 
     --header-bg: #4b6d94;
 
@@ -85,7 +80,7 @@ body.light{
 
 body {
     font-family: 'inter';
-    background: linear-gradient(to right, var(--fundo01), var(--fundo02));
+    background: var(--fundobody);
     overflow-x: hidden;
 }
 
@@ -94,7 +89,7 @@ body {
 
     width: 100%;
     min-height: 100vh;
-    /* background: url(../imagens/MyDesignSanddude.jpeg);  */
+    background: url(../imagens/MyDesignSanddude.jpeg);  
     background-size: cover;
     background-position: 48% center;
     background-repeat: no-repeat;
@@ -107,7 +102,7 @@ body {
     position: absolute;
     inset: 0;
 
-    /* background: var(--overlay); */
+    background: var(--overlay);
     z-index: 0;
     backdrop-filter: blur(1px);
 }
@@ -319,7 +314,7 @@ section#container div.texto{
     margin-left: calc(2px + 1vw);
     font-size: calc(4px + 3vw);
     color: var(--titulo-home);
-    margin-top: 150px;
+    margin-top: 120px;
     margin-left: 15px;
 }
 
