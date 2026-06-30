@@ -15,11 +15,11 @@
 
     /* fundo */
 
-    --fundo01: rgb(39, 39, 39);
-    --fundo02: rgb(15, 15, 15);
+    --fundo01: rgb(51, 51, 51);
+    --fundo02: rgb(175, 175, 175);
 
     /* Header */
-    --header-bg: #151924;
+    --header-bg: #111520;
 
     /* Logo */
     --logo: #ffffff;
@@ -54,7 +54,7 @@ body.light{
 
     background: linear-gradient(top right, rgb(216, 216, 216), rgb(126, 126, 126));
 
-    --header-bg: #ffffff;
+    --header-bg: #4b6d94;
 
     --logo: #111827;
 
@@ -83,7 +83,7 @@ body.light{
 body {
     background-color: var(--fundo01);
     font-family: 'inter';
-    background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
+    background-image: linear-gradient(to right, var(--fundo01), var(--fundo02));
     overflow-x: hidden;
 }
 
@@ -133,7 +133,7 @@ header > h1 {
     padding: 5px;
     margin-left: 2vw ;
     color: var(--logo);
-    text-shadow: 0px 2px 0px rgba(194, 193, 193, 0.993);
+    text-shadow: 0px 2px 0px var(--header-bg);
 }
 
 header > h1 > span {
