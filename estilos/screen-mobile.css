@@ -14,7 +14,7 @@
 :root{
 
     /* fundo */
-    --fundobody: black; 
+    --fundobody: rgb(211, 198, 12); 
 
     /* Header */
     --header-bg: #111520;
