@@ -52,14 +52,16 @@
 
 body.light{
 
-    --header-bg:#ffffff;
+    background: linear-gradient(top right, rgb(216, 216, 216), rgb(126, 126, 126));
 
-    --logo:#111827;
+    --header-bg: #ffffff;
 
-    --icon:#111827;
+    --logo: #111827;
 
-    --theme-bg:transparent;
-    --theme-hover:rgba(0,0,0,.08);
+    --icon: #111827;
+
+    --theme-bg: transparent;
+    --theme-hover: rgba(0,0,0,.08);
 
 
 
