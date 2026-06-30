@@ -34,13 +34,13 @@ const botaoTema = document.getElementById('theme-toggle');
 const icone = botaoTema.querySelector('i');
 const themeColor = document.querySelector('meta[name="theme-color"]');
 
-function atualizarTema() {
-    if (document.body.classList.contains('light')) {
-        themeColor.setAttribute('content', '#FFFFFF');
-    } else {
-        themeColor.setAttribute('content', '#111520');
-    }
-}
+// function atualizarTema() {
+//     if (document.body.classList.contains('light')) {
+//         themeColor.setAttribute('content', '#FFFFFF');
+//     } else {
+//         themeColor.setAttribute('content', '#111520');
+//     }
+// }
 
 const temaSalvo = localStorage.getItem('tema');
 
