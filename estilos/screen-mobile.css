@@ -11,11 +11,65 @@
     /* outline: 1px solid rgb(243, 6, 6); */
 }
 
-:root {
-    --fundo01: rgb(26, 26, 26);
-    --fundo02: rgb(48, 47, 47);
+:root{
+
+    /* Header */
+    --header-bg: #151924;
+
+    /* Logo */
+    --logo: #ffffff;
+
+    /* Ícones */
+    --icon: #ffffff;
+
+    /* Botão do tema */
+    --theme-bg: transparent;
+    --theme-hover: rgba(255,255,255,.08);
+
+    /* Principal */
     --principal: #0077ff;
-    --destaque: white;
+
+
+
+        /* Home */
+    --overlay: rgba(32, 32, 32, 0.651);
+
+    --titulo-home: #ffffff;
+    --texto-home: #ffffff;
+
+    --curriculo-bg: rgb(51, 51, 51);
+    --curriculo-hover: rgba(31, 31, 31, 0.74);
+    --curriculo-active: rgba(0, 0, 0, 0.801);
+
+    --curriculo-texto: #ffffff;
+}
+
+body.light{
+
+    --header-bg:#ffffff;
+
+    --logo:#111827;
+
+    --icon:#111827;
+
+    --theme-bg:transparent;
+    --theme-hover:rgba(0,0,0,.08);
+
+
+
+        /* Home */
+
+    --overlay: rgb(136, 136, 136);
+
+    --titulo-home: #111827;
+    --texto-home: #374151;
+
+    --curriculo-bg: #ffffff;
+    --curriculo-hover: #f3f4f6;
+    --curriculo-active: #e5e7eb;
+
+    --curriculo-texto: #111827;
+
 }
 
 body {
@@ -43,7 +97,7 @@ body {
     position: absolute;
     inset: 0;
 
-    background-color: rgba(32, 32, 32, 0.678);
+    background-color: var(--overlay);
     z-index: 0;
     backdrop-filter: blur(1px);
 }
@@ -55,7 +109,7 @@ body {
 
 header {
     /* border: 2px solid red; */
-    background-color: #151924;
+    background-color: var(--header-bg);
     position: relative;
     position: sticky;
     display: flex;
@@ -70,13 +124,13 @@ header > h1 {
     font-size: calc(1.6em + 1.5vw);
     padding: 5px;
     margin-left: 2vw ;
-    color: white;
+    color: var(--logo);
     text-shadow: 0px 2px 0px rgba(194, 193, 193, 0.993);
 }
 
 header > h1 > span {
     text-shadow: 0px 3px 0px rgba(46, 46, 173, 0.918);
-    color: #0077ff;
+    color: var(--principal);
 }
 
 .overlay {
@@ -120,7 +174,7 @@ header > h1 > span {
 
 header i#burguer {
     font-size: 2.2em;
-    color: white;
+    color: var(--icon);
     cursor: pointer;
     margin-top: 8px;
     margin-right: 10px;
@@ -128,23 +182,31 @@ header i#burguer {
 }
 
 header i#close {
-font-size: 2.2em;
-color: white;
-display: flex;
-justify-content: flex-end;
-cursor: pointer;
-margin-top: 14px;
-margin-right: 14px;
+    font-size: 2.2em;
+    color: var(--icon);
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-right: 14px;
 }
 
-header i#moon {
+header button#theme-toggle {
     transform: translateY(-5px);
     font-size: 1.5em;
     cursor: pointer;
     margin-bottom: 10px;
     margin-right: 20px;
     border-radius: 12px;
-    color: rgb(243, 228, 200);
+    width: 30px;
+    height: 30px;
+    background: var(--theme-bg);
+    color: var(--icon);
+    transition: .3s;
+}
+
+header button#theme-toggle:hover {
+    background: var(--theme-hover);
 }
 
 header i#moon:hover {
@@ -153,6 +215,7 @@ header i#moon:hover {
 
 nav div#imgandnome {
     /* border: 1px solid red; */
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,16 +304,13 @@ section#container {
     min-height: 100vh;
 }
 
-section#container div.texto {
-    margin-top: 120px;
-}
-
 section#container div.texto{
     /* border: 2px solid orange; */
     margin-left: calc(2px + 1vw);
     font-size: calc(4px + 3vw);
-    color: white;
-    margin-top: 30px;
+    color: var(--titulo-home);
+    margin-top: 150px;
+    margin-left: 15px;
 }
 
 section#container div.texto > h1 > span {
@@ -272,6 +332,7 @@ article div.icons {
     color: white;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 15px;
 }
 
 article div.icons > ul {
@@ -298,32 +359,31 @@ article div.icons > ul > li > a {
 }
 
 article div#curriculo a {
-    background-color: rgba(27, 27, 27, 0.74);
+    background-color: var(--curriculo-bg);
     padding: 9px;
-    color: white;
-    margin-left: 3px;
+    margin-left: calc(10px + 0.7vw);
+    color: var(--curriculo-texto);
     text-decoration: none;
-    border-top: 2px solid var(--principal);
+    border-top: 3px solid var(--principal);
     border-radius: 7px;
-    margin-left: calc(2px + 1vw);
     font-size: calc(4px + 2vw);
 }
 
 article div#curriculo a:hover {
-    background-color: rgb(51, 51, 51);
+    background-color: var(--curriculo-hover);
     color: rgb(209, 209, 209);
     text-decoration: underline;
 }
 
 article div#curriculo a:active {
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: var(--curriculo-active);
     color: rgb(156, 155, 155);
     transition: 1s;
 }
 
 
 article div#curriculo i {
-    color: rgb(242, 242, 243);
+    color: var(--curriculo-texto);
     padding-right: 3px;
     transform: translateY(7px);
 }
@@ -334,7 +394,6 @@ article div#curriculo i:hover {
 }
 
                             /* Area sobre */
-
 
 section#sobre {
     font-family: 'inter';

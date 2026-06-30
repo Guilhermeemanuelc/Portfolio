@@ -28,6 +28,32 @@ overlay.addEventListener('click', () => {
 })
 })
 
+                    // tema botao escuro e claro 
+
+const botaoTema = document.getElementById('theme-toggle');
+const icone = botaoTema.querySelector('i');
+
+const temaSalvo = localStorage.getItem('tema');
+
+if (temaSalvo === 'light') {
+    document.body.classList.add('light');
+    icone.classList.replace('fa-moon', 'fa-sun');
+}
+
+botaoTema.addEventListener('click', () => {
+
+    document.body.classList.toggle('light');
+
+    if (document.body.classList.contains('light')) {
+        icone.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('tema', 'light');
+    } else {
+        icone.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('tema', 'dark');
+    }
+
+});
+
 // Scroll suave para links de navegação
 const navLinks = document.querySelectorAll('#menu ul a.link');
 navLinks.forEach(link => {
