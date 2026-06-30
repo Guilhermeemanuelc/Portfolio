@@ -55,6 +55,8 @@ body.light{
     --body-lightclaro1: rgb(231, 231, 231);
     --body-lightclaro2: rgb(197, 195, 195);
 
+    background: linear-gradient(to right, var(--body-lightclaro1), var(--body-lightclaro2) );
+
     --header-bg: #4b6d94;
 
     --logo: #111827;
@@ -87,16 +89,12 @@ body {
     overflow-x: hidden;
 }
 
-body.light {
-    background: linear-gradient(to right, var(--body-lightclaro1), var(--body-lightclaro2));
-}
-
 .inicio {
     position: relative;
 
     width: 100%;
     min-height: 100vh;
-    background: url(../imagens/MyDesignSanddude.jpeg); 
+    /* background: url(../imagens/MyDesignSanddude.jpeg);  */
     background-size: cover;
     background-position: 48% center;
     background-repeat: no-repeat;
