@@ -33,14 +33,24 @@ overlay.addEventListener('click', () => {
 const botaoTema = document.getElementById('theme-toggle');
 const icone = botaoTema.querySelector('i');
 
-const temaSalvo = localStorage.getItem('tema');
+const temaSalvo = localStorage.getItem('tema') || 'dark';
 
 if (temaSalvo === 'light') {
     document.body.classList.add('light');
     icone.classList.replace('fa-moon', 'fa-sun');
 }
 
-atualizarTema(); // Atualiza quando a página abre
+function atualizarTema() {
+    const isLight = document.body.classList.contains('light');
+
+    if (isLight) {
+        document.documentElement.style.setProperty('--fundobody', '#ffffff');
+    } else {
+        document.documentElement.style.setProperty('--fundobody', 'linear-gradient(to right, rgb(39, 39, 39), rgb(24, 24, 24))');
+    }
+}
+
+atualizarTema();
 
 botaoTema.addEventListener('click', () => {
 
@@ -54,7 +64,7 @@ botaoTema.addEventListener('click', () => {
         localStorage.setItem('tema', 'dark');
     }
 
-    atualizarTema(); // Atualiza a cor da barra
+    atualizarTema();
 });
 
 
