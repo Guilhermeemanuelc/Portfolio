@@ -44,7 +44,7 @@ function atualizarTema() {
     const isLight = document.body.classList.contains('light');
 
     if (isLight) {
-        document.documentElement.style.setProperty('--fundobody', '#ffffff');
+        document.documentElement.style.setProperty('--fundobody', '#3b3b3b');
     } else {
         document.documentElement.style.setProperty('--fundobody', 'linear-gradient(to right, rgb(39, 39, 39), rgb(24, 24, 24))');
     }

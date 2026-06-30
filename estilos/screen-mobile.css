@@ -78,7 +78,7 @@ body.light{
 
 }
 
-html, body {
+body {
     font-family: 'inter';
     background: var(--fundobody);
     overflow-x: hidden;
