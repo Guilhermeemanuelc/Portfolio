@@ -82,9 +82,8 @@ body.light{
 }
 
 body {
-    background-color: var(--fundo01);
     font-family: 'inter';
-    background-image: linear-gradient(to right, var(--fundo01), var(--fundo02));
+    background: linear-gradient(to right, var(--fundo01), var(--fundo02));
     overflow-x: hidden;
 }
 
