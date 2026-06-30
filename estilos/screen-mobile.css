@@ -52,10 +52,10 @@
 
 body.light{
 
-    --body-lightclaro1: rgb(231, 231, 231);
+    --body-lightclaro1: rgb(114, 114, 114);
     --body-lightclaro2: rgb(197, 195, 195);
 
-    background: linear-gradient(to right, var(--body-lightclaro1), var(--body-lightclaro2) );
+    background: linear-gradient(to bottom, var(--body-lightclaro1), var(--body-lightclaro2));
 
     --header-bg: #4b6d94;
 
@@ -107,7 +107,7 @@ body {
     position: absolute;
     inset: 0;
 
-    background: var(--overlay);
+    /* background: var(--overlay); */
     z-index: 0;
     backdrop-filter: blur(1px);
 }
@@ -403,7 +403,15 @@ article div#curriculo i:hover {
     transition: 2s;
 }
 
-                            /* Area sobre */
+
+
+
+
+                                   /* Area sobre */
+
+
+
+
 
 section#sobre {
     font-family: 'inter';

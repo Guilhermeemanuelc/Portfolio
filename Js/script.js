@@ -23,7 +23,7 @@ links.forEach(link => {
   })
 
 overlay.addEventListener('click', () => {
-  menu.classList.removee('active')
+  menu.classList.remove('active')
   overlay.classList.remove('active')
 })
 })
