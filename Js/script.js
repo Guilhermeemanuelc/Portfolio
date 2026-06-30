@@ -36,7 +36,7 @@ const themeColor = document.querySelector('meta[name="theme-color"]');
 
 function atualizarTema() {
     if (document.body.classList.contains('light')) {
-        themeColor.setAttribute('content', '#4b6d94');
+        themeColor.setAttribute('content', '#FFFFFF');
     } else {
         themeColor.setAttribute('content', '#111520');
     }
