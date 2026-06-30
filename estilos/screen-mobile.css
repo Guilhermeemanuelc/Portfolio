@@ -13,6 +13,11 @@
 
 :root{
 
+    /* fundo */
+
+    --fundo01: rgb(39, 39, 39);
+    --fundo02: rgb(15, 15, 15);
+
     /* Header */
     --header-bg: #151924;
 
@@ -32,7 +37,8 @@
 
 
         /* Home */
-    --overlay: rgba(32, 32, 32, 0.651);
+        
+    --overlay: rgba(32, 32, 32, 0.781);
 
     --titulo-home: #ffffff;
     --texto-home: #ffffff;
@@ -84,7 +90,7 @@ body {
 
     width: 100%;
     min-height: 100vh;
-    background: rgb(44, 44, 44) url(../imagens/MyDesignSanddude.jpeg); 
+    background: url(../imagens/MyDesignSanddude.jpeg); 
     background-size: cover;
     background-position: 48% center;
     background-repeat: no-repeat;
