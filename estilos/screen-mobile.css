@@ -14,7 +14,7 @@
 :root {
 
     /* fundo */
-    --fundobody: rgb(211, 198, 12); 
+    --fundobody: rgb(27, 27, 27); 
 
     /* Header */
     --header-bg: #111520; 
@@ -50,7 +50,7 @@
 
 body.light{
 
-    --fundobody: rgb(230, 17, 17);
+    --fundobody: rgb(138, 138, 138);
 
     --header-bg: #4b6d94;
 

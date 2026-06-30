@@ -30,43 +30,32 @@ overlay.addEventListener('click', () => {
 
                     // tema botao escuro e claro 
 
+
 const botaoTema = document.getElementById('theme-toggle');
 const icone = botaoTema.querySelector('i');
 
+// Carrega o tema salvo
 const temaSalvo = localStorage.getItem('tema') || 'dark';
 
 if (temaSalvo === 'light') {
     document.body.classList.add('light');
     icone.classList.replace('fa-moon', 'fa-sun');
+} else {
+    icone.classList.replace('fa-sun', 'fa-moon');
 }
 
-function atualizarTema() {
-    const isLight = document.body.classList.contains('light');
+// Troca o tema
+botaoTema.addEventListener('click', () => {
+    const isLight = document.body.classList.toggle('light');
 
     if (isLight) {
-        document.documentElement.style.setProperty('--fundobody', '#3b3b3b');
-    } else {
-        document.documentElement.style.setProperty('--fundobody', 'linear-gradient(to right, rgb(39, 39, 39), rgb(24, 24, 24))');
-    }
-}
-
-atualizarTema();
-
-botaoTema.addEventListener('click', () => {
-
-    document.body.classList.toggle('light');
-
-    if (document.body.classList.contains('light')) {
         icone.classList.replace('fa-moon', 'fa-sun');
         localStorage.setItem('tema', 'light');
     } else {
         icone.classList.replace('fa-sun', 'fa-moon');
         localStorage.setItem('tema', 'dark');
     }
-
-    atualizarTema();
 });
-
 
 
 // Scroll suave para links de navegação
