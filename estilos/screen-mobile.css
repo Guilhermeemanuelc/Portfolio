@@ -46,6 +46,19 @@
     --curriculo-active: rgba(0, 0, 0, 0.801); 
 
     --curriculo-texto: #ffffff;
+
+
+    /* Sobre Mim  */
+
+    --colorh1: rgb(180, 180, 180);
+
+    --fundosobremim: linear-gradient(to bottom, rgb(29, 29, 29), rgb(44, 44, 44));
+    --fundoelementos: rgb(22, 22, 22);
+    --fundodados: #292929;
+    --fundofaculdade: #181717b6;
+    --corh2: white;
+    --corp: rgb(185, 185, 185);
+
 }
 
 body.light{
@@ -75,6 +88,19 @@ body.light{
     --curriculo-active: #e5e7eb;
 
     --curriculo-texto: #111827;
+
+
+    /* Sobre Mim  */
+
+
+    --colorh1: rgb(10, 10, 10);
+
+    --fundosobremim: linear-gradient(to bottom, rgb(156, 156, 156), rgb(196, 195, 195));
+    --fundoelementos: rgb(128, 128, 128);
+    --fundodados: #c4c4c4;
+    --fundofaculdade: #818181;
+    --corh2: black;
+    --corp: rgb(83, 83, 83);
 
 }
 
@@ -410,12 +436,12 @@ article div#curriculo i:hover {
 
 section#sobre {
     font-family: 'inter';
-    color: rgb(180, 180, 180);
-    background-image: linear-gradient(to bottom, rgb(29, 29, 29), rgb(44, 44, 44));
+    background: var(--fundosobremim);
     min-height: 100vh;
 }
 
 section#sobre > h1 {
+    color: var(--colorh1);
     text-align: center;
     padding: 30px;
 }
@@ -443,14 +469,14 @@ section#sobre div.elementos {
     gap: 5px;
     border-radius: 12px;
     border-top-right-radius: 13px;
-    background-color: rgb(22, 22, 22);
+    background-color: var(--fundoelementos);
 }
 
 section div.dados1 {
     border: 1px solid rgb(100, 100, 100);
     border-radius: 7px;
     border-top-left-radius: 13px;
-    background-color: #292929;
+    background-color: var(--fundodados);
     height: 277px;
 }
 
@@ -468,7 +494,7 @@ section div.dados1 div.imagem{
 section div.dados1 h2 {
     margin-left: 5px;
     font-size: 2vw;
-    color: white;
+    color: var(--corh2);
 }
 
 section div.dados1 h2 > span {
@@ -480,7 +506,7 @@ section div.dados1 p {
     margin-left: 5px;
     margin-top: 8px;
     font-size: calc(3.5px + 1.1vw);
-    color: rgb(185, 185, 185);
+    color: var(--corp);
 }
 
 
@@ -499,7 +525,7 @@ section div.dados2 i {
 section div.dados2-1 {
     padding: 7px;
     height: 82px;
-    background-color: #292929;
+    background-color: var(--fundodados);
     border-radius: 7px;
     border-top-right-radius: 15px;
     border: 1px solid rgb(100, 100, 100);
@@ -507,7 +533,7 @@ section div.dados2-1 {
 }
 
 section div.dados2-1 > h2 {
-    color: white;
+    color: var(--corh2);
     margin-left: 10px;
     font-size: 0.8em;
 }
@@ -517,13 +543,13 @@ section div.dados2-1 > p {
     margin-top: 11px;
     font-size: calc(3.5px + 1.1vw);
     width: 90%;
-    color: rgb(185, 185, 185);
+    color: var(--corp);
 }
 
 section div.dados2-2 {
     padding: 7px;
     height: 77px;
-    background-color: #292929;
+    background-color: var(--fundodados);
     border: 1px solid rgb(100, 100, 100);
     border-radius: 5px;
 }
@@ -533,11 +559,11 @@ section div.dados2-2 > p {
     margin-top: 10px;
     font-size: calc(3.5px + 1.1vw);
     width: 90%;
-    color: rgb(185, 185, 185);
+    color: var(--corp);
 }
 
 section div.dados2-2 > h2 {
-    color: white;
+    color: var(--corh2);
     margin-left: 10px;
     font-size: 0.8em;
 }
@@ -547,11 +573,11 @@ section div.dados2-3 {
     padding: 5px;
     height: 72px;
     border-radius: 7px;
-    background-color: #292929;
+    background-color: var(--fundodados);
 }
 
 section div.dados2-3 > h2 {
-    color: white;
+    color: var(--corh2);
     margin-left: 10px;
     font-size: 0.8em;
 }
@@ -561,13 +587,13 @@ section div.dados2-3 > p {
     margin-top: 10px;
     font-size: calc(3.5px + 1.1vw);
     width: 90%;
-    color: rgb(185, 185, 185);
+    color: var(--corp);
 }
 
 section div.dados3 {
     border: 1px solid rgb(100, 100, 100);
     border-radius: 7px;
-    background-color: #292929;
+    background-color: var(--fundodados);
     padding: 3px;
 }
 
@@ -577,13 +603,13 @@ section div.dados3 i {
 
 section div.dados3 div.rotina > h2 {
     margin-left: 6px;
-    color: white;
+    color: var(--corh2);
     font-size: calc(1px 40vw);
     
 }
 
 section div.dados3 h2 {
-    color: white;
+    color: var(--corh2);
     font-size: 2vw;
     margin-top: 2px;
 }
@@ -592,14 +618,14 @@ section div.dados3 p {
     margin-top: 1vw;
     margin-left: 12px;
     width: 80%;
-    color: rgb(185, 185, 185);
+    color: var(--corp);
     font-size: calc(8.5px + 0.2vw);
 }
 
 section div.dados4 {
     border: 1px solid rgb(100, 100, 100);
     border-radius: 7px;
-    background-color: #292929;
+    background-color: var(--fundodados);
     padding: 3px;
 }
 
@@ -607,7 +633,7 @@ div.dados4 > h2 {
     font-size: calc(1px + 0.8em);
     margin-top: 5px;
     margin-left: 12px;
-    color: white;
+    color: var(--corh2);
 }
 
 div.dados4 i {
@@ -626,7 +652,7 @@ div.componentes {
 div.faculdade {
     grid-column: 1 / 4;
     border: 1px solid rgb(100, 100, 100);
-    background-color: #1f1e1eb6;
+    background-color: var(--fundofaculdade);
     margin-top: 5px;
     border-radius: 5px;
     padding: 5px;
@@ -636,7 +662,7 @@ div.faculdade {
 div.faculdade > p {
     margin-left: 1.7vw;
     font-size: 1.8vw;
-    color: white;
+    color: var(--corh2);
     width: 90%;
 }
 
@@ -653,7 +679,7 @@ div.registros {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c2c2cb6;
+    background-color: var(--fundodados);
     border-radius: 6px;
     padding: 5px;
     border: 1px solid rgb(100, 100, 100);
@@ -667,13 +693,13 @@ div.registros > i {
 
 div.registros > h2 {
     position: relative;
-    color: white;
+    color: var(--corh2);
     font-size: calc(2px + 1.4vw);
     text-align: center;
 }
 
 div.registros > p {
-    color: rgb(185, 185, 185);
+    color: var(--corp);
     font-size: calc(0.9vw + 2.7px);
     text-align: center;
 }
