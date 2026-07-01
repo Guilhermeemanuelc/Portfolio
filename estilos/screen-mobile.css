@@ -88,6 +88,25 @@
     --projetoa: white;
     --vercodigoi: #00040c;
 
+
+    /* Contato */
+
+    --corh1contato: white;
+
+    --fundocontato: linear-gradient(180deg, #050816 0%, #070b1a 50%, #050816 100%);
+    --fundocontatos: linear-gradient(to right, #0f1930, rgba(0, 0, 0, 0.288));
+    --fundomensagem: linear-gradient(to right, #051835cb, rgba(1, 12, 37, 0.295));
+    --fundofriends: linear-gradient(to right, #00030862, rgba(4, 19, 56, 0.979));
+    --contatop: rgb(206, 206, 206);
+
+    
+
+    /* Footer  */
+
+    --fundofooter: linear-gradient(180deg, #0D1117 0%, #0B0D12 100%);
+    --footerp: #8A8F98;
+    --footeravisop: #8A8F98;
+
 }
 
 body.light{
@@ -161,6 +180,26 @@ body.light{
     --projetoa: black;
     --vercodigoi: #ffffff;
 
+
+    /* Contato  */
+
+
+    --corh1contato: black;
+
+    --fundocontato: linear-gradient(180deg, #adb1c0 0%, #8f95aa 50%, #b2b6c9 100%);
+    --fundocontatos: linear-gradient(to right, #95a3c4, rgba(255, 255, 255, 0.288));
+    --fundomensagem: linear-gradient(to right, #a4aebecb, rgba(94, 94, 94, 0.295));
+    --fundofriends: linear-gradient(to right, #94949462, rgba(170, 170, 170, 0.979));
+    --contatop: black;
+
+
+    /* footer */
+
+
+    --fundofooter: linear-gradient(180deg, #828383 0%, #7c7c7c 100%);
+    --footerp: #3f352b;
+    --footeravisop: #bebebe;
+    
 }
 
 body {
@@ -1136,13 +1175,14 @@ section#projetos .links-projeto a:hover{
 
 
 
-
                         /* Area contatos  */
 
 
 
+
+
 section#contato {
-    background: linear-gradient(180deg, #050816 0%, #070b1a 50%, #050816 100%);
+    background: var(--fundocontato);
     color: white;
     min-height: 100vh;
     font-family: 'inter';
@@ -1150,7 +1190,7 @@ section#contato {
 
 section#contato > h1 {
     font-size: 1.9em;
-    color: white;
+    color: var(--corh1contato);
     text-align: center;
     padding: 30px;
 }
@@ -1164,7 +1204,7 @@ section#contato div.contatos {
     flex-direction: column;
     justify-self: center;
     width: 88vw;
-    background: linear-gradient(to right, #0f1930, rgba(0, 0, 0, 0.288));
+    background: var(--fundocontatos);
     border: 1px solid #1e293b;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
@@ -1184,7 +1224,7 @@ section#contato div.texto > h2 {
 }
 
 section#contato div.texto > p {
-    color: rgb(214, 213, 213);
+    color: var(--contatop);
     font-weight: 500;
     font-size: calc(0.5vw + 9.5px);
     line-height: 1.4;
@@ -1285,7 +1325,7 @@ section#contato div.mensagem {
     flex-direction: column;
     justify-self: center;
     width: 88vw;
-    background: linear-gradient(to right, #051835cb, rgba(1, 12, 37, 0.295));
+    background: var(--fundomensagem);
     border: 1px solid #1e293b;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
@@ -1373,7 +1413,7 @@ section#contato div.friends {
     flex-direction: column;
     justify-self: center;
     width: 88vw;
-    background: linear-gradient(to right, #00030862, rgba(4, 19, 56, 0.979));
+    background: var(--fundofriends);
     border: 1px solid #1e293b;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
@@ -1387,7 +1427,7 @@ section#contato div.friends > h2 {
 }
 
 section#contato div.friends > p {
-    color: rgb(214, 213, 213);
+    color: var(--contatop);
     font-weight: 400;
     font-size: calc(0.5vw + 9.5px);
     line-height: 1.4;
@@ -1407,7 +1447,7 @@ section#contato div.friends > p {
 
 footer {
     color: white;
-    background: linear-gradient(180deg, #0D1117 0%, #0B0D12 100%);
+    background: var(--fundofooter);
     min-height: 260px;
 }
 
@@ -1449,7 +1489,7 @@ footer div.nome span{
 
 footer div.paragrafo {
     font-size: 8px;
-    color: #8A8F98;
+    color: var(--footerp);
     letter-spacing: 4px;
 }
 
@@ -1472,7 +1512,7 @@ footer div.graca {
 }
 
 footer div.final {
-    color: #8A8F98;
+    color: var(--footeravisop);
     margin-top: 20px;
     display: flex;
     flex-direction: column;
