@@ -70,13 +70,31 @@
     --corphabilidades: rgb(218, 218, 218);
     --corfundophabilidades: rgba(48, 48, 48, 0.233);
 
+
+    /* Meus Projetos */
+
+    --corh1projetos: white;
+
+    --fundoprojetos: linear-gradient(180deg,#01091a,#020c1f,#020817);
+    --buttonfundo: rgba(255,255,255,.02);
+    --buttonp: white;
+    --buttonborder: rgba(255,255,255,.08);
+    --fundocard: rgba(248, 7, 7, 0.03);
+    --borderimagem: rgba(255, 255, 255, 0.164);
+    --opacity: .6;
+    --bordercard: rgba(255, 255, 255, 0.164);
+    --conteudoh3: white;
+    --conteudop: #b3b3b3;
+    --projetoa: white;
+    --vercodigoi: #00040c;
+
 }
 
 body.light{
 
     --fundobody: rgb(223, 223, 223);
 
-    --header-bg: #4b6d94;
+    --header-bg: #1E3A8A;
 
     --logo: #111827;
 
@@ -107,9 +125,9 @@ body.light{
     --corh1sobremim: rgb(10, 10, 10);
 
     --fundosobremim: linear-gradient(to bottom, rgb(156, 156, 156), rgb(196, 195, 195));
-    --fundoelementos: rgb(128, 128, 128);
+    --fundoelementos: rgb(192, 192, 192);
     --fundodados: #c4c4c4;
-    --fundofaculdade: #818181;
+    --fundofaculdade: #b1b1b1;
     --corh2: black;
     --corp: rgb(83, 83, 83);
 
@@ -119,11 +137,29 @@ body.light{
     --corh1habilidades: rgb(0, 0, 0);
 
     --fundohabilidades: linear-gradient(180deg, #dadada 0%, #c7cbd1 50%, #ffffff 100%);
-    --fundobolha: rgba(188, 201, 219, 0.9);
+    --fundobolha: #979797;
     --border: rgba(9, 25, 49, 0.445);
     --corh2habilidades: rgb(0, 0, 0);
     --corphabilidades: rgb(31, 31, 31);
     --corfundophabilidades: rgba(194, 194, 194, 0.568);
+
+
+    /* Meus Projetos */
+
+    --corh1projetos: black;
+
+    --fundoprojetos: linear-gradient(180deg,#c9c9c9,#d4d4d4,#d3d7e0);
+    --buttonfundo: #c2c2c2;
+    --buttonborder: rgba(29, 66, 230, 0.534);
+    --buttonp: black;
+    --fundocard: rgb(167, 167, 167);
+    --borderimagem: rgb(243, 244, 247);
+    --opacity: .9;
+    --bordercard: rgba(221, 221, 221, 0.774);
+    --conteudoh3: black;
+    --conteudop: #424242;
+    --projetoa: black;
+    --vercodigoi: #ffffff;
 
 }
 
@@ -667,7 +703,7 @@ div.componentes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 47.5px 1fr 1fr;
-    gap: 3px;
+    gap: 2.5px;
     padding-left: 1px;
     padding-right: 0px;
 }
@@ -748,7 +784,10 @@ div.dots span.active {
 }
 
 
+
                             /* Area Habilidades */
+
+
 
 
 section#habilidades {
@@ -832,6 +871,7 @@ section#habilidades div.icons i {
 
 
 
+
                             /* Area Projetos  */
 
 
@@ -839,18 +879,18 @@ section#habilidades div.icons i {
 
 section#projetos{
     min-height: 100vh;
-    background: linear-gradient(180deg,#01091a,#020c1f,#020817);
+    background: var(--fundoprojetos);
 }
 
 section#projetos > h1{
-    color: white;
+    color: var(--corh1projetos);
     font-size: 2rem;
     text-align: center;
     padding: 30px;
 }
 
 section#projetos > h1 span{
-    color: #0d6efd;
+    color: var(--principal);
 }
 
 /* CARD */
@@ -868,8 +908,8 @@ section#projetos div.filtro button{
 
     width: calc(100px + 10vw);
     height: 45px;
-    background: rgba(255,255,255,.02);
-    border: 1px solid rgba(255,255,255,.08);
+    background: var(--buttonfundo);
+    border: 1px solid var(--buttonborder);
     border-radius: 6px;
     cursor: pointer;
     backdrop-filter: blur(10px);
@@ -889,21 +929,21 @@ section#projetos div.filtro button.filtro-ativo{
 
 section#projetos div.filtro button p{
 
-    color: white;
+    color: var(--buttonp);
     font-size: .63rem;
     font-weight: 500;
 }
 
 section#projetos div.filtro button p i{
     font-size: 0.86rem;
-    color: white;
+    color: var(--buttonp);
     margin-right: 5px;
 }
 
 section#projetos div.projetos {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2px;
 }
 
 section#projetos .card-projeto{
@@ -913,8 +953,9 @@ section#projetos .card-projeto{
     align-items: center;
     gap: 20px;
     padding: 6px;
-    background: rgba(255,255,255,.03);
-    border: 1px solid rgba(255, 255, 255, 0.164);
+    margin-bottom: 10px;
+    background: var(--fundocard);
+    border: 1px solid var(--bordercard);
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
@@ -931,8 +972,8 @@ section#projetos .imagem1{
     background-position: center;
     margin-left: 3px;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem2{
@@ -947,8 +988,8 @@ section#projetos .imagem2{
     background-position: center;
     margin-left: 3px;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem3{
@@ -963,8 +1004,8 @@ section#projetos .imagem3{
     background-position: center;
     margin-left: 3px;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem4{
@@ -979,8 +1020,8 @@ section#projetos .imagem4{
     background-position: center;
     margin-left: 3px;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem5{
@@ -995,8 +1036,8 @@ section#projetos .imagem5{
     background-position: center;
     margin-left: 3px;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem6{
@@ -1011,8 +1052,8 @@ section#projetos .imagem6{
     background-position: center;
     margin-left: 3px;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .conteudo{
@@ -1023,7 +1064,7 @@ section#projetos .conteudo{
 }
 
 section#projetos .conteudo h3{
-    color: white;
+    color: var(--conteudoh3);
     margin-top: 10px;
     font-size: 0.7rem;
 }
@@ -1036,7 +1077,7 @@ section#projetos .conteudo h3 i{
 
 section#projetos .conteudo p{
     font-size: calc(6.5px + 0.6vw);
-    color: #b3b3b3;
+    color: var(--conteudop);
     line-height: 1.2;
     max-width: 85%;
 }
@@ -1064,7 +1105,7 @@ section#projetos .links-projeto{
 section#projetos .links-projeto a{
     font-size: 8px;
     text-decoration: none;
-    color: white;
+    color: var(--projetoa);
     transition: .3s;
     padding-bottom: 5px;
 }
@@ -1077,7 +1118,9 @@ section#projetos .links-projeto a i#verprojeto{
 
 section#projetos .links-projeto a i#vercodigo{
     font-size: 10px;
-    background: #00040c;
+    background: var(--vercodigoi);
+    padding: 2px;
+    border-radius: 5px;
     margin-right: 5px;
 }
 
