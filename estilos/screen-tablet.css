@@ -16,13 +16,6 @@
                        /* Começo do Site */
 
 
-    :root {
-    --fundo01: rgb(26, 26, 26);
-    --fundo02: rgb(48, 47, 47);
-    --principal: #0077ff;
-    --destaque: white;
-    }
-
     @font-face {
         font-family: 'inter';
         src: url(../fonte/inter/static/Inter_28pt-Regular.ttf);
@@ -35,9 +28,200 @@
         /* outline: 1px solid rgb(243, 6, 6);  */
     }
 
+    :root {
+
+    /* fundo */
+    --fundobody: rgb(32, 32, 32); 
+
+    /* Header */
+    --header-bg: #111520; 
+
+    /* Logo */
+    --logo: #ffffff;
+
+    /* Ícones */
+    --icon: #ffffff;
+
+    /* Botão do tema */
+    --theme-bg: transparent;
+    --theme-hover: rgba(255,255,255,.08); 
+
+    /* Principal */
+    --principal: #0077ff;
+
+
+
+        /* Home */
+        
+    --overlay: rgba(32, 32, 32, 0.781);  
+
+    --titulo-home: #ffffff;
+    --texto-home: #ffffff;
+
+    --curriculo-bg: rgb(51, 51, 51); 
+    --curriculo-hover: rgba(31, 31, 31, 0.74);
+    --curriculo-active: rgba(0, 0, 0, 0.801); 
+
+    --curriculo-texto: #ffffff;
+
+
+    /* Sobre Mim  */
+
+    --corh1sobremim: rgb(180, 180, 180);
+
+    --fundosobremim: linear-gradient(to bottom, rgb(29, 29, 29), rgb(44, 44, 44));
+    --fundoelementos: rgb(22, 22, 22);
+    --fundodados: #292929;
+    --fundofaculdade: #181717b6;
+    --corh2: white;
+    --corp: rgb(185, 185, 185);
+
+
+    /* Habilidades  */
+
+    --corh1habilidades: white;
+    --fundohabilidades: linear-gradient(180deg, #00060e 0%, #020b18 50%, #00040c 100%);
+    --fundobolha: rgba(8, 17, 29, 0.9);
+    --border: rgba(255, 255, 255, 0.274);
+    --corh2habilidades: white;
+    --corphabilidades: rgb(218, 218, 218);
+    --corfundophabilidades: rgba(48, 48, 48, 0.233);
+
+
+    /* Meus Projetos */
+
+    --corh1projetos: white;
+
+    --fundoprojetos: linear-gradient(180deg,#01091a,#020c1f,#020817);
+    --buttonfundo: rgba(255,255,255,.02);
+    --buttonp: white;
+    --buttonborder: rgba(255,255,255,.08);
+    --fundocard: rgba(248, 7, 7, 0.03);
+    --borderimagem: rgba(255, 255, 255, 0.164);
+    --opacity: .6;
+    --bordercard: rgba(255, 255, 255, 0.164);
+    --conteudoh3: white;
+    --conteudop: #b3b3b3;
+    --projetoa: white;
+    --vercodigoi: #00040c;
+
+
+    /* Contato */
+
+    --corh1contato: white;
+
+    --fundocontato: linear-gradient(180deg, #050816 0%, #070b1a 50%, #050816 100%);
+    --fundocontatos: linear-gradient(to right, #0f1930, rgba(0, 0, 0, 0.288));
+    --fundomensagem: linear-gradient(to right, #051835cb, rgba(1, 12, 37, 0.295));
+    --fundofriends: linear-gradient(to right, #00030862, rgba(4, 19, 56, 0.979));
+    --contatop: rgb(206, 206, 206);
+
+    
+
+    /* Footer  */
+
+    --fundofooter: linear-gradient(180deg, #0D1117 0%, #0B0D12 100%);
+    --footerp: #8A8F98;
+    --footeravisop: #8A8F98;
+
+}
+
+body.light{
+
+    --fundobody: rgb(223, 223, 223);
+
+    --header-bg: #1E3A8A;
+
+    --logo: #111827;
+
+    --icon: #111827;
+
+    --theme-bg: transparent;
+    --theme-hover: rgba(0,0,0,.08);
+
+
+
+        /* Home */
+
+    --overlay: rgb(136, 136, 136);
+
+    --titulo-home: #111827;
+    --texto-home: #374151;
+
+    --curriculo-bg: #ffffff;
+    --curriculo-hover: #f3f4f6;
+    --curriculo-active: #e5e7eb;
+
+    --curriculo-texto: #111827;
+
+
+    /* Sobre Mim  */
+
+
+    --corh1sobremim: rgb(10, 10, 10);
+
+    --fundosobremim: linear-gradient(to bottom, rgb(156, 156, 156), rgb(196, 195, 195));
+    --fundoelementos: rgb(192, 192, 192);
+    --fundodados: #c4c4c4;
+    --fundofaculdade: #b1b1b1;
+    --corh2: black;
+    --corp: rgb(83, 83, 83);
+
+
+    /* Habilidades  */
+
+    --corh1habilidades: rgb(0, 0, 0);
+
+    --fundohabilidades: linear-gradient(180deg, #dadada 0%, #c7cbd1 50%, #ffffff 100%);
+    --fundobolha: #979797;
+    --border: rgba(9, 25, 49, 0.445);
+    --corh2habilidades: rgb(0, 0, 0);
+    --corphabilidades: rgb(31, 31, 31);
+    --corfundophabilidades: rgba(194, 194, 194, 0.568);
+
+
+    /* Meus Projetos */
+
+    --corh1projetos: black;
+
+    --fundoprojetos: linear-gradient(180deg,#c9c9c9,#d4d4d4,#d3d7e0);
+    --buttonfundo: #c2c2c2;
+    --buttonborder: rgba(29, 66, 230, 0.534);
+    --buttonp: black;
+    --fundocard: rgb(167, 167, 167);
+    --borderimagem: rgb(243, 244, 247);
+    --opacity: .9;
+    --bordercard: rgba(221, 221, 221, 0.774);
+    --conteudoh3: black;
+    --conteudop: #424242;
+    --projetoa: black;
+    --vercodigoi: #ffffff;
+
+
+    /* Contato  */
+
+
+    --corh1contato: black;
+
+    --fundocontato: linear-gradient(180deg, #adb1c0 0%, #8f95aa 50%, #b2b6c9 100%);
+    --fundocontatos: linear-gradient(to right, #95a3c4, rgba(255, 255, 255, 0.288));
+    --fundomensagem: linear-gradient(to right, #a4aebecb, rgba(94, 94, 94, 0.295));
+    --fundofriends: linear-gradient(to right, #94949462, rgba(170, 170, 170, 0.979));
+    --contatop: black;
+
+
+    /* footer */
+
+
+    --fundofooter: linear-gradient(180deg, #828383 0%, #7c7c7c 100%);
+    --footerp: #3f352b;
+    --footeravisop: #bebebe;
+    
+}
+
     body {
         background-color: var(--fundo01);
-         background-image: linear-gradient(to bottom, var(--fundo01), var(--fundo02));
+         background: var(--fundobody);
          overflow-x: hidden;
     }
 
@@ -57,7 +241,7 @@
         position: absolute;
         inset: 0;
 
-        background-color: rgba(32, 32, 32, 0.651);
+        background-color: var(--overlay);
         z-index: 0;
         backdrop-filter: blur(1px);
 }
@@ -71,7 +255,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #151924;
+        background-color: var(--header-bg);
         z-index: 999;
         position: sticky;
         top: 0;
@@ -80,13 +264,34 @@
 
     header > h1 {
         font-size: calc(2em + 1vw);
-        color: var(--destaque);
+        color: var(--logo);
         text-shadow: 0px 2px 0px rgba(194, 193, 193, 0.993);
+        margin-left: 10px;
     }
 
     header > h1 > span {
         color: var(--principal);
         text-shadow: 0px 3px 0px rgba(46, 46, 173, 0.918);
+    }
+
+    header button#theme-toggle {
+        transform: translateY(-5px);
+        font-size: 1.5em;
+        cursor: pointer;
+        border-radius: 12px;
+        width: 30px;
+        height: 30px;
+        background: var(--theme-bg);
+        color: var(--icon);
+        transition: .3s;
+    }
+
+    header button#theme-toggle:hover {
+        background: var(--theme-hover);
+    }
+
+    header i#moon:hover {
+        color: var(--principal);
     }
 
     header div#explorar {
@@ -158,7 +363,7 @@ section#container {
 }
 
 section#container div.texto {
-    color: white;
+    color: var(--titulo-home);
     padding-top: 80px;
     margin-left: 2vw;
     font-size: calc(8px + 2vw);
@@ -200,9 +405,9 @@ div#curriculo {
 }
 
 div#curriculo a {
-    background-color: rgb(51, 51, 51);
+    background-color: var(--curriculo-bg);
     padding: 9px;
-    color: white;
+    color: var(--curriculo-texto);
     margin-left: 3px;
     width: 150px;
     text-decoration: none;
@@ -213,19 +418,19 @@ div#curriculo a {
 }
 
 div#curriculo a:hover {
-    background-color: rgba(31, 31, 31, 0.74);
-    color: rgb(209, 209, 209);
+    background-color: var(--curriculo-hover);
+    color: var(--curriculo-texto);
     text-decoration: underline;
 }
 
 div#curriculo a:active {
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: var(--curriculo-active);
     color: rgb(156, 155, 155);
     transition: 1s;
 }
 
 article div#curriculo i {
-    color: rgb(242, 242, 243);
+    color: var(--curriculo-texto);
     padding-right: 3px;
     transform: translateY(5px);
 }
@@ -239,12 +444,13 @@ article div#curriculo i {
 
 section#sobre {
     /* border: 1px solid #3b82f6; */
+    background: var(--fundosobremim);
     width: 100vw;
     min-height: 100vh;
 }
 
 section#sobre > h1 {
-    color: white;
+    color: var(--corh1sobremim);
     text-align: center;
     padding: 30px;
 }
@@ -263,7 +469,7 @@ section#sobre div#caixa {
 section#sobre div.elementos {
     height: 665px;
     margin-bottom: 30px;
-    background-color: rgb(22, 22, 22);
+    background-color: var(--fundoelementos);
     display: grid;
     grid-template-columns: 1fr 2fr 1.3fr;
     grid-template-rows: 420px auto;
@@ -273,7 +479,7 @@ section#sobre div.elementos {
 section#sobre div.dados1 {
     border: 1px solid rgb(100, 100, 100);
     border-radius: 8px;
-    background-color: #292929;
+    background-color: var(--fundodados);
     grid-column: 1 / 2
     
 }
@@ -289,7 +495,7 @@ div.dados1 div.imagem {
 }
 
 div.dados1 h2 {
-    color: white;
+    color: var(--corh2);
     margin-left: 7px;
     font-size: 1.1em;
     margin-top: 5px;
@@ -303,7 +509,7 @@ div.dados1 p.pequeno{
     margin-left: 6px;
     font-size: 1em;
     margin-top: 10px;
-    color: rgb(185, 185, 185);
+    color: var(--corp);
 }
 
 div.dados1 p {
@@ -311,7 +517,7 @@ div.dados1 p {
     font-size: 12px;
     width: 90%;
     margin-top: 15px;
-    color: rgb(185, 185, 185);
+    color: var(--corp);
 }
 
 section#sobre div.dados2 {
@@ -328,7 +534,7 @@ section div.dados2 i {
 
 div.dados2 div.dados2-1 {
     border: 1px solid rgb(100, 100, 100);
-    background-color: #292929;
+    background-color: var(--fundodados);
     border-radius: 7px;
     height: 37%;
 }
@@ -336,12 +542,12 @@ div.dados2 div.dados2-1 {
 div.dados2 div.dados2-1 > h2 {
     margin-top: 1vw;
     margin-left: 2vw;
-    color: white;
+    color: var(--corh2);
     font-size: 1.5em;
 }
 
 div.dados2 div.dados2-1 > p {
-    color: rgb(185, 185, 185);
+    color: var(--corp);
     width: 92%;
     font-size: 11px;
     margin-top: 1.1vw;
@@ -350,7 +556,7 @@ div.dados2 div.dados2-1 > p {
 
 div.dados2 div.dados2-2 {
     border: 1px solid rgb(100, 100, 100);
-    background-color: #292929;
+    background-color: var(--fundodados);
     border-radius: 7px;
     height: 35%;
 }
@@ -358,12 +564,12 @@ div.dados2 div.dados2-2 {
 div.dados2 div.dados2-2 > h2 {
     margin-top: 1vw;
     margin-left: 2vw;
-    color: white;
+    color: var(--corh2);
     font-size: 1.5em;
 }
 
 div.dados2 div.dados2-2 > p {
-    color: rgb(185, 185, 185);
+    color: var(--corp);
     width: 92%;
     font-size: 11px;
     margin-top: 1.1vw;
@@ -372,7 +578,7 @@ div.dados2 div.dados2-2 > p {
 
 div.dados2 div.dados2-3 {
     border: 1px solid rgb(100, 100, 100);
-    background-color: #292929;
+    background-color: var(--fundodados);
     border-radius: 7px;
     height: 36%;
 }
@@ -380,12 +586,12 @@ div.dados2 div.dados2-3 {
 div.dados2 div.dados2-3 > h2 {
     margin-top: 1vw;
     margin-left: 2vw;
-    color: white;
+    color: var(--corh2);
     font-size: 1.5em;
 }
 
 div.dados2 div.dados2-3 > p {
-    color: rgb(185, 185, 185);
+    color: var(--corp);
     width: 92%;
     font-size: 11px;
     margin-top: 1.1vw;
@@ -395,7 +601,7 @@ div.dados2 div.dados2-3 > p {
 section#sobre div.dados3 {
     border: 1px solid rgb(100, 100, 100);
     border-radius: 9px;
-    background-color: #292929;
+    background-color: var(--fundodados);
     grid-column: 3 / 4
 }
 
@@ -408,22 +614,15 @@ div.dados3 div.rotina{
     
 }
 
-div.dados3 div.rotina > h2 {
-    color: white;
-    margin-top: 1vw;
-    margin-left: 1vw;
-    font-size: 1.5em;
-}
-
 div.dados3 div.rotina h2 {
-    color: white;
+    color: var(--corh2);
     margin-top: 5px;
     margin-left: 1vw;
     font-size: 1.3em;
 }
 
 div.dados3 div.rotina p {
-    color: rgb(185, 185, 185);
+    color: var(--corp);
     margin-top: 2px;
     margin-left: 1vw;
     width: 90%;
@@ -435,7 +634,7 @@ section#sobre div.dados4 {
     height: 240px;
     border: 1px solid rgb(100, 100, 100);
     border-radius: 7px;
-    background-color: #292929;
+    background-color: var(--fundodados);
     grid-column: 1 / 4
 }
 
@@ -447,7 +646,7 @@ div.dados4 > h2 {
     font-size: 1.5;
     margin-top: 1vw;
     margin-left: 2vw;
-    color: white;
+    color: var(--corh2);
 }
 
 div.dados4 i {
@@ -468,7 +667,7 @@ div.faculdade {
     flex-direction: row;
     grid-column: 1 / 7;
     border: 1px solid rgb(100, 100, 100);
-    background-color: #1f1e1eb6;
+    background-color: var(--fundofaculdade);
     margin-top: 5px;
     border-radius: 5px;
     padding: 5px;
@@ -478,12 +677,12 @@ div.faculdade {
 div.faculdade > p.p1 {
     margin-left: 1.7vw;
     font-size: 1.7vw;
-    color: white;
+    color: var(--corh2);
     font-weight: 700;
 }
 
 div.faculdade > p.p2 {
-    color: white;
+    color: var(--corh2);
     font-size: 1.7vw;
     margin-left: 9px;
     font-weight: 700;
@@ -498,7 +697,7 @@ div.registros {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c2c2cb6;
+    background-color: var(--fundodados);
     border-radius: 6px;
     padding: 5px;
     border: 1px solid rgb(100, 100, 100);
@@ -512,13 +711,13 @@ div.registros > i {
 
 div.registros > h2 {
     position: relative;
-    color: white;
+    color: var(--corh2);
     font-size: calc(2px + 1.4vw);
     text-align: center;
 }
 
 div.registros > p {
-    color: rgb(185, 185, 185);
+    color: var(--corp);
     font-size: calc(0.9vw + 2.5px);
     text-align: center;
 }
@@ -551,8 +750,7 @@ div.dots span.active {
 
 
 section#habilidades {
-    background: linear-gradient(180deg, #00060e 0%, #020b18 50%, #00040c 100%);
-    color: white;
+    background: var(--fundohabilidades);
     min-height: 100vh;
     font-family: 'inter';
 }   
@@ -561,7 +759,7 @@ section#habilidades > h1 {
     font-size: 1.9em;
     padding: 30px;
     text-align: center;
-    color: var(--destaque);
+    color: var(--corh1habilidades);
 }
 
 section#habilidades > h1 > span {
@@ -582,8 +780,8 @@ section#habilidades div.bolha {
     display: grid;
     grid-template-rows: repeat(4, 40px);
     width: 90vw;
-    background-color: rgba(8, 17, 29, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.274);
+    background-color: var(--fundobolha);
+    border: 1px solid var(--border);
     margin-bottom: 10px;
 }
 
@@ -596,7 +794,7 @@ section#habilidades div.icons {
 }
 
 section#habilidades div.bolha > h2 {
-    color: white;
+    color: var(--corh2habilidades);
     margin-top: 10px;
     margin-left: 15px;
     margin-bottom: 14px;
@@ -616,7 +814,8 @@ section#habilidades div.icons > p {
     font-size: 1rem;
     padding: 10px 8px;
     font-weight: 500;
-    background: rgba(48, 48, 48, 0.281);
+    color: var(--corphabilidades);
+    background: var(--corfundophabilidades);
 }
 
 section#habilidades div.icons i {
@@ -630,17 +829,13 @@ section#habilidades div.icons i {
 
 
 
-section#projetos {
-    min-height: 100vh;
-}
-
 section#projetos{
     min-height: 100vh;
-    background: linear-gradient(180deg,#01091a,#020c1f,#020817);
+    background: var(--fundoprojetos);
 }
 
 section#projetos > h1{
-    color: white;
+    color: var(--corh1projetos);
     font-size: 2rem;
     text-align: center;
     padding: 30px;
@@ -664,8 +859,8 @@ section#projetos div.filtro button{
 
     width: calc(100px + 5vw);
     height: 45px;
-    background: rgba(255,255,255,.02);
-    border: 1px solid rgba(255,255,255,.08);
+    background: var(--buttonfundo);
+    border: 1px solid var(--buttonborder);
     border-radius: 6px;
     cursor: pointer;
     backdrop-filter: blur(10px);
@@ -685,14 +880,14 @@ section#projetos div.filtro button.filtro-ativo{
 
 section#projetos div.filtro button p{
 
-    color: white;
+    color: var(--buttonp);
     font-size: .79rem;
     font-weight: 500;
 }
 
 section#projetos div.filtro button p i{
     font-size: 0.86rem;
-    color: white;
+    color: var(--buttonp);
     margin-right: 5px;
 }
 
@@ -710,8 +905,8 @@ section#projetos div.projetos {
 }
 
 section#projetos div.card-projeto {
-    background: rgba(255,255,255,.03);
-    border: 1px solid rgba(255, 255, 255, 0.164);
+    background: var(--fundocard);
+    border: 1px solid var(--bordercard);
     border-radius: 12px;
     padding: 10px;
 }
@@ -725,8 +920,8 @@ section#projetos .imagem1{
     background-size: cover;
     background-position: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem2{
@@ -738,8 +933,8 @@ section#projetos .imagem2{
     background-size: cover;
     background-position: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem3{
@@ -751,8 +946,8 @@ section#projetos .imagem3{
     background-size: cover;
     background-position: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem4{
@@ -764,8 +959,8 @@ section#projetos .imagem4{
     background-size: cover;
     background-position: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem5{
@@ -777,8 +972,8 @@ section#projetos .imagem5{
     background-size: cover;
     background-position: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 section#projetos .imagem6{
@@ -790,8 +985,8 @@ section#projetos .imagem6{
     background-size: cover;
     background-position: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    opacity: .6;
+    border: 1px solid var(--borderimagem);
+    opacity: var(--opacity);
 }
 
 
@@ -803,7 +998,7 @@ section#projetos div.conteudo {
 }
 
 section#projetos div.conteudo > h3 {
-    color: white;
+    color: var(--conteudoh3);
 }
 
 section#projetos div.conteudo > h3 i{
@@ -812,7 +1007,7 @@ section#projetos div.conteudo > h3 i{
 
 section#projetos div.conteudo > p {
     font-size: calc(6.5px + 0.6vw);
-    color: #b3b3b3;
+    color: var(--conteudop);
     line-height: 1.2;
     max-width: 85%;
 }
@@ -841,7 +1036,7 @@ section#projetos .links-projeto{
 section#projetos .links-projeto a{
     font-size: 14px;
     text-decoration: none;
-    color: white;
+    color: var(--projetoa);
     transition: .3s;
     padding-bottom: 5px;
 }
@@ -854,7 +1049,7 @@ section#projetos .links-projeto a i#verprojeto{
 
 section#projetos .links-projeto a i#vercodigo{
     font-size: 10px;
-    background: #00040c;
+    background: var(--vercodigoi);
     margin-right: 5px;
 }
 
@@ -877,7 +1072,7 @@ section#projetos .links-projeto a:hover{
 
 section#contato {
     min-height: 100vh;
-    background: linear-gradient(180deg, #080220 0%, #04152c 50%, #010c22 100%);
+    background: var(--fundocontato);
 }
 section#contato .container{
         width: 90%;
@@ -892,7 +1087,7 @@ section#contato .container{
 }
 
 section#contato > h1 {
-    color: white;
+    color: var(--corh1contato);
     text-align: center;
     padding: 30px;
 }
@@ -902,15 +1097,16 @@ section#contato > h1 > span {
 }
 
 section#contato .contatos {
-    background: linear-gradient(to right, #00030862, rgba(4, 19, 56, 0.979));
+    background: var(--fundocontatos);
     border: 1px solid #262f3f;
     border-radius: 8px;
     backdrop-filter: blur(10px);
     padding: 10px;
 }
 section#contato .mensagem {
-    background: linear-gradient(to right, #051835cb, rgba(2, 10, 29, 0.87));
+    background: var(--fundomensagem);
     border: 1px solid #262f3f;
+    box-shadow: 0 0 20px rgba(0, 89, 255, 0.08);
     border-radius: 8px;
     backdrop-filter: blur(10px);
     padding: 10px;
@@ -922,7 +1118,7 @@ section#contato .texto h2{
 }
 
 section#contato .texto p{
-    color: #d6d6d6;
+    color: var(--contatop);
     line-height: 1.3;
     margin-bottom: 25px;
 }
@@ -1003,7 +1199,19 @@ section#contato .form-group{
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
+    background: linear-gradient(to right, rgba(2, 6, 23, 0.95), rgba(5, 15, 35, 0.85));
 }
+
+section#contato div.form-group i{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    color: rgba(255, 255, 255, 0.671);
+    border-right: 1px solid rgb(66, 66, 66);
+    margin-top: 5px;
+} 
 
 section#contato .form-group label{
     color: white;
@@ -1066,7 +1274,7 @@ section#contato button:hover{
 }
 
 section#contato div.friends{
-    background: linear-gradient(to right, #020813f8, rgba(4, 25, 80, 0.664));
+    background: var(--fundofriends);
     border: 1px solid #1e293b;
     border-radius: 8px;
     backdrop-filter: blur(10px);
@@ -1088,7 +1296,7 @@ section#contato div.friends > h2 {
 }
 
 section#contato div.friends > p {
-    color: rgb(214, 213, 213);
+    color: var(--contatop);
     font-weight: 400;
     font-size: calc(0.4vw + 8px);
     line-height: 1.3;
@@ -1108,7 +1316,7 @@ section#contato div.friends > p {
 
 footer {
     color: white;
-    background: linear-gradient(180deg, #0D1117 0%, #0B0D12 100%);
+    background: var(--fundofooter);
     min-height: 260px;
 }
 
@@ -1150,7 +1358,7 @@ footer div.nome span{
 
 footer div.paragrafo {
     font-size: 12px;
-    color: #8A8F98;
+    color: var(--footerp);
     letter-spacing: 4px;
 }
 
@@ -1173,7 +1381,7 @@ footer div.graca {
 }
 
 footer div.final {
-    color: #8A8F98;
+    color: var(--footeravisop);
     margin-top: 20px;
     display: flex;
     flex-direction: column;

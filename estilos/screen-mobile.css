@@ -500,7 +500,8 @@ article div#curriculo a {
 
 article div#curriculo a:hover {
     background-color: var(--curriculo-hover);
-    color: rgb(209, 209, 209);
+    color: var(--curriculo-texto);
+    transition: 5s;
     text-decoration: underline;
 }
 
