@@ -740,7 +740,7 @@ section div.dados3 p {
     margin-left: 12px;
     width: 80%;
     color: var(--corp);
-    font-size: calc(7.4px + 0.2vw);
+    font-size: calc(7px + 0.2vw);
 }
 
 section div.dados4 {
