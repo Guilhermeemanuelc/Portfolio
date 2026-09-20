@@ -550,7 +550,7 @@ article div#curriculo i:hover {
 
 
 
-                                   /* Area sobre */
+                                   /* Area sobre Mim */
 
 
 
@@ -559,7 +559,7 @@ article div#curriculo i:hover {
 section#sobre {
     font-family: 'inter';
     background: var(--fundosobremim);
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
 section#sobre > h1 {
@@ -575,7 +575,6 @@ section#sobre > h1 > span {
 section div#caixa {
     background-color: rgb(44, 44, 44);
     width: 94vw;
-    min-height: 61vh;
     margin: auto;
     border-radius: 12px;
     border-top-right-radius: 15px;
@@ -586,8 +585,7 @@ section div#caixa {
 section#sobre div.elementos {
     display: grid;
     grid-template-columns: 33% 66.2%;
-    grid-template-rows: 285px 361px;
-    height: 650px;
+    grid-template-rows: auto auto;
     gap: 5px;
     border-radius: 12px;
     border-top-right-radius: 13px;
@@ -599,7 +597,7 @@ section div.dados1 {
     border-radius: 7px;
     border-top-left-radius: 13px;
     background-color: var(--fundodados);
-    height: 277px;
+    min-width: 0;
 }
 
 section div.dados1 div.imagem{
@@ -638,6 +636,7 @@ section div.dados2 {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 16px;
+    min-width: 0;
 }
 
 section div.dados2 i {
@@ -646,7 +645,6 @@ section div.dados2 i {
 
 section div.dados2-1 {
     padding: 7px;
-    height: 82px;
     background-color: var(--fundodados);
     border-radius: 7px;
     border-top-right-radius: 15px;
@@ -663,14 +661,13 @@ section div.dados2-1 > h2 {
 section div.dados2-1 > p {
     margin-left: 6px;
     margin-top: 11px;
-    font-size: calc(3.5px + 1.1vw);
+    font-size: calc(3.5px + 1.2vw);
     width: 90%;
     color: var(--corp);
 }
 
 section div.dados2-2 {
     padding: 7px;
-    height: 77px;
     background-color: var(--fundodados);
     border: 1px solid rgb(100, 100, 100);
     border-radius: 5px;
@@ -679,7 +676,7 @@ section div.dados2-2 {
 section div.dados2-2 > p {
     margin-left: 7px;
     margin-top: 10px;
-    font-size: calc(3.5px + 1.1vw);
+    font-size: calc(3.5px + 1.2vw);
     width: 90%;
     color: var(--corp);
 }
@@ -693,7 +690,6 @@ section div.dados2-2 > h2 {
 section div.dados2-3 {
     border: 1px solid rgb(100, 100, 100);
     padding: 5px;
-    height: 72px;
     border-radius: 7px;
     background-color: var(--fundodados);
 }
@@ -707,7 +703,7 @@ section div.dados2-3 > h2 {
 section div.dados2-3 > p {
     margin-left: 6px;
     margin-top: 10px;
-    font-size: calc(3.5px + 1.1vw);
+    font-size: calc(3.5px + 1.2vw);
     width: 90%;
     color: var(--corp);
 }
@@ -717,6 +713,7 @@ section div.dados3 {
     border-radius: 7px;
     background-color: var(--fundodados);
     padding: 3px;
+    min-width: 0;
 }
 
 section div.dados3 i {
@@ -726,7 +723,7 @@ section div.dados3 i {
 section div.dados3 div.rotina > h2 {
     margin-left: 6px;
     color: var(--corh2);
-    font-size: calc(1px 40vw);
+    font-size: calc(8px + 1vw);
     
 }
 
@@ -749,6 +746,7 @@ section div.dados4 {
     border-radius: 7px;
     background-color: var(--fundodados);
     padding: 3px;
+    min-width: 0;
 }
 
 div.dados4 > h2 {
@@ -765,7 +763,7 @@ div.dados4 i {
 div.componentes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 47.5px 1fr 1fr;
+    grid-auto-rows: auto;
     gap: 2.5px;
     padding-left: 1px;
     padding-right: 0px;
@@ -802,10 +800,10 @@ div.registros {
     justify-content: space-between;
     align-items: center;
     background-color: var(--fundodados);
+    height: calc(68px + 7.22vw);;
     border-radius: 6px;
     padding: 5px;
     border: 1px solid rgb(100, 100, 100);
-    height: 127.5px;
 }
 
 div.registros > i {
@@ -960,7 +958,7 @@ section#projetos > h1 span{
 
 section#projetos div.filtro{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     gap: 12px;
     width: 92%;
@@ -1021,6 +1019,7 @@ section#projetos .card-projeto{
     border: 1px solid var(--bordercard);
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0,0,0,.3);
+    min-width: 0;
 }
 
 section#projetos .imagem1{
@@ -1124,6 +1123,8 @@ section#projetos .conteudo{
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+    min-width: 0;
+    flex: 1;
 }
 
 section#projetos .conteudo h3{
