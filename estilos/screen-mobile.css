@@ -802,7 +802,7 @@ div.registros {
     justify-content: space-between;
     align-items: center;
     background-color: var(--fundodados);
-    height: calc(68px + 7.26vw);;
+    height: calc(74px + 7.26vw);;
     border-radius: 6px;
     padding: 5px;
     border: 1px solid rgb(100, 100, 100);
