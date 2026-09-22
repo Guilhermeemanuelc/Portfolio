@@ -61,16 +61,18 @@
 
 
 
-    /* Sobre Mim  */
+    /* Sobre Mim */
 
-    --corh1sobremim: rgb(180, 180, 180);
+    --corh1sobremim: #F5F7FA;
 
-    --fundosobremim: linear-gradient(to bottom, rgb(29, 29, 29), rgb(44, 44, 44));
-    --fundoelementos: rgb(22, 22, 22);
-    --fundodados: #292929;
-    --fundofaculdade: #181717b6;
-    --corh2: white;
-    --corp: rgb(185, 185, 185);
+    --fundosobremim: #020B16;
+    --fundoelementos: #031426;
+
+    --fundodados: #061C34;
+    --fundofaculdade: #071F3E;
+
+    --corh2: #FFFFFF;
+    --corp: #C5D0DD;
 
 
     /* Habilidades  */
@@ -162,17 +164,18 @@ body.light{
     --cormenubordera: rgba(167, 200, 253, 0.363);
 
 
-    /* Sobre Mim  */
+     /* Sobre Mim */
 
+    --corh1sobremim: #00040a;
 
-    --corh1sobremim: rgb(10, 10, 10);
+    --fundosobremim: #808080;
+    --fundoelementos: #949494;
 
-    --fundosobremim: linear-gradient(to bottom, rgb(156, 156, 156), rgb(196, 195, 195));
-    --fundoelementos: rgb(192, 192, 192);
-    --fundodados: #c4c4c4;
-    --fundofaculdade: #b1b1b1;
-    --corh2: black;
-    --corp: rgb(83, 83, 83);
+    --fundodados: #838383;
+    --fundofaculdade: #aaaaaa;
+
+    --corh2: #000000;
+    --corp: #C5D0DD;
 
 
     /* Habilidades  */
@@ -550,301 +553,1163 @@ article div#curriculo i:hover {
 
 
 
-                                   /* Area sobre Mim */
+
+                          /* Area sobre Mim */
+
 
 
 
 
 
 section#sobre {
-    font-family: 'inter';
+    font-family: 'Inter', sans-serif;
     background: var(--fundosobremim);
     min-height: 80vh;
+    padding-bottom: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
+
+section#sobre *,
+section#sobre *::before,
+section#sobre *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
 
 section#sobre > h1 {
     color: var(--corh1sobremim);
     text-align: center;
-    padding: 30px;
+    padding: 30px 15px;
+    margin: 0;
 }
+
 section#sobre > h1 > span {
     color: var(--principal);
-    text-align: center;
 }
 
-section div#caixa {
-    background-color: rgb(44, 44, 44);
-    width: 94vw;
-    margin: auto;
-    border-radius: 12px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border: 1px solid rgb(85, 85, 85);
-}
 
-section#sobre div.elementos {
+/* =========================================================
+   APRESENTAÇÃO
+   ========================================================= */
+
+section#sobre .sobre-apresentacao {
+    width: 94%;
+    max-width: 1100px;
+
+    min-height: 290px;
+
+    margin: 0 auto 18px;
+    padding: 18px;
+
     display: grid;
-    grid-template-columns: 33% 66.2%;
-    grid-template-rows: auto auto;
-    gap: 5px;
-    border-radius: 12px;
-    border-top-right-radius: 13px;
-    background-color: var(--fundoelementos);
-}
-
-section div.dados1 {
-    border: 1px solid rgb(100, 100, 100);
-    border-radius: 7px;
-    border-top-left-radius: 13px;
-    background-color: var(--fundodados);
-    min-width: 0;
-}
-
-section div.dados1 div.imagem{
-    background: url(../imagens/myimage.favicon.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    width: 100%;
-    height: 119px;
-}
-
-section div.dados1 h2 {
-    margin-left: 5px;
-    font-size: 2vw;
-    color: var(--corh2);
-}
-
-section div.dados1 h2 > span {
-    color: var(--principal);
-}
-
-section div.dados1 p {
-    width: 80%;
-    margin-left: 5px;
-    margin-top: 8px;
-    font-size: calc(3.5px + 1.1vw);
-    color: var(--corp);
-}
-
-
-
-section div.dados2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 16px;
-    min-width: 0;
-}
-
-section div.dados2 i {
-    color: #0077ff;
-}
-
-section div.dados2-1 {
-    padding: 7px;
-    background-color: var(--fundodados);
-    border-radius: 7px;
-    border-top-right-radius: 15px;
-    border: 1px solid rgb(100, 100, 100);
-    
-}
-
-section div.dados2-1 > h2 {
-    color: var(--corh2);
-    margin-left: 10px;
-    font-size: calc(6.8px + 0.5vw);
-}
-
-section div.dados2-1 > p {
-    margin-left: 6px;
-    margin-top: 11px;
-    font-size: calc(3.5px + 1.3vw);
-    width: 90%;
-    color: var(--corp);
-}
-
-section div.dados2-2 {
-    padding: 7px;
-    background-color: var(--fundodados);
-    border: 1px solid rgb(100, 100, 100);
-    border-radius: 5px;
-}
-
-section div.dados2-2 > p {
-    margin-left: 7px;
-    margin-top: 10px;
-    font-size: calc(3.5px + 1.3vw);
-    width: 90%;
-    color: var(--corp);
-}
-
-section div.dados2-2 > h2 {
-    color: var(--corh2);
-    margin-left: 10px;
-    font-size: calc(6.8px + 0.5vw);
-}
-
-section div.dados2-3 {
-    border: 1px solid rgb(100, 100, 100);
-    padding: 5px;
-    border-radius: 7px;
-    background-color: var(--fundodados);
-}
-
-section div.dados2-3 > h2 {
-    color: var(--corh2);
-    margin-left: 10px;
-    font-size: calc(6.8px + 0.5vw);
-}
-
-section div.dados2-3 > p {
-    margin-left: 6px;
-    margin-top: 10px;
-    font-size: calc(3.5px + 1.2vw);
-    width: 90%;
-    color: var(--corp);
-}
-
-
-
-section div.dados3 {
-    border: 1px solid rgb(100, 100, 100);
-    border-radius: 7px;
-    background-color: var(--fundodados);
-    padding: 3px;
-    min-width: 0;
-}
-
-section div.dados3 i {
-    color: var(--principal);
-}
-
-section div.dados3 div.rotina > h2 {
-    margin-left: 6px;
-    color: var(--corh2);
-    font-size: calc(8px + 1vw);
-    
-}
-
-section div.dados3 h2 {
-    color: var(--corh2);
-    font-size: 2vw;
-    margin-top: 2px;
-}
-
-section div.dados3 p {
-    margin-top: 1vw;
-    margin-left: 12px;
-    width: 80%;
-    color: var(--corp);
-    font-size: calc(7px + 0.2vw);
-}
-
-section div.dados4 {
-    border: 1px solid rgb(100, 100, 100);
-    border-radius: 7px;
-    background-color: var(--fundodados);
-    padding: 3px;
-    min-width: 0;
-}
-
-div.dados4 > h2 {
-    font-size: calc(1px + 0.8em);
-    margin-top: 5px;
-    margin-left: 12px;
-    color: var(--corh2);
-}
-
-div.dados4 i {
-    color: var(--principal);
-}
-
-div.componentes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    gap: 2.5px;
-    padding-left: 1px;
-    padding-right: 0px;
-}
-
-div.faculdade {
-    grid-column: 1 / 4;
-    border: 1px solid rgb(100, 100, 100);
-    background-color: var(--fundofaculdade);
-    margin-top: 5px;
-    border-radius: 5px;
-    padding: 5px;
-    margin-bottom: 1px;
-}
-
-div.faculdade > p {
-    margin-left: 1.7vw;
-    font-size: 1.8vw;
-    color: var(--corh2);
-    width: 90%;
-}
-
-div.faculdade p.p2 {
-    margin-left: 15px;
-}
-
-div.faculdade > p > span {
-    color: var(--principal);
-}
-
-div.registros {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    grid-template-columns: 145px minmax(0, 1fr);
     align-items: center;
-    background-color: var(--fundodados);
-    height: calc(74px + 7.26vw);;
-    border-radius: 6px;
-    padding: 5px;
-    border: 1px solid rgb(100, 100, 100);
+
+    gap: 18px;
+
+    border: 1px solid #104b7d;
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(1, 13, 28, .98),
+            rgba(1, 13, 28, .80),
+            rgba(1, 13, 28, .38)
+        ),
+        url("../imagens/sobre-mim/foto-principal.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
 }
 
-div.registros > i {
-    margin-top: 3px;
-    font-size: 2.5vw;
+
+/* =========================================================
+   FOTO DE PERFIL
+   ========================================================= */
+
+section#sobre .sobre-foto {
+    width: 145px;
+    height: 145px;
+
+    overflow: hidden;
+
+    border: 2px solid #0087ff;
+    border-radius: 13px;
+
+    box-shadow:
+        0 0 8px rgba(0, 119, 255, .75),
+        0 0 17px rgba(0, 119, 255, .25);
+
+    align-self: start;
+    margin-top: calc(2vw + 22px);
 }
 
-div.registros > h2 {
-    position: relative;
-    color: var(--corh2);
-    font-size: calc(2px + 1.4vw);
-    text-align: center;
+section#sobre .sobre-foto img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
 }
 
-div.registros > p {
+
+/* =========================================================
+   TEXTO DA APRESENTAÇÃO
+   ========================================================= */
+
+section#sobre .sobre-introducao {
+    min-width: 0;
+    max-width: 560px;
+}
+
+section#sobre .saudacao {
+    margin: 0 0 2px;
+
+    color: #e4ebf3;
+
+    font-size: 13px;
+}
+
+section#sobre .sobre-introducao h2 {
+    margin: 0 0 10px;
+
+    color: white;
+
+    font-size: clamp(23px, 3vw, 31px);
+    line-height: 1.05;
+}
+
+section#sobre .sobre-introducao h2 span {
+    color: var(--principal);
+}
+
+
+/* FRASE */
+
+section#sobre .frase-destaque {
+    margin: 0 0 11px;
+
+    padding: 3px 0 3px 10px;
+
+    border-left: 3px solid var(--principal);
+
+    color: #e7edf4;
+
+    font-size: 13px;
+    line-height: 1.3;
+
+    max-width: 390px;
+}
+
+
+/* PARÁGRAFO */
+
+section#sobre .sobre-introducao .descricao {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0;
+
     color: var(--corp);
-    font-size: calc(0.9vw + 3px);
-    text-align: center;
+
+    font-size: 11.5px;
+    line-height: 1.32;
 }
 
-div.dots {
+
+/* =========================================================
+   BLOCOS
+   ========================================================= */
+
+section#sobre .sobre-bloco {
+    width: 94%;
+    max-width: 1100px;
+
+    margin: 17px auto 0;
+    padding: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--fundoelementos),
+            #031a30
+        );
+
+    border: 1px solid #103f6d;
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TÍTULO DOS BLOCOS
+   ========================================================= */
+
+section#sobre .titulo-bloco {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+}
+
+section#sobre .icone-titulo {
+    width: 43px;
+    min-width: 43px;
+
+    display: flex;
     justify-content: center;
-    gap: 3px;
-    margin-bottom: 6px;
+    align-items: center;
+
+    color: var(--principal);
+
+    font-size: 31px;
+
+    text-shadow: 0 0 8px rgba(0, 119, 255, .4);
 }
 
-div.dots span {
-    width: 3px;
-    height: 3px;
+section#sobre .titulo-bloco h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 22px;
+    line-height: 1;
+}
+
+section#sobre .titulo-bloco h2 span {
+    color: var(--principal);
+}
+
+section#sobre .titulo-bloco p {
+    margin: 4px 0 0;
+
+    color: var(--corp);
+
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   PILARES
+   6 COLUNAS VIRTUAIS
+
+   1º 2º 3º = 2 colunas cada
+   4º 5º     = 3 colunas cada
+   ========================================================= */
+
+section#sobre .pilares-grid {
+    display: grid;
+
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    gap: 8px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+section#sobre .pilar {
+    min-width: 0;
+    height: 174px;
+
+    overflow: hidden;
+
+    background: var(--fundodados);
+
+    border: 1px solid #124b7b;
+    border-radius: 11px;
+}
+
+
+/* PRIMEIROS 3 */
+
+section#sobre .pilar:nth-child(1),
+section#sobre .pilar:nth-child(2),
+section#sobre .pilar:nth-child(3) {
+    grid-column: span 2;
+}
+
+
+/* ÚLTIMOS 2 — METADE DA LARGURA */
+
+section#sobre .pilar:nth-child(4),
+section#sobre .pilar:nth-child(5) {
+    grid-column: span 3;
+}
+
+
+/* =========================================================
+   IMAGEM DOS PILARES
+   ========================================================= */
+
+section#sobre .pilar-imagem {
+    position: relative;
+
+    width: 100%;
+    height: 74px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* IMAGENS */
+
+section#sobre .catolico-img {
+    background-image: url("../imagens/sobre-mim/catolico.png");
+}
+
+section#sobre .exercicio-img {
+    background-image: url("../imagens/sobre-mim/exercicios.png");
+}
+
+section#sobre .leitura-img {
+    background-image: url("../imagens/sobre-mim/livro.png");
+}
+
+section#sobre .musica-img {
+    background-image: url("../imagens/sobre-mim/musica.png");
+}
+
+section#sobre .silencio-img {
+    background-image: url("../imagens/sobre-mim/sozinho.png");
+}
+
+
+/* =========================================================
+   ÍCONES
+   ========================================================= */
+
+section#sobre .pilar-icone {
+    position: absolute;
+
+    top: 48px;
+    left: 10px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #061c33;
+
+    border-radius: 50%;
+
+    font-size: 17px;
+
+    z-index: 2;
+}
+
+section#sobre .catolico-icone {
+    color: #0087ff;
+    border: 2px solid #0087ff;
+}
+
+section#sobre .exercicio-icone {
+    color: #00ed79;
+    border: 2px solid #00ed79;
+}
+
+section#sobre .leitura-icone {
+    color: #e735e8;
+    border: 2px solid #e735e8;
+}
+
+section#sobre .musica-icone {
+    color: #ed32c7;
+    border: 2px solid #ed32c7;
+}
+
+section#sobre .silencio-icone {
+    color: #1bddea;
+    border: 2px solid #1bddea;
+}
+
+
+/* =========================================================
+   TEXTO DOS PILARES
+   ========================================================= */
+
+section#sobre .pilar-conteudo {
+    padding: 22px 9px 8px;
+}
+
+section#sobre .pilar-conteudo h3 {
+    margin: 0 0 4px;
+
+    color: white;
+
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+section#sobre .pilar-conteudo p {
+    margin: 0;
+
+    color: var(--corp);
+
+    font-size: 9px;
+    line-height: 1.22;
+}
+
+
+/* =========================================================
+   FORMAÇÃO ACADÊMICA
+   ========================================================= */
+
+section#sobre .formacao-card {
+    width: 100%;
+    min-height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 8px 11px;
+
+    background: var(--fundofaculdade);
+
+    border: 1px solid #123f6b;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
-div.dots span.active {
-    background-color: var(--principal);
-    box-shadow: 0 0 4px #171247;
+section#sobre .formacao-icone {
+    width: 75px;
+    min-width: 75px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #625cff;
+
+    background: #071f3d;
+
+    border: 1px solid #1c4371;
+    border-radius: 8px;
+
+    font-size: 25px;
 }
+
+
+section#sobre .formacao-texto {
+    min-width: 0;
+}
+
+section#sobre .formacao-texto p {
+    margin: 0;
+
+    color: var(--corp);
+
+    font-size: 11px;
+    line-height: 1.25;
+}
+
+section#sobre .formacao-texto strong {
+    color: white;
+}
+
+section#sobre .formacao-texto span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: var(--principal);
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   IDIOMAS
+   ========================================================= */
+
+section#sobre .idiomas-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 8px;
+
+    width: 100%;
+}
+
+section#sobre .idioma {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 8px 10px;
+
+    background: #061c34;
+
+    border: 1px solid #123f6c;
+    border-radius: 10px;
+}
+
+section#sobre .bandeira {
+    width: 39px;
+    min-width: 39px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+section#sobre .bandeira .fi {
+    display: inline-block;
+    width: 25px;
+    height: 17px;
+}
+
+section#sobre .idioma strong {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: white;
+
+    font-size: 11px;
+}
+
+section#sobre .idioma span {
+    display: block;
+
+    color: var(--corp);
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   FRASE FINAL
+   ========================================================= */
+
+section#sobre .frase-final {
+    width: 94%;
+    max-width: 1100px;
+
+    min-height: 90px;
+
+    margin: 17px auto 0;
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 17, 34, .97),
+            rgba(2, 17, 34, .48)
+        ),
+        url("../imagens/sobre-mim/foto-final.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    border: 1px solid #123e69;
+    border-radius: 15px;
+}
+
+section#sobre .linha-frase {
+    width: 3px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    background: var(--principal);
+
+    border-radius: 5px;
+}
+
+section#sobre .frase-final p {
+    margin: 0 0 0 14px;
+
+    color: white;
+
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+section#sobre .frase-final strong {
+    color: var(--principal);
+}
+
+
+/* =========================================================
+   ATÉ 768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    section#sobre .sobre-apresentacao {
+        width: 94%;
+        min-height: 265px;
+
+        grid-template-columns: 135px minmax(0, 1fr);
+
+        gap: 14px;
+
+        padding: 14px;
+    }
+
+    section#sobre .sobre-foto {
+        width: 135px;
+        height: 145px;
+    }
+
+    section#sobre .saudacao {
+        font-size: 11px;
+    }
+
+    section#sobre .sobre-introducao h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    section#sobre .frase-destaque {
+        font-size: 11px;
+        max-width: 310px;
+
+        margin-bottom: 8px;
+    }
+
+    section#sobre .sobre-introducao .descricao {
+        max-width: 390px;
+
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+
+    /* BLOCOS */
+
+    section#sobre .sobre-bloco {
+        width: 94%;
+        padding: 13px;
+        margin-top: 13px;
+    }
+
+
+    /* TÍTULOS */
+
+    section#sobre .icone-titulo {
+        width: 38px;
+        min-width: 38px;
+        font-size: 27px;
+    }
+
+    section#sobre .titulo-bloco h2 {
+        font-size: 20px;
+    }
+
+    section#sobre .titulo-bloco p {
+        font-size: 9px;
+    }
+
+
+    /* PILARES */
+
+    section#sobre .pilares-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 7px;
+    }
+
+    section#sobre .pilar {
+        height: 160px;
+    }
+
+    section#sobre .pilar-imagem {
+        height: 97px;
+    }
+
+    section#sobre .pilar-icone {
+        top: 44px;
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 15px;
+    }
+
+    section#sobre .pilar-conteudo {
+        padding: 20px 7px 7px;
+    }
+
+    section#sobre .pilar-conteudo h3 {
+        font-size: 11px;
+    }
+
+    section#sobre .pilar-conteudo p {
+        font-size: 8px;
+        line-height: 1.18;
+    }
+
+
+    /* FORMAÇÃO */
+
+    section#sobre .formacao-card {
+        min-height: 59px;
+        padding: 7px 9px;
+        gap: 9px;
+    }
+
+    section#sobre .formacao-icone {
+        width: 65px;
+        min-width: 65px;
+        height: 45px;
+
+        font-size: 22px;
+    }
+
+    section#sobre .formacao-texto p {
+        font-size: 10px;
+    }
+
+    section#sobre .formacao-texto span {
+        font-size: 9px;
+    }
+
+
+    /* IDIOMAS */
+
+    section#sobre .idioma {
+        padding: 7px 8px;
+    }
+
+    section#sobre .bandeira {
+        width: 33px;
+        min-width: 33px;
+        font-size: 22px;
+    }
+
+    section#sobre .idioma strong {
+        font-size: 10px;
+    }
+
+    section#sobre .idioma span {
+        font-size: 8px;
+    }
+}
+
+
+/* =========================================================
+   ATÉ 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    section#sobre > h1 {
+        padding: 20px 10px;
+        font-size: 25px;
+    }
+
+
+    /* APRESENTAÇÃO */
+
+    section#sobre .sobre-apresentacao {
+        width: 94%;
+
+        grid-template-columns: 118px minmax(0, 1fr);
+
+        gap: 11px;
+
+        min-height: 235px;
+
+        padding: 11px;
+    }
+
+    section#sobre .sobre-foto {
+        width: 118px;
+        height: 125px;
+    }
+
+    section#sobre .saudacao {
+        font-size: 9px;
+    }
+
+    section#sobre .sobre-introducao h2 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+
+    section#sobre .frase-destaque {
+        font-size: 9px;
+        max-width: 250px;
+
+        padding-left: 7px;
+
+        margin-bottom: 7px;
+    }
+
+    section#sobre .sobre-introducao .descricao {
+        max-width: 320px;
+
+        font-size: 8.5px;
+        line-height: 1.28;
+    }
+
+
+    /* BLOCO */
+
+    section#sobre .sobre-bloco {
+        width: 94%;
+        padding: 10px;
+        margin-top: 11px;
+    }
+
+
+    /* TÍTULO */
+
+    section#sobre .titulo-bloco {
+        gap: 6px;
+        margin-bottom: 9px;
+    }
+
+    section#sobre .icone-titulo {
+        width: 31px;
+        min-width: 31px;
+        font-size: 23px;
+    }
+
+    section#sobre .titulo-bloco h2 {
+        font-size: 17px;
+    }
+
+    section#sobre .titulo-bloco p {
+        font-size: 7.5px;
+    }
+
+
+    /* PILARES */
+
+    section#sobre .pilares-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    section#sobre .pilar {
+        height: 142px;
+        border-radius: 8px;
+    }
+
+    section#sobre .pilar-imagem {
+        height: 86px;
+    }
+
+    section#sobre .pilar-icone {
+        top: 37px;
+        left: 6px;
+
+        width: 32px;
+        height: 32px;
+
+        font-size: 13px;
+    }
+
+    section#sobre .pilar-conteudo {
+        padding: 18px 6px 6px;
+    }
+
+    section#sobre .pilar-conteudo h3 {
+        font-size: 9px;
+        margin-bottom: 3px;
+    }
+
+    section#sobre .pilar-conteudo p {
+        font-size: 7px;
+        line-height: 1.15;
+    }
+
+
+    /* FORMAÇÃO */
+
+    section#sobre .formacao-card {
+        min-height: 53px;
+
+        padding: 6px;
+
+        gap: 7px;
+    }
+
+    section#sobre .formacao-icone {
+        width: 57px;
+        min-width: 57px;
+        height: 41px;
+
+        font-size: 19px;
+    }
+
+    section#sobre .formacao-texto p {
+        font-size: 8.5px;
+    }
+
+    section#sobre .formacao-texto span {
+        font-size: 7.5px;
+    }
+
+
+    /* IDIOMAS */
+
+    section#sobre .idiomas-grid {
+        gap: 6px;
+    }
+
+    section#sobre .idioma {
+        gap: 5px;
+        padding: 6px;
+    }
+
+    section#sobre .bandeira {
+        width: 28px;
+        min-width: 28px;
+        font-size: 19px;
+    }
+
+    section#sobre .idioma strong {
+        font-size: 8.5px;
+    }
+
+    section#sobre .idioma span {
+        font-size: 7.5px;
+    }
+
+
+    /* FRASE */
+
+    section#sobre .frase-final {
+        width: 94%;
+        min-height: 72px;
+
+        padding: 11px 13px;
+    }
+
+    section#sobre .frase-final p {
+        margin-left: 9px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   ATÉ 450px
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    section#sobre > h1 {
+        padding: 17px 8px;
+        font-size: 22px;
+    }
+
+
+    /* APRESENTAÇÃO */
+
+    section#sobre .sobre-apresentacao {
+        width: 94%;
+
+        grid-template-columns: 103px minmax(0, 1fr);
+
+        gap: 9px;
+
+        min-height: 210px;
+
+        padding: 9px;
+    }
+
+    section#sobre .sobre-foto {
+        width: 103px;
+        height: 110px;
+    }
+
+    section#sobre .saudacao {
+        font-size: 8px;
+    }
+
+    section#sobre .sobre-introducao h2 {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+
+    section#sobre .frase-destaque {
+        font-size: 8px;
+
+        padding-left: 6px;
+
+        margin-bottom: 6px;
+    }
+
+    section#sobre .sobre-introducao .descricao {
+        max-width: 270px;
+
+        font-size: 7.5px;
+        line-height: 1.25;
+    }
+
+
+    /* BLOCO */
+
+    section#sobre .sobre-bloco {
+        width: 94%;
+        padding: 8px;
+    }
+
+
+    /* TÍTULO */
+
+    section#sobre .icone-titulo {
+        width: 27px;
+        min-width: 27px;
+        font-size: 20px;
+    }
+
+    section#sobre .titulo-bloco h2 {
+        font-size: 15px;
+    }
+
+    section#sobre .titulo-bloco p {
+        font-size: 6.5px;
+    }
+
+
+    /* PILARES */
+
+    section#sobre .pilares-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 5px;
+    }
+
+    section#sobre .pilar {
+        height: 128px;
+        border-radius: 7px;
+    }
+
+    section#sobre .pilar-imagem {
+        height: 70px;
+    }
+
+    section#sobre .pilar-icone {
+        top: 32px;
+        left: 5px;
+
+        width: 29px;
+        height: 29px;
+
+        font-size: 12px;
+    }
+
+    section#sobre .pilar-conteudo {
+        padding: 16px 5px 5px;
+    }
+
+    section#sobre .pilar-conteudo h3 {
+        font-size: 8px;
+    }
+
+    section#sobre .pilar-conteudo p {
+        font-size: 6.5px;
+        line-height: 1.12;
+    }
+
+
+    /* FORMAÇÃO */
+
+    section#sobre .formacao-card {
+        min-height: 47px;
+
+        padding: 5px;
+
+        gap: 5px;
+    }
+
+    section#sobre .formacao-icone {
+        width: 49px;
+        min-width: 49px;
+        height: 36px;
+
+        font-size: 17px;
+    }
+
+    section#sobre .formacao-texto p {
+        font-size: 7.5px;
+    }
+
+    section#sobre .formacao-texto span {
+        font-size: 6.5px;
+    }
+
+
+    /* IDIOMAS */
+
+    section#sobre .idiomas-grid {
+        gap: 5px;
+    }
+
+    section#sobre .idioma {
+        gap: 3px;
+        padding: 5px;
+    }
+
+    section#sobre .bandeira {
+        width: 23px;
+        min-width: 23px;
+        font-size: 16px;
+    }
+
+    section#sobre .idioma strong {
+        font-size: 7.5px;
+    }
+
+    section#sobre .idioma span {
+        font-size: 6.5px;
+    }
+
+
+    /* FRASE FINAL */
+
+    section#sobre .frase-final {
+        min-height: 65px;
+
+        padding: 9px 10px;
+    }
+
+    section#sobre .linha-frase {
+        height: 40px;
+    }
+
+    section#sobre .frase-final p {
+        margin-left: 7px;
+        font-size: 11px;
+    }
+}
+
 
 
 
