@@ -584,7 +584,7 @@ section#sobre *::after {
 section#sobre > h1 {
     color: var(--corh1sobremim);
     text-align: center;
-    padding: 30px 15px;
+    padding: 30px 15px; 
     margin: 0;
 }
 
