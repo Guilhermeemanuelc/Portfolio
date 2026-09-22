@@ -826,6 +826,8 @@ section#sobre .pilares-grid {
    ========================================================= */
 
 section#sobre .pilar {
+    position: relative;
+
     min-width: 0;
     height: 174px;
 
@@ -900,7 +902,7 @@ section#sobre .silencio-img {
 section#sobre .pilar-icone {
     position: absolute;
 
-    top: 48px;
+    top: 68px;
     left: 10px;
 
     width: 38px;
@@ -1251,7 +1253,7 @@ section#sobre .frase-final strong {
     }
 
     section#sobre .pilar-icone {
-        top: 44px;
+        top: 74px;
 
         width: 36px;
         height: 36px;
@@ -1425,13 +1427,13 @@ section#sobre .frase-final strong {
     }
 
     section#sobre .pilar-icone {
-        top: 37px;
+        top: 67px;
         left: 6px;
 
-        width: 32px;
-        height: 32px;
+        width: 30px;
+        height: 30px;
 
-        font-size: 13px;
+        font-size: 11px;
     }
 
     section#sobre .pilar-conteudo {
@@ -1616,7 +1618,7 @@ section#sobre .frase-final strong {
     }
 
     section#sobre .pilar-icone {
-        top: 32px;
+        top: 52px;
         left: 5px;
 
         width: 29px;
