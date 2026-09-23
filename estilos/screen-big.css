@@ -50,173 +50,165 @@ div#curriculo a {
 }
 
 
-                        /* Area Sobre  */
+                        /* Area Sobre  Mim*/
 
-section#sobre div#caixa {
-    margin: auto;
-    width: 74vw;
-    min-height: 77vh;
-}
-section#sobre div.elementos {
-    height: 654;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1.3fr;
-    grid-template-rows: 420px auto;
-    gap: 7px
-}
 
-section#sobre div.dados1 {
-    padding-left: 15px;
-    padding-right: 26px;
-    
-}
 
-div.dados1 h2 {
-    text-align: center;
-    font-size: 1.1em;
-    margin-top: 5px;
-}                  
 
-div.dados1 p.pequeno{
-    text-align: center;
-    font-size: 1.2em;
-    margin-top: 15px;
+
+/* =========================================================
+   AJUSTES — COMPUTADOR
+   ========================================================= */
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+section#sobre {
+    max-width: 1400px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-div.dados1 p {
-    text-align: center;
-    font-size: 1.1em;
-    margin-top: 22px;
+
+/* =========================================================
+   APRESENTAÇÃO
+   ========================================================= */
+
+section#sobre .sobre-apresentacao {
+    min-height: 300px;
+
+    grid-template-columns:
+        215px minmax(0, 1fr);
+
+    gap: 38px;
+
+    padding: 30px 25px 25px 10px;
+}
+
+section#sobre .sobre-foto {
+    width: 205px;
+    height: 225px;
+}
+
+section#sobre .sobre-introducao {
+    max-width: 700px;
+}
+
+section#sobre .sobre-introducao h2 {
+    font-size: 38px;
+}
+
+section#sobre .sobre-introducao .descricao {
+    max-width: 700px;
+}
+
+
+/* =========================================================
+   PILARES
+   TABLET = 3 + 2
+   PC = 5 LADO A LADO
+   ========================================================= */
+
+section#sobre .pilares-grid {
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* cancela o span do tablet */
+
+section#sobre .pilar:nth-child(1),
+section#sobre .pilar:nth-child(2),
+section#sobre .pilar:nth-child(3),
+section#sobre .pilar:nth-child(4),
+section#sobre .pilar:nth-child(5) {
+    grid-column: span 1;
+}
+
+
+/* =========================================================
+   CARDS DOS PILARES
+   ========================================================= */
+
+section#sobre .pilar {
     width: 100%;
+    height: 230px;
 }
 
-div.dados2 div.dados2-1 > h2 {
-    margin-top: 1vw;
-    margin-left: 2vw;
-    font-size: 1.7em;
+
+/* =========================================================
+   FORMAÇÃO + IDIOMAS
+   ========================================================= */
+
+section#sobre .formacao,
+section#sobre .idiomas {
+    width: calc(50% - 7px);
 }
 
-div.dados2 div.dados2-1 > p {
-    width: 88%;
-    font-size: 1.2em;
-    margin-top: 1.1vw;
-    margin-left: 1.7vw;
+section#sobre .formacao {
+    margin-right: 10px;
 }
 
-div.dados2 div.dados2-2 > h2 {
-    margin-top: 1vw;
-    margin-left: 2vw;
-    font-size: 1.7em;
+
+/* =========================================================
+   FORMAÇÃO
+   ========================================================= */
+
+section#sobre .formacao-icone {
+    width: 105px;
+    min-width: 105px;
+    height: 60px;
+
+    font-size: 38px;
 }
 
-div.dados2 div.dados2-2 > p {
-    width: 88%;
-    font-size: 1.2em;
-    margin-top: 1.1vw;
-    margin-left: 1.7vw;
+
+/* =========================================================
+   IDIOMAS
+   ========================================================= */
+
+section#sobre .idiomas-grid {
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
 }
 
-div.dados2 div.dados2-3 > h2 {
-    margin-top: 1vw;
-    margin-left: 2vw;
-    font-size: 1.7em;
+section#sobre .idioma {
+    gap: 15px;
+    padding: 10px 15px;
 }
 
-div.dados2 div.dados2-3 > p {
-    width: 88%;
-    font-size: 1.2em;
-    margin-top: 1.1vw;
-    margin-left: 1.7vw;
+section#sobre .bandeira {
+    width: 58px;
+    min-width: 58px;
+    height: 58px;
 }
 
-div.dados3 div.rotina > h2 {
-    margin-top: 1.1vw;
-    margin-left: 2vw;
-    font-size: 1.4em;
+section#sobre .bandeira span {
+    font-size: 48px;
 }
 
-div.dados3 div.rotina > div > h2 {
-    margin-top: 11px;
-    margin-left: 1.8vw;
-    font-size: 1.2em;
+
+/* =========================================================
+   FRASE FINAL
+   ========================================================= */
+
+section#sobre .frase-final {
+    height: 100px;
+
+    padding: 0 35px;
 }
 
-div.dados3 div.rotina p {
-    margin-top: 4px;
-    margin-left: 2.2vw;
-    width: 85%;
-    font-size: 11.5px;
-    font-weight: 550;
+section#sobre .frase-final p {
+    font-size: 21px;
 }
 
-section#sobre div.dados4 {
-    height: calc(134px + 21vh);
-}
 
-section div.dados4 i {
-    font-size: 2em;
-    color: #0077ff;
-}
-
-div.dados4 > h2 {
-    font-size: 2em;
-    margin-top: 1vw;
-    margin-left: 4vw;
-}
-
-div.dados4 div.componentes {
-    display: grid;
-    gap: 4px;
-    grid-template-columns: repeat(6, calc(75px + 4vw));
-    justify-content: space-evenly;
-}
-
-div.faculdade > p.p1 {
-    margin-left: 1.5em;
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-div.faculdade > p.p2 {
-    font-size: 1.5em;
-    margin-left: 9px;
-    font-weight: 700;
-}
-
-div.registros {
-    height: calc(110px + 4vw);
-}
-
-div.registros > h2 {
-    position: relative;
-    font-size: calc(12px + 0.2vw);
-    text-align: center;
-}
-
-div.registros > p {
-    font-size: calc(0.2vw + 9px);
-    text-align: center;
-}
-
-div.dots {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3px;
-    margin-bottom: 6px;
-}
-
-div.dots span {
-    width: 3px;
-    height: 3px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-div.dots span.active {
-    background-color: var(--principal);
-    box-shadow: 0 0 4px #171247;
-}
 
 
 

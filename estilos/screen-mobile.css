@@ -63,16 +63,16 @@
 
     /* Sobre Mim */
 
-    --corh1sobremim: #F5F7FA;
+    --corh1sobremim: #F8FAFC;
 
-    --fundosobremim: #020B16;
-    --fundoelementos: #031426;
+    --fundosobremim: #050B14;
+    --fundoelementos: #0A1422;
 
-    --fundodados: #061C34;
-    --fundofaculdade: #071F3E;
+    --fundodados: #0F1D2E;
+    --fundofaculdade: #101F32;
 
-    --corh2: #FFFFFF;
-    --corp: #C5D0DD;
+    --corh2: #F8FAFC;
+    --corp: #B8C4D2;
 
 
     /* Habilidades  */
@@ -164,18 +164,20 @@ body.light{
     --cormenubordera: rgba(167, 200, 253, 0.363);
 
 
-     /* Sobre Mim */
+    /* Sobre Mim */
 
-    --corh1sobremim: #00040a;
+    --corh1sobremim: #0B1220;
 
-    --fundosobremim: #808080;
-    --fundoelementos: #949494;
+    --fundosobremim: #F4F7FB;
+    --fundoelementos: #FFFFFF;
 
-    --fundodados: #838383;
-    --fundofaculdade: #aaaaaa;
+    --fundodados: #E9EFF6;
+    --fundofaculdade: #F8FAFC;
 
-    --corh2: #000000;
-    --corp: #C5D0DD;
+    --corh2: #0B1220;
+    --corp: #526173;
+
+
 
 
     /* Habilidades  */
@@ -581,10 +583,11 @@ section#sobre *::after {
    TÍTULO
    ========================================================= */
 
-section#sobre > h1 {
+section#sobre  h1 {
+    font-size: 1.8em;
     color: var(--corh1sobremim);
     text-align: center;
-    padding: 30px 15px; 
+    padding: 30px;
     margin: 0;
 }
 
@@ -612,15 +615,15 @@ section#sobre .sobre-apresentacao {
 
     gap: 18px;
 
-    border: 1px solid #104b7d;
+    border: 1px solid var(--borda-sobre);
     border-radius: 16px;
 
     background:
         linear-gradient(
             90deg,
-            rgba(1, 13, 28, .98),
-            rgba(1, 13, 28, .80),
-            rgba(1, 13, 28, .38)
+            var(--overlay-apresentacao-1),
+            var(--overlay-apresentacao-2),
+            var(--overlay-apresentacao-3)
         ),
         url("../imagens/sobre-mim/foto-principal.jpeg");
 
@@ -641,12 +644,12 @@ section#sobre .sobre-foto {
 
     overflow: hidden;
 
-    border: 2px solid #0087ff;
+    border: 2px solid var(--borda-foto);
     border-radius: 13px;
 
     box-shadow:
-        0 0 8px rgba(0, 119, 255, .75),
-        0 0 17px rgba(0, 119, 255, .25);
+        0 0 8px var(--sombra-foto-1),
+        0 0 17px var(--sombra-foto-2);
 
     align-self: start;
     margin-top: calc(2vw + 22px);
@@ -674,7 +677,7 @@ section#sobre .sobre-introducao {
 section#sobre .saudacao {
     margin: 0 0 2px;
 
-    color: #e4ebf3;
+    color: var(--texto-secundario-sobre);
 
     font-size: 13px;
 }
@@ -682,7 +685,7 @@ section#sobre .saudacao {
 section#sobre .sobre-introducao h2 {
     margin: 0 0 10px;
 
-    color: white;
+    color: var(--corh2);
 
     font-size: clamp(23px, 3vw, 31px);
     line-height: 1.05;
@@ -702,7 +705,7 @@ section#sobre .frase-destaque {
 
     border-left: 3px solid var(--principal);
 
-    color: #e7edf4;
+    color: var(--corh1sobremim);
 
     font-size: 13px;
     line-height: 1.3;
@@ -741,10 +744,10 @@ section#sobre .sobre-bloco {
         linear-gradient(
             145deg,
             var(--fundoelementos),
-            #031a30
+            var(--fundo-bloco-final)
         );
 
-    border: 1px solid #103f6d;
+    border: 1px solid var(--borda-bloco);
     border-radius: 16px;
 
     overflow: hidden;
@@ -776,13 +779,13 @@ section#sobre .icone-titulo {
 
     font-size: 31px;
 
-    text-shadow: 0 0 8px rgba(0, 119, 255, .4);
+    text-shadow: 0 0 8px var(--sombra-icone);
 }
 
 section#sobre .titulo-bloco h2 {
     margin: 0;
 
-    color: white;
+    color: var(--corh2);
 
     font-size: 22px;
     line-height: 1;
@@ -835,7 +838,7 @@ section#sobre .pilar {
 
     background: var(--fundodados);
 
-    border: 1px solid #124b7b;
+    border: 1px solid var(--borda-card);
     border-radius: 11px;
 }
 
@@ -912,7 +915,7 @@ section#sobre .pilar-icone {
     align-items: center;
     justify-content: center;
 
-    background: #061c33;
+    background: var(--fundoelementos);
 
     border-radius: 50%;
 
@@ -958,7 +961,7 @@ section#sobre .pilar-conteudo {
 section#sobre .pilar-conteudo h3 {
     margin: 0 0 4px;
 
-    color: white;
+    color: var(--corh2);
 
     font-size: 12px;
     line-height: 1.1;
@@ -991,7 +994,7 @@ section#sobre .formacao-card {
 
     background: var(--fundofaculdade);
 
-    border: 1px solid #123f6b;
+    border: 1px solid var(--borda-faculdade);
     border-radius: 10px;
 }
 
@@ -1006,9 +1009,9 @@ section#sobre .formacao-icone {
 
     color: #625cff;
 
-    background: #071f3d;
+    background: var(--fundo-icone-faculdade);
 
-    border: 1px solid #1c4371;
+    border: 1px solid var(--borda-icone-faculdade);
     border-radius: 8px;
 
     font-size: 25px;
@@ -1029,7 +1032,7 @@ section#sobre .formacao-texto p {
 }
 
 section#sobre .formacao-texto strong {
-    color: white;
+    color: var(--corh2);
 }
 
 section#sobre .formacao-texto span {
@@ -1067,9 +1070,9 @@ section#sobre .idioma {
 
     padding: 8px 10px;
 
-    background: #061c34;
+    background: var(--fundoelementos);
 
-    border: 1px solid #123f6c;
+    border: 1px solid var(--borda-idioma);
     border-radius: 10px;
 }
 
@@ -1095,7 +1098,7 @@ section#sobre .idioma strong {
 
     margin-bottom: 2px;
 
-    color: white;
+    color: var(--corh2);
 
     font-size: 11px;
 }
@@ -1128,15 +1131,15 @@ section#sobre .frase-final {
     background:
         linear-gradient(
             90deg,
-            rgba(2, 17, 34, .97),
-            rgba(2, 17, 34, .48)
+            var(--overlay-frase-1),
+            var(--overlay-frase-2)
         ),
         url("../imagens/sobre-mim/foto-final.jpeg");
 
     background-size: cover;
     background-position: center;
 
-    border: 1px solid #123e69;
+    border: 1px solid var(--borda-frase);
     border-radius: 15px;
 }
 
@@ -1154,7 +1157,7 @@ section#sobre .linha-frase {
 section#sobre .frase-final p {
     margin: 0 0 0 14px;
 
-    color: white;
+    color: var(--corh2);
 
     font-size: 17px;
     line-height: 1.2;
@@ -1327,11 +1330,6 @@ section#sobre .frase-final strong {
    ========================================================= */
 
 @media (max-width: 600px) {
-
-    section#sobre > h1 {
-        padding: 20px 10px;
-        font-size: 25px;
-    }
 
 
     /* APRESENTAÇÃO */
@@ -1526,10 +1524,6 @@ section#sobre .frase-final strong {
 
 @media (max-width: 450px) {
 
-    section#sobre > h1 {
-        padding: 17px 8px;
-        font-size: 22px;
-    }
 
 
     /* APRESENTAÇÃO */
@@ -1715,7 +1709,13 @@ section#sobre .frase-final strong {
 
 
 
+                          
+
+
+
                             /* Area Habilidades */
+
+
 
 
 

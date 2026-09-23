@@ -67,7 +67,7 @@
 
 
 
-    /* Sobre Mim */
+        /* Sobre Mim */
 
     --corh1sobremim: #F5F7FA;
 
@@ -134,7 +134,7 @@
 
 body.light{
 
-    --fundobody: rgb(223, 223, 223);
+    --fundobody: rgb(214, 214, 214);
 
     --header-bg: #1E3A8A;
 
@@ -165,19 +165,18 @@ body.light{
 
 
 
-     /* Sobre Mim */
+    /* Sobre Mim */
 
     --corh1sobremim: #00040a;
 
-    --fundosobremim: #808080;
+    --fundosobremim: #636363;
     --fundoelementos: #949494;
 
     --fundodados: #838383;
-    --fundofaculdade: #aaaaaa;
+    --fundofaculdade: #AAAAAA;
 
     --corh2: #000000;
     --corp: #C5D0DD;
-
 
 
     
@@ -456,101 +455,92 @@ article div#curriculo i {
 
 
 
-                           /* Area Sobre  */
+
+                  /* Area Sobre  Mim*/
+
+
 
 
 
 
 /* =========================================================
-   SOBRE MIM — DESKTOP
+   SOBRE MIM — TABLET
    ========================================================= */
+
 
 section#sobre {
     width: 100%;
-    padding-bottom: 50px;
-    overflow: hidden;
-    background: var(--fundosobremim);
-}
+    max-width: 1200px;
 
-
-/* =========================================================
-   TÍTULO
-   ========================================================= */
-
-section#sobre > h1 {
-    width: min(92%, 1200px);
     margin: 0 auto;
-    padding: 42px 0 30px;
+    padding: 0 25px 35px;
 
-    text-align: center;
+    box-sizing: border-box;
 
-    font-size: 36px;
-    font-weight: 700;
-
-    color: var(--corh1sobremim);
+    background: var(--fundosobremim);
+    color: var(--corh2);
 }
 
-section#sobre > h1 span {
+
+section#sobre  h1 {
+    font-size: 2.2em;
+    color: var(--corh1sobremim);
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
+
+section#sobre > h1 > span {
     color: var(--principal);
 }
 
 
-/* =========================================================
-   HERO
-   ========================================================= */
 
 section#sobre .sobre-apresentacao {
-    width: min(92%, 1200px);
-    min-height: 330px;
+    width: 100%;
+    min-height: 280px;
 
-    margin: 0 auto 22px;
-    padding: 28px;
+    margin: 0 0 10px;
+    padding: 25px 20px;
+
+    box-sizing: border-box;
 
     display: grid;
-    grid-template-columns: 210px minmax(0, 1fr);
+
+    grid-template-columns:
+        190px minmax(0, 1fr);
+
     align-items: center;
-    gap: 35px;
+
+    gap: 30px;
 
     position: relative;
-
-    border: 1px solid rgba(16, 135, 255, 0.30);
-    border-radius: 18px;
+    overflow: hidden;
 
     background:
         linear-gradient(
             90deg,
-            rgba(3, 17, 31, 0.534),
-            rgba(3, 18, 34, 0.63),
-            rgba(3, 18, 34, 0)
+            var(--fundosobremim) 0%,
+            color-mix(
+                in srgb,
+                var(--fundosobremim) 92%,
+                transparent
+            ) 40%,
+            color-mix(
+                in srgb,
+                var(--fundosobremim) 35%,
+                transparent
+            ) 72%,
+            transparent 100%
         ),
         url("../imagens/sobre-mim/foto-principal.jpeg");
 
     background-size: cover;
     background-position: center;
 
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-section#sobre .sobre-apresentacao::before {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(2, 12, 24, 0.78),
-            rgba(2, 13, 26, 0.45),
-            rgba(2, 13, 26, 0.75)
-        );
-
-    pointer-events: none;
-}
-
-section#sobre .sobre-apresentacao > * {
-    position: relative;
-    z-index: 1;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 
@@ -559,18 +549,20 @@ section#sobre .sobre-apresentacao > * {
    ========================================================= */
 
 section#sobre .sobre-foto {
-    width: 210px;
-    height: 210px;
+    width: 180px;
+    height: 200px;
 
-    border: 2px solid #0087ff;
-    border-radius: 15px;
+    justify-self: center;
 
     overflow: hidden;
 
-    background: #061523;
+    border: 2px solid var(--principal);
+    border-radius: 15px;
+
+    background: var(--fundoelementos);
 
     box-shadow:
-        0 0 18px rgba(0, 135, 255, 0.14);
+        0 0 10px rgba(0, 119, 255, 0.30);
 }
 
 section#sobre .sobre-foto img {
@@ -589,65 +581,57 @@ section#sobre .sobre-foto img {
 
 section#sobre .sobre-introducao {
     width: 100%;
-    max-width: 700px;
+    max-width: 650px;
 }
 
 section#sobre .sobre-introducao .saudacao {
-    margin: 0 0 5px;
+    margin: 0 0 3px;
 
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.2;
 
-    color: #c6d1dc;
+    color: var(--corh2);
 }
 
 section#sobre .sobre-introducao h2 {
-    margin: 0 0 17px;
+    margin: 0 0 10px;
 
-    font-size: 40px;
-    line-height: 1.1;
+    font-size: 34px;
+    line-height: 1.05;
 
-    color: #ffffff;
+    color: var(--corh2);
 }
 
 section#sobre .sobre-introducao h2 span {
     color: var(--principal);
 }
 
-
-/* =========================================================
-   FRASE
-   ========================================================= */
-
 section#sobre .frase-destaque {
-    max-width: 500px;
+    max-width: 430px;
 
-    margin: 0 0 18px;
-    padding: 6px 0 6px 15px;
+    margin: 0 0 13px;
+    padding: 2px 0 2px 16px;
 
-    border-left: 3px solid var(--principal);
+    border-left: 5px solid var(--principal);
 
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.35;
 
     font-style: italic;
 
-    color: #e0e8f0;
+    color: var(--corh2);
 }
 
-
-/* =========================================================
-   DESCRIÇÃO
-   ========================================================= */
-
 section#sobre .sobre-introducao .descricao {
-    max-width: 680px;
+    width: 100%;
+    max-width: 650px;
 
     margin: 0;
 
-    font-size: 12.5px;
-    line-height: 1.6;
+    font-size: 13px;
+    line-height: 1.5;
 
-    color: #b8c5d1;
+    color: var(--corp);
 }
 
 
@@ -656,61 +640,54 @@ section#sobre .sobre-introducao .descricao {
    ========================================================= */
 
 section#sobre .sobre-bloco {
-    width: min(92%, 1200px);
+    width: 100%;
 
-    margin: 20px auto 0;
-    padding: 22px;
+    margin: 0 auto 12px;
+    padding: 15px 20px;
 
-    border: 1px solid rgba(16, 63, 109, 0.75);
-    border-radius: 18px;
+    box-sizing: border-box;
 
-    background:
-        linear-gradient(
-            145deg,
-            rgba(5, 24, 43, 0.98),
-            rgba(3, 15, 29, 0.98)
-        );
+    background: var(--fundoelementos);
 
-    box-shadow:
-        0 10px 28px rgba(0, 0, 0, 0.20);
+    border: 1px solid rgba(0, 119, 255, 0.48);
+    border-radius: 10px;
 }
 
 
 /* =========================================================
-   TÍTULOS DOS BLOCOS
+   TÍTULOS
    ========================================================= */
 
 section#sobre .titulo-bloco {
     display: flex;
     align-items: center;
 
-    gap: 12px;
+    gap: 15px;
 
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 
 section#sobre .icone-titulo {
-    width: 46px;
-    height: 46px;
-
-    flex-shrink: 0;
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 32px;
-
     color: var(--principal);
+
+    font-size: 32px;
 }
 
 section#sobre .titulo-bloco h2 {
     margin: 0;
 
-    font-size: 24px;
-    line-height: 1.2;
+    font-size: 25px;
+    line-height: 1;
 
-    color: #ffffff;
+    color: var(--corh2);
 }
 
 section#sobre .titulo-bloco h2 span {
@@ -720,10 +697,9 @@ section#sobre .titulo-bloco h2 span {
 section#sobre .titulo-bloco p {
     margin: 5px 0 0;
 
-    font-size: 10px;
-    line-height: 1.4;
+    font-size: 13px;
 
-    color: #9eacba;
+    color: var(--corp);
 }
 
 
@@ -731,14 +707,27 @@ section#sobre .titulo-bloco p {
    PILARES
    ========================================================= */
 
+section#sobre .pilares {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 section#sobre .pilares-grid {
     width: 100%;
 
     display: grid;
 
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    /*
+       6 partes permitem:
 
-    gap: 11px;
+       3 cards em cima
+       2 cards maiores embaixo
+    */
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 20px;
 }
 
 
@@ -747,51 +736,54 @@ section#sobre .pilares-grid {
    ========================================================= */
 
 section#sobre .pilar {
-    width: 100%;
-    height: 220px;
-
     min-width: 0;
+    height: 230px;
 
     position: relative;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
 
-    overflow: hidden;
+    background: var(--fundoelementos);
 
-    border: 1px solid rgba(16, 135, 255, 0.25);
-    border-radius: 13px;
+    border: 1px solid rgba(0, 119, 255, 0.55);
+    border-radius: 10px;
 
-    background:
-        linear-gradient(
-            180deg,
-            rgba(6, 27, 47, 0.98),
-            rgba(3, 17, 31, 0.98)
-        );
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
-}
-
-section#sobre .pilar:hover {
-    transform: translateY(-4px);
-
-    border-color: rgba(0, 135, 255, 0.50);
-
-    box-shadow:
-        0 10px 22px rgba(0, 0, 0, 0.30);
+    box-sizing: border-box;
 }
 
 
 /* =========================================================
-   IMAGEM DOS PILARES
+   PRIMEIRA LINHA
+   3 CARDS
+   ========================================================= */
+
+section#sobre .pilar:nth-child(1),
+section#sobre .pilar:nth-child(2),
+section#sobre .pilar:nth-child(3) {
+    grid-column: span 2;
+}
+
+
+/* =========================================================
+   SEGUNDA LINHA
+   2 CARDS MAIS LARGOS
+   ========================================================= */
+
+section#sobre .pilar:nth-child(4),
+section#sobre .pilar:nth-child(5) {
+    grid-column: span 3;
+}
+
+
+/* =========================================================
+   IMAGENS
    ========================================================= */
 
 section#sobre .pilar-imagem {
     width: 100%;
-    height: 100px;
+    height: 112px;
 
     flex-shrink: 0;
 
@@ -810,14 +802,14 @@ section#sobre .pilar-imagem::after {
     background:
         linear-gradient(
             to bottom,
-            rgba(0, 0, 0, 0.05),
-            rgba(2, 13, 25, 0.65)
+            transparent,
+            rgba(0, 0, 0, 0.55)
         );
 }
 
 
 /* =========================================================
-   IMAGENS
+   IMAGENS DOS PILARES
    ========================================================= */
 
 section#sobre .catolico-img {
@@ -847,89 +839,80 @@ section#sobre .silencio-img {
 
 
 /* =========================================================
-   ÍCONE DOS PILARES
+   ÍCONES
    ========================================================= */
 
 section#sobre .pilar-icone {
-    width: 42px;
-    height: 42px;
+    width: 48px;
+    height: 48px;
 
     position: absolute;
 
+    left: 15px;
     top: 78px;
-    left: 12px;
-
-    z-index: 2;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    z-index: 5;
+
     border-radius: 50%;
 
-    background: #061725;
+    background: var(--fundoelementos);
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 2px solid currentColor;
 
-    font-size: 17px;
-
-    box-shadow:
-        0 5px 13px rgba(0, 0, 0, 0.35);
+    font-size: 23px;
 }
 
-
-/* CORES */
-
 section#sobre .catolico-icone {
-    color: #35c8ff;
+    color: #087ff5;
 }
 
 section#sobre .exercicio-icone {
-    color: #58d68d;
+    color: #00ff66;
 }
 
 section#sobre .leitura-icone {
-    color: #b477ff;
+    color: #d82cff;
 }
 
 section#sobre .musica-icone {
-    color: #ff62b0;
+    color: #ff18a9;
 }
 
 section#sobre .silencio-icone {
-    color: #42d8e8;
+    color: #20e7ff;
 }
 
 
 /* =========================================================
-   CONTEÚDO
+   TEXTO DOS PILARES
    ========================================================= */
 
 section#sobre .pilar-conteudo {
-    flex: 1;
+    padding: 22px 16px 12px;
 
-    padding: 26px 11px 10px;
-
-    display: flex;
-    flex-direction: column;
+    box-sizing: border-box;
 }
 
 section#sobre .pilar-conteudo h3 {
-    margin: 0 0 6px;
+    margin: 0 0 7px;
 
-    font-size: 13px;
-    line-height: 1.2;
+    font-size: 16px;
+    line-height: 1.15;
 
-    color: #ffffff;
+    color: var(--corh2);
 }
 
 section#sobre .pilar-conteudo p {
     margin: 0;
 
-    font-size: 9.5px;
-    line-height: 1.45;
+    font-size: 13px;
+    line-height: 1.35;
 
-    color: #aebbc8;
+    color: var(--corp);
 }
 
 
@@ -937,15 +920,25 @@ section#sobre .pilar-conteudo p {
    FORMAÇÃO + IDIOMAS
    ========================================================= */
 
-/*
-   Aqui usamos um grid externo.
-   Os dois blocos ficam lado a lado
-   sem usar width + margin manual.
-*/
-
 section#sobre .formacao,
 section#sobre .idiomas {
-    width: min(92%, 1200px);
+    width: calc(50% - 7px);
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin-bottom: 12px;
+
+    box-sizing: border-box;
+}
+
+section#sobre .formacao {
+    margin-right: 10px;
+}
+
+section#sobre .idiomas {
+    margin-left: 0;
 }
 
 
@@ -954,61 +947,66 @@ section#sobre .idiomas {
    ========================================================= */
 
 section#sobre .formacao-card {
-    width: 100%;
-    min-height: 72px;
+    min-height: 82px;
 
     display: flex;
     align-items: center;
 
-    gap: 13px;
+    gap: 14px;
 
-    padding: 9px 12px;
+    padding: 10px;
 
-    border: 1px solid rgba(16, 135, 255, 0.25);
-    border-radius: 11px;
+    box-sizing: border-box;
 
-    background: rgba(2, 15, 29, 0.85);
+    background: var(--fundodados);
+
+    border: 1px solid rgba(0, 119, 255, 0.50);
+    border-radius: 8px;
 }
 
 section#sobre .formacao-icone {
-    width: 76px;
-    min-width: 76px;
-
-    height: 50px;
+    width: 80px;
+    min-width: 80px;
+    height: 60px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid rgba(98, 92, 255, 0.30);
-    border-radius: 8px;
-
-    background: rgba(4, 21, 38, 0.95);
-
     color: #625cff;
 
-    font-size: 25px;
+    background: var(--fundofaculdade);
+
+    border-radius: 6px;
+
+    font-size: 34px;
+}
+
+section#sobre .formacao-texto {
+    min-width: 0;
 }
 
 section#sobre .formacao-texto p {
     margin: 0;
 
-    font-size: 12px;
-    line-height: 1.35;
+    font-size: 14px;
+    line-height: 1.25;
 
-    color: #dce5ee;
+    color: var(--corh2);
 }
 
 section#sobre .formacao-texto strong {
-    color: #ffffff;
+    font-size: 15px;
+
+    color: var(--corh2);
 }
 
 section#sobre .formacao-texto span {
     display: block;
 
-    margin-top: 4px;
+    margin-top: 5px;
 
-    font-size: 10px;
+    font-size: 12px;
 
     color: var(--principal);
 }
@@ -1019,81 +1017,66 @@ section#sobre .formacao-texto span {
    ========================================================= */
 
 section#sobre .idiomas-grid {
-    width: 100%;
-
     display: grid;
 
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
 
     gap: 10px;
 }
 
 section#sobre .idioma {
-    min-width: 0;
+    min-height: 82px;
 
     display: flex;
     align-items: center;
 
-    gap: 9px;
+    gap: 10px;
 
-    padding: 9px 10px;
+    padding: 10px;
 
-    border: 1px solid rgba(16, 135, 255, 0.25);
-    border-radius: 11px;
+    box-sizing: border-box;
 
-    background: rgba(2, 15, 29, 0.85);
+    background: var(--fundodados);
+
+    border: 1px solid rgba(0, 119, 255, 0.50);
+    border-radius: 8px;
 }
 
-
-/* =========================================================
-   BANDEIRAS
-   ========================================================= */
-
 section#sobre .bandeira {
-    width: 38px;
-    min-width: 38px;
-
-    height: 38px;
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    overflow: hidden;
+
     border-radius: 50%;
-
-    background: #071b2e;
-
-    border: 1px solid rgba(0, 135, 255, 0.20);
 }
 
 section#sobre .bandeira span {
-    width: 25px;
-    height: 17px;
-
-    display: block;
+    font-size: 40px;
 }
-
-
-/* =========================================================
-   TEXTO DOS IDIOMAS
-   ========================================================= */
 
 section#sobre .idioma strong {
     display: block;
 
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 
-    font-size: 11px;
+    font-size: 14px;
 
-    color: #ffffff;
+    color: var(--corh2);
 }
 
 section#sobre .idioma > div:last-child span {
     display: block;
 
-    font-size: 9px;
+    font-size: 12px;
 
-    color: var(--principal);
+    color: var(--corp);
 }
 
 
@@ -1102,56 +1085,60 @@ section#sobre .idioma > div:last-child span {
    ========================================================= */
 
 section#sobre .frase-final {
-    width: min(92%, 1200px);
-    min-height: 105px;
+    width: 100%;
+    height: 100px;
 
-    margin: 21px auto 0;
+    margin: 0;
+    padding: 0 30px;
 
-    padding: 18px 25px;
+    box-sizing: border-box;
 
     display: flex;
     align-items: center;
 
-    gap: 15px;
-
     position: relative;
-
     overflow: hidden;
-
-    border: 1px solid rgba(16, 135, 255, 0.28);
-    border-radius: 17px;
 
     background:
         linear-gradient(
             90deg,
-            rgba(3, 17, 31, 0.96),
-            rgba(3, 17, 31, 0.70),
-            rgba(3, 17, 31, 0.90)
+            var(--fundoelementos) 0%,
+            color-mix(
+                in srgb,
+                var(--fundoelementos) 75%,
+                transparent
+            ) 55%,
+            transparent 100%
         ),
         url("../imagens/sobre-mim/foto-final.jpeg");
 
     background-size: cover;
     background-position: center;
+
+    border: 1px solid rgba(0, 119, 255, 0.55);
+    border-radius: 8px;
 }
 
 section#sobre .linha-frase {
-    width: 3px;
-    min-width: 3px;
+    width: 5px;
+    height: 58px;
 
-    height: 55px;
+    margin-right: 25px;
 
-    border-radius: 5px;
+    flex-shrink: 0;
 
     background: var(--principal);
+
+    border-radius: 4px;
 }
 
 section#sobre .frase-final p {
     margin: 0;
 
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 20px;
+    line-height: 1.3;
 
-    color: #ffffff;
+    color: var(--corh2);
 }
 
 section#sobre .frase-final strong {
@@ -1159,42 +1146,8 @@ section#sobre .frase-final strong {
 }
 
 
-/* =========================================================
-   DESKTOP GRANDE
-   ========================================================= */
 
-@media (min-width: 1400px) {
 
-    section#sobre > h1 {
-        width: min(90%, 1300px);
-        font-size: 40px;
-    }
-
-    section#sobre .sobre-apresentacao,
-    section#sobre .sobre-bloco,
-    section#sobre .frase-final {
-        width: min(95%, 1300px);
-    }
-
-    section#sobre .sobre-apresentacao {
-        grid-template-columns: 225px minmax(0, 1fr);
-        min-height: 345px;
-    }
-
-    section#sobre .sobre-foto {
-        width: 225px;
-        height: 225px;
-    }
-
-    section#sobre .sobre-introducao h2 {
-        font-size: 43px;
-    }
-
-    section#sobre .pilar {
-        height: 225px;
-    }
-}                        
-                           
 
 
 
