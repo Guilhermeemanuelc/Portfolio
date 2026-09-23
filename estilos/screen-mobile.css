@@ -65,6 +65,10 @@
 
     --corh1sobremim: #F8FAFC;
 
+    --overlay-apresentacao-1: rgba(5, 11, 20, 0.979);
+    --overlay-apresentacao-2: rgba(5, 11, 20, 0.70);
+    --overlay-apresentacao-3: rgba(5, 11, 20, 0.233);
+
     --fundosobremim: #050B14;
     --fundoelementos: #0A1422;
 
@@ -73,6 +77,7 @@
 
     --corh2: #F8FAFC;
     --corp: #B8C4D2;
+    --corp-apresentacao: rgb(184, 183, 183);
 
 
     /* Habilidades  */
@@ -168,14 +173,19 @@ body.light{
 
     --corh1sobremim: #0B1220;
 
+    --overlay-apresentacao-1: rgba(244, 247, 251, 0.849);
+    --overlay-apresentacao-2: rgba(206, 206, 206, 0.65);
+    --overlay-apresentacao-3: rgba(214, 215, 216, 0.308);
+
     --fundosobremim: #F4F7FB;
     --fundoelementos: #FFFFFF;
 
     --fundodados: #E9EFF6;
     --fundofaculdade: #F8FAFC;
 
-    --corh2: #0B1220;
+    --corh2: #0b1220;
     --corp: #526173;
+    --corp-apresentacao: rgb(46, 45, 45);
 
 
 
@@ -587,7 +597,8 @@ section#sobre  h1 {
     font-size: 1.8em;
     color: var(--corh1sobremim);
     text-align: center;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     margin: 0;
 }
 
@@ -722,7 +733,7 @@ section#sobre .sobre-introducao .descricao {
 
     margin: 0;
 
-    color: var(--corp);
+    color: var(--corp-apresentacao);
 
     font-size: 11.5px;
     line-height: 1.32;
