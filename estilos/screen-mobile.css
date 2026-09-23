@@ -178,9 +178,9 @@ body.light{
 
     --corh1sobremim: #0B1220;
 
-    --overlay-apresentacao-1: rgba(244, 247, 251, 0.849);
-    --overlay-apresentacao-2: rgba(206, 206, 206, 0.65);
-    --overlay-apresentacao-3: rgba(214, 215, 216, 0.308);
+    --overlay-apresentacao-1: rgba(187, 184, 184, 0.952);
+    --overlay-apresentacao-2: rgba(105, 105, 105, 0.692);
+    --overlay-apresentacao-3: rgba(214, 215, 216, 0.096);
 
     --fundosobremim: #F4F7FB;
     --fundoelementos: #FFFFFF;
@@ -190,7 +190,7 @@ body.light{
 
     --corh2: #0b1220;
     --corp: #526173;
-    --corp-apresentacao: rgb(46, 45, 45);
+    --corp-apresentacao: rgb(184, 182, 182);
 
     --overlay-frase-1: rgba(244, 247, 251, 0.979);
     --overlay-frase-2: rgba(244, 247, 251, 0.199);
