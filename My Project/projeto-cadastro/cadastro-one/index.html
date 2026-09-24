@@ -1,207 +1,189 @@
-```html
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro | Guilherme Emanuel</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Cadastro | Guilherme Emanuel</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
 <body>
 
-    <div class="container">
 
-        <section class="apresentacao">
+<div class="container">
 
-            <div class="marca">
-                <span class="destaque">GUILHERME EMANUEL</span>
+    <!-- APRESENTAÇÃO -->
+    <section class="apresentacao">
 
-                <h1>
-                    Desenvolvimento Front-End
-                    moderno e profissional.
-                </h1>
+        <div class="marca">
 
-                <p>
-                    Crie sua conta e tenha acesso a uma experiência
-                    rápida, segura e totalmente responsiva.
-                </p>
-            </div>
+            <span class="destaque">
+                GUILHERME EMANUEL
+            </span>
 
-            <div class="beneficios">
-
-                <div class="beneficio">
-                    <span>✓</span>
-                    <p>Design Moderno</p>
-                </div>
-
-                <div class="beneficio">
-                    <span>✓</span>
-                    <p>Alta Performance</p>
-                </div>
-
-                <div class="beneficio">
-                    <span>✓</span>
-                    <p>Segurança dos Dados</p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="cadastro">
-
-            <div class="cabecalho">
-
-                <h2>Criar Conta</h2>
-
-                <p>
-                    Preencha os campos abaixo para começar.
-                </p>
-
-            </div>
-
-            <form id="formCadastro">
-
-                <div class="campo">
-
-                    <label for="nome">
-                        Nome Completo
-                    </label>
-
-                    <input
-                        type="text"
-                        id="nome"
-                        placeholder="Digite seu nome completo"
-                        required
-                    >
-
-                </div>
-
-                <div class="campo">
-
-                    <label for="email">
-                        E-mail
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Digite seu e-mail"
-                        required
-                    >
-
-                </div>
-
-                <div class="linha">
-
-                    <div class="campo">
-
-                        <label for="senha">
-                            Senha
-                        </label>
-
-                        <input
-                            type="password"
-                            id="senha"
-                            placeholder="Digite sua senha"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="campo">
-
-                        <label for="confirmarSenha">
-                            Confirmar Senha
-                        </label>
-
-                        <input
-                            type="password"
-                            id="confirmarSenha"
-                            placeholder="Repita sua senha"
-                            required
-                        >
-
-                    </div>
-
-                </div>
-
-                <div class="termos">
-
-                    <input
-                        type="checkbox"
-                        id="aceitar"
-                        required
-                    >
-
-                    <label for="aceitar">
-                        Li e aceito os Termos de Uso
-                        e Política de Privacidade.
-                    </label>
-
-                </div>
-
-                <button
-                    type="submit"
-                    id="criarConta"
-                    class="botao"
-                >
-                    Criar Conta
-                </button>
-
-            </form>
-
-            <div
-                class="sucesso"
-                id="sucesso"
-            >
-
-                <h3>
-                    Conta criada com sucesso!
-                </h3>
-
-                <p>
-                    Verifique seu e-mail para ativar sua conta.
-                </p>
-
-                <button
-                    type="button"
-                    id="continuar"
-                    class="botao-secundario"
-                >
-                    Continuar
-                </button>
-
-            </div>
-
-        </section>
-
-        <footer class="rodape">
+            <h1>
+                Desenvolvimento Front-End
+                moderno e profissional.
+            </h1>
 
             <p>
-                © 2026 Guilherme Emanuel.
-                Todos os direitos reservados.
+                Crie seu perfil e tenha acesso a uma experiência
+                rápida, moderna e totalmente responsiva.
             </p>
 
-        </footer>
+        </div>
 
-    </div>
+        <div class="beneficios">
 
-    <div
-        class="alerta"
-        id="alerta"
-    >
-        <span id="mensagemAlerta"></span>
-    </div>
+            <div class="beneficio">
+                <span>✓</span>
+                <p>Design Moderno</p>
+            </div>
 
-    <script src="js/script.js"></script>
+            <div class="beneficio">
+                <span>✓</span>
+                <p>Alta Performance</p>
+            </div>
+
+            <div class="beneficio">
+                <span>✓</span>
+                <p>Experiência Responsiva</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CADASTRO -->
+    <section class="cadastro">
+
+        <div class="cabecalho">
+
+            <h2>Criar Perfil</h2>
+
+            <p>
+                Digite seu nome abaixo para começar.
+            </p>
+
+        </div>
+
+
+        <form id="formCadastro">
+
+            <div class="campo">
+
+                <label for="nome">
+                    Nome
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    autocomplete="off"
+                    required
+                >
+
+            </div>
+
+
+            <div class="termos">
+
+                <input
+                    type="checkbox"
+                    id="aceitar"
+                    required
+                >
+
+                <label for="aceitar">
+                    Li e aceito os Termos de Uso
+                    e Política de Privacidade.
+                </label>
+
+            </div>
+
+
+            <button
+                type="submit"
+                id="criarConta"
+                class="botao"
+            >
+                Criar Perfil
+            </button>
+
+        </form>
+
+
+        <!-- SUCESSO -->
+
+        <div
+            class="sucesso"
+            id="sucesso"
+        >
+
+            <h3>
+                Perfil criado com sucesso!
+            </h3>
+
+            <p>
+                Você já pode continuar para a próxima etapa.
+            </p>
+
+            <button
+                type="button"
+                id="continuar"
+                class="botao-secundario"
+            >
+                Continuar
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer class="rodape">
+
+        <p>
+            © 2026 Guilherme Emanuel.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</div>
+
+
+<!-- ALERTA -->
+
+<div
+    class="alerta"
+    id="alerta"
+>
+    <span id="mensagemAlerta"></span>
+</div>
+
+
+<script src="js/script.js"></script>
+
 
 </body>
 </html>
-```

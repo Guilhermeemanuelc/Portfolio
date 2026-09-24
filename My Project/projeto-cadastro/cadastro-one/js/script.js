@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     const form = document.getElementById("formCadastro");
+
     const sucesso = document.getElementById("sucesso");
 
     const nome = document.getElementById("nome");
@@ -9,108 +9,53 @@ document.addEventListener("DOMContentLoaded", () => {
     const confirmarSenha = document.getElementById("confirmarSenha");
     const aceitar = document.getElementById("aceitar");
 
-    const alerta = document.getElementById("alerta");
-    const mensagemAlerta = document.getElementById("mensagemAlerta");
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-    function mostrarAlerta(texto, tipo = "erro") {
-
-        mensagemAlerta.textContent = texto;
-
-        alerta.style.display = "block";
-
-        if (tipo === "sucesso") {
-            alerta.style.background = "#22c55e";
-        } else {
-            alerta.style.background = "#ef4444";
-        }
-
-        clearTimeout(alerta.timeout);
-
-        alerta.timeout = setTimeout(() => {
-            alerta.style.display = "none";
-        }, 4000);
-    }
-
-    form.addEventListener("submit", (e) => {
-
-        e.preventDefault();
-
-        const valorNome = nome.value.trim();
-        const valorEmail = email.value.trim();
-        const valorSenha = senha.value.trim();
-        const valorConfirmar = confirmarSenha.value.trim();
-
-        if (
-            valorNome === "" ||
-            valorEmail === "" ||
-            valorSenha === "" ||
-            valorConfirmar === ""
-        ) {
-            mostrarAlerta("Preencha todos os campos.");
-            return;
-        }
-
-        const regexEmail =
-            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!regexEmail.test(valorEmail)) {
-            mostrarAlerta("Digite um e-mail válido.");
-            return;
-        }
-
-        if (valorSenha.length < 6) {
-            mostrarAlerta("A senha deve ter pelo menos 6 caracteres.");
-            return;
-        }
-
-        if (valorSenha !== valorConfirmar) {
-            mostrarAlerta("As senhas não coincidem.");
-            return;
-        }
-
-        if (!aceitar.checked) {
-            mostrarAlerta("Você precisa aceitar os termos.");
-            return;
-        }
-
-        const botao = document.getElementById("criarConta");
-
-        botao.disabled = true;
-        botao.textContent = "Criando conta...";
-
-        setTimeout(() => {
-
-            form.style.display = "none";
-
-            sucesso.style.display = "block";
-
-            mostrarAlerta(
-                "Conta criada com sucesso!",
-                "sucesso"
-            );
-
-            botao.disabled = false;
-            botao.textContent = "Criar Conta";
-
-        }, 1500);
-
-    });
-
-    const continuar = document.getElementById("continuar");
-
-    continuar.addEventListener("click", () => {
-
+        // Limpa mensagens anteriores
         sucesso.style.display = "none";
 
-        form.style.display = "flex";
+        // Validação do nome
+        if (nome.value.trim().length < 3) {
+            alert("Digite um nome válido.");
+            nome.focus();
+            return;
+        }
 
+        // Validação do e-mail
+        const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailValido.test(email.value.trim())) {
+            alert("Digite um e-mail válido.");
+            email.focus();
+            return;
+        }
+
+        // Validação da senha
+        if (senha.value.length < 6) {
+            alert("A senha deve ter pelo menos 6 caracteres.");
+            senha.focus();
+            return;
+        }
+
+        // Confirmação da senha
+        if (senha.value !== confirmarSenha.value) {
+            alert("As senhas não coincidem.");
+            confirmarSenha.focus();
+            return;
+        }
+
+        // Termos
+        if (!aceitar.checked) {
+            alert("Você precisa aceitar os termos.");
+            aceitar.focus();
+            return;
+        }
+
+        // Cadastro realizado
+        sucesso.style.display = "block";
+
+        // Limpa o formulário
         form.reset();
-
-        mostrarAlerta(
-            "Formulário reiniciado.",
-            "sucesso"
-        );
-
     });
-
 });
