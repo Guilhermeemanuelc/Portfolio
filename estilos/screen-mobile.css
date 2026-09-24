@@ -98,20 +98,28 @@
 
     /* Meus Projetos */
 
-    --corh1projetos: white;
+    --corh1projetos: #F5F9FF;
+    --fundoprojetos: linear-gradient(180deg, #050D1C, #071426, #030914);
+    --buttonfundo: rgba(255, 255, 255, 0.035);
+    --buttonp: #E8F1FF;
+    --buttonborder: rgba(105, 166, 255, 0.16);
+    --fundocard: rgba(10, 25, 48, 0.72);
+    --borderimagem: rgba(110, 170, 255, 0.18);
+    --opacity: .4;
+    --bordercard: rgba(110, 170, 255, 0.16);
+    --conteudoh3: #F1F6FF;
+    --conteudop: #AAB9CC;
+    --projetoa: #E6F0FF;
+    --vercodigoi: #06101F;
 
-    --fundoprojetos: linear-gradient(180deg,#01091a,#020c1f,#020817);
-    --buttonfundo: rgba(255,255,255,.02);
-    --buttonp: white;
-    --buttonborder: rgba(255,255,255,.08);
-    --fundocard: rgba(248, 7, 7, 0.03);
-    --borderimagem: rgba(255, 255, 255, 0.164);
-    --opacity: .6;
-    --bordercard: rgba(255, 255, 255, 0.164);
-    --conteudoh3: white;
-    --conteudop: #b3b3b3;
-    --projetoa: white;
-    --vercodigoi: #00040c;
+    --principal: #1683F5;
+    --borda-destaque: #1683F5;
+    --filtro-hover: rgba(22, 131, 245, 0.10);
+    --filtro-ativo: rgba(22, 131, 245, 0.16);
+    --tecnologia-fundo: rgba(22, 131, 245, 0.10);
+    --tecnologia-texto: #69B1FF;
+    --categoria-projeto: #69B1FF;
+    --sombra-card: rgba(0, 0, 0, 0.35);
 
 
     /* Contato */
@@ -212,20 +220,29 @@ body.light{
 
     /* Meus Projetos */
 
-    --corh1projetos: black;
 
-    --fundoprojetos: linear-gradient(180deg,#c9c9c9,#d4d4d4,#d3d7e0);
-    --buttonfundo: #c2c2c2;
-    --buttonborder: rgba(29, 66, 230, 0.534);
-    --buttonp: black;
-    --fundocard: rgb(167, 167, 167);
-    --borderimagem: rgb(243, 244, 247);
-    --opacity: .9;
-    --bordercard: rgba(221, 221, 221, 0.774);
-    --conteudoh3: black;
-    --conteudop: #424242;
-    --projetoa: black;
-    --vercodigoi: #ffffff;
+    --corh1projetos: #102E56;
+    --fundoprojetos: linear-gradient(180deg, #adadad, #cfcdcd, #959596);
+    --buttonfundo: #d3d1d1;
+    --buttonp: #17385F;
+    --buttonborder: #D7E4F2;
+    --fundocard: #b4b3b3;
+    --borderimagem: #DCE8F4;
+    --opacity: .4;
+    --bordercard: #b5b5b6;
+    --conteudoh3: #102E56;
+    --conteudop: #50657D;
+    --projetoa: #0878E8;
+    --vercodigoi: #FFFFFF;
+
+    --principal: #0878E8;
+    --borda-destaque: #0878E8;
+    --filtro-hover: #F0F7FF;
+    --filtro-ativo: #E8F3FF;
+    --tecnologia-fundo: #EAF4FF;
+    --tecnologia-texto: #0878E8;
+    --categoria-projeto: #0878E8;
+    --sombra-card: rgba(28, 70, 110, 0.10);
 
 
     /* Contato  */
@@ -1821,269 +1838,493 @@ section#habilidades div.icons i {
 
 
 
-                            /* Area Projetos  */
+                      /* Area Projetos  */
 
 
 
 
-section#projetos{
+
+/* ================================
+   AREA PROJETOS — MOBILE
+================================ */
+
+section#projetos {
+    position: relative;
+
+    width: 100%;
     min-height: 100vh;
+
+    padding: 25px 5vw 40px;
+
     background: var(--fundoprojetos);
+
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    box-sizing: border-box;
 }
 
-section#projetos > h1{
-    color: var(--corh1projetos);
-    font-size: 2rem;
+section#projetos *,
+section#projetos *::before,
+section#projetos *::after {
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   FUNDO
+================================ */
+
+section#projetos .projetos-background {
+    position: absolute;
+
+    inset: 0;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+
+    background: url("../imagens/projetosIMG/background.png")
+        center top / cover no-repeat ;
+
+    opacity: var(--opacity);
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* ================================
+   CONTEÚDO
+================================ */
+
+section#projetos > header,
+section#projetos > article {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+}
+
+
+/* ================================
+   TÍTULO
+================================ */
+
+section#projetos .titulo-projetos {
+    width: 100%;
+
+    margin-bottom: 20px;
+
     text-align: center;
-    padding: 30px;
 }
 
-section#projetos > h1 span{
+section#projetos .titulo-projetos h1 {
+    margin: 0 0 8px;
+
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    color: var(--corh1projetos);
+
+    font-size: 2em;
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+section#projetos .titulo-projetos h1 span {
     color: var(--principal);
 }
 
-/* CARD */
+section#projetos .titulo-projetos p {
+    width: 90%;
 
-section#projetos div.filtro{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 12px;
-    width: 92%;
-    margin: 18px auto;
-}
+    margin: 0 auto;
 
-section#projetos div.filtro button{
-
-    width: calc(100px + 10vw);
-    height: 45px;
-    background: var(--buttonfundo);
-    border: 1px solid var(--buttonborder);
-    border-radius: 6px;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
-}
-
-section#projetos div.filtro button:hover{
-    transform: translateY(-3px);
-    border-color: #0d6efd;
-    background: rgba(13,110,253,.12);
-}
-
-section#projetos div.filtro button.filtro-ativo{
-    background: rgba(13,110,253,.2);
-    border: 1px solid #0d6efd;
-    box-shadow: 0 0 20px rgba(13,110,253,.25);
-}
-
-section#projetos div.filtro button p{
-
-    color: var(--buttonp);
-    font-size: .63rem;
-    font-weight: 500;
-}
-
-section#projetos div.filtro button p i{
-    font-size: 0.86rem;
-    color: var(--buttonp);
-    margin-right: 5px;
-}
-
-section#projetos div.projetos {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-section#projetos .card-projeto{
-    width: 92%;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 6px;
-    margin-bottom: 10px;
-    background: var(--fundocard);
-    border: 1px solid var(--bordercard);
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,.3);
-    min-width: 0;
-}
-
-section#projetos .imagem1{
-
-    width: 135px;
-    height: 140px;
-    border-radius: 10px;
-
-    flex-shrink: 0;
-    background-image: url(../imagens/projetosIMG/Tela-de-Cadastro.png);
-    background-size: cover;
-    background-position: center;
-    margin-left: 3px;
-
-    border: 1px solid var(--borderimagem);
-    opacity: var(--opacity);
-}
-
-section#projetos .imagem2{
-
-    width: 135px;
-    height: 140px;
-    border-radius: 10px;
-
-    flex-shrink: 0;
-    background-image: url(../imagens/projetosIMG/tela-de-login-one.png);
-    background-size: cover;
-    background-position: center;
-    margin-left: 3px;
-
-    border: 1px solid var(--borderimagem);
-    opacity: var(--opacity);
-}
-
-section#projetos .imagem3{
-
-    width: 135px;
-    height: 140px;
-    border-radius: 10px;
-
-    flex-shrink: 0;
-    background-image: url(../imagens/projetosIMG/projeto-em-desenvolvimento.png);
-    background-size: cover;
-    background-position: center;
-    margin-left: 3px;
-
-    border: 1px solid var(--borderimagem);
-    opacity: var(--opacity);
-}
-
-section#projetos .imagem4{
-
-    width: 135px;
-    height: 140px;
-    border-radius: 10px;
-
-    flex-shrink: 0;
-    background-image: url(../imagens/projetosIMG/projeto-em-desenvolvimento.png);
-    background-size: cover;
-    background-position: center;
-    margin-left: 3px;
-
-    border: 1px solid var(--borderimagem);
-    opacity: var(--opacity);
-}
-
-section#projetos .imagem5{
-
-    width: 135px;
-    height: 140px;
-    border-radius: 10px;
-
-    flex-shrink: 0;
-    background-image: url(../imagens/projetosIMG/projeto-em-desenvolvimento.png);
-    background-size: cover;
-    background-position: center;
-    margin-left: 3px;
-
-    border: 1px solid var(--borderimagem);
-    opacity: var(--opacity);
-}
-
-section#projetos .imagem6{
-
-    width: 135px;
-    height: 140px;
-    border-radius: 10px;
-
-    flex-shrink: 0;
-    background-image: url(../imagens/projetosIMG/projeto-em-desenvolvimento.png);
-    background-size: cover;
-    background-position: center;
-    margin-left: 3px;
-
-    border: 1px solid var(--borderimagem);
-    opacity: var(--opacity);
-}
-
-section#projetos .conteudo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    min-width: 0;
-    flex: 1;
-}
-
-section#projetos .conteudo h3{
-    color: var(--conteudoh3);
-    margin-top: 10px;
-    font-size: 0.7rem;
-}
-
-section#projetos .conteudo h3 i{
-    color: var(--principal);
-    font-size: 0.8rem;
-    margin-right: 5px;
-}
-
-section#projetos .conteudo p{
-    font-size: calc(6.5px + 0.6vw);
     color: var(--conteudop);
-    line-height: 1.2;
-    max-width: 85%;
+
+    font-size: 3vw;
+
+    line-height: 1.5;
 }
 
-section#projetos .tecnologias{
+
+/* ================================
+   FILTROS
+================================ */
+
+section#projetos .filtro {
+    width: 100%;
+
     display: flex;
-    gap: 7px;
-    flex-wrap: wrap;
-}
 
-section#projetos .tecnologias span{
-    background: rgba(13,110,253,.12);
-    color: #4f93ff;
-    padding: 6px 10px;
-    border-radius: 10px;
-    font-size: .5rem;
-}
-
-section#projetos .links-projeto{
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-right: 40px;
+
+    gap: 7px;
+
+    margin-bottom: 20px;
+
+    padding: 2px 0 6px;
+
+    overflow: hidden;
 }
 
-section#projetos .links-projeto a{
-    font-size: 8px;
-    text-decoration: none;
-    color: var(--projetoa);
-    transition: .3s;
-    padding-bottom: 5px;
+section#projetos .filtro button {
+    flex: 1 1 0;
+
+    min-width: 0;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0 5px;
+
+    border: 1px solid var(--buttonborder);
+
+    border-radius: 10px;
+
+    background: var(--buttonfundo);
+
+    color: var(--buttonp);
+
+    font-family: 'inter';
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: .2s ease;
 }
 
-section#projetos .links-projeto a i#verprojeto{
-    font-size: 10px;
+section#projetos .filtro button i {
+    flex-shrink: 0;
+
+    font-size: 11px;
+}
+
+section#projetos .filtro button span {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+section#projetos .filtro button:hover {
+    background: var(--filtro-hover);
+}
+
+section#projetos .filtro button.filtro-ativo {
+    background: var(--filtro-ativo);
+
+    border-color: var(--principal);
+
     color: var(--principal);
-    margin-right: 5px;
 }
 
-section#projetos .links-projeto a i#vercodigo{
-    font-size: 10px;
-    background: var(--vercodigoi);
-    padding: 2px;
+
+/* ================================
+   ÁREA DOS PROJETOS
+================================ */
+
+section#projetos .projetos {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+section#projetos .card-projeto {
+    width: 100%;
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: var(--fundocard);
+
+    border: 1px solid var(--bordercard);
+
+    border-radius: 14px;
+
+    box-shadow: 0 7px 20px var(--sombra-card);
+
+    transition: .2s ease;
+}
+section#projetos .card-projeto.projeto-oculto {
+    display: none;
+}
+
+section#projetos .card-projeto:hover {
+    border-color: var(--borda-destaque);
+}
+
+
+/* ================================
+   IMAGEM DO PROJETO
+================================ */
+
+section#projetos .imagem-projeto {
+    width: 100%;
+
+    /* IMAGEM MAIOR */
+    height: 135px;
+
+    overflow: hidden;
+
+    background: var(--tecnologia-fundo);
+
+    border-bottom: 1px solid var(--borderimagem);
+}
+
+section#projetos .imagem-projeto img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* ================================
+   CONTEÚDO DO CARD
+================================ */
+
+section#projetos .conteudo {
+    width: 100%;
+
+    padding: 12px 11px 11px;
+}
+
+section#projetos .categoria-projeto {
+    display: inline-block;
+
+    margin-bottom: 5px;
+
+    color: var(--categoria-projeto);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .3px;
+}
+
+section#projetos .conteudo h3 {
+    margin: 0 0 6px;
+
+    color: var(--conteudoh3);
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+section#projetos .conteudo p {
+    margin: 0 0 9px;
+
+    color: var(--conteudop);
+
+    font-size: 8.5px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================
+   TECNOLOGIAS
+================================ */
+
+section#projetos .tecnologias {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 4px;
+
+    margin-bottom: 10px;
+}
+
+section#projetos .tecnologias span {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 4px 6px;
+
     border-radius: 5px;
-    margin-right: 5px;
+
+    background: var(--tecnologia-fundo);
+
+    color: var(--tecnologia-texto);
+
+    font-size: 9px;
+
+    font-weight: 600;
 }
 
-section#projetos .links-projeto a:hover{
-    color: #0d6efd;
+
+/* ================================
+   LINKS DOS PROJETOS
+================================ */
+
+section#projetos .links-projeto {
+    display: flex;
+
+    width: 100%;
+
+    gap: 5px;
 }
 
-.hide {
+section#projetos .links-projeto a {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 0 5px;
+
+    border: 1px solid var(--bordercard);
+
+    border-radius: 7px;
+
+    background: var(--buttonfundo);
+
+    color: var(--projetoa);
+
+    font-size: 9.5px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: .2s ease;
+}
+
+section#projetos .links-projeto a:hover {
+    background: var(--filtro-hover);
+
+    border-color: var(--principal);
+}
+
+section#projetos .links-projeto a.ver-codigo {
+    background: var(--principal);
+
+    border-color: var(--principal);
+
+    color: var(--vercodigoi);
+}
+
+section#projetos .links-projeto a i {
+    flex-shrink: 0;
+
+    font-size: 10px;
+}
+
+
+/* ================================
+   VER MAIS PROJETOS
+================================ */
+
+section#projetos .ver-mais-projetos {
+    width: 100%;
+
+    height: 34px;
+
+    margin: 14px 0 0;
+
+    padding: 0 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border: 1px solid var(--buttonborder);
+
+    border-radius: 8px;
+
+    background: var(--buttonfundo);
+
+    color: var(--buttonp);
+
+    font-family: 'inter';
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+section#projetos .ver-mais-projetos i {
+    font-size: 10px;
+}
+
+section#projetos .ver-mais-projetos:hover {
+    background: var(--filtro-hover);
+
+    border-color: var(--principal);
+
+    color: var(--principal);
+}
+
+section#projetos .ver-mais-projetos:active {
+    transform: scale(.98);
+}
+
+
+/* ================================
+   FILTRO — CARDS ESCONDIDOS
+================================ */
+
+section#projetos .card-projeto.hide {
     display: none !important;
 }
-
+                      
 
 
 
