@@ -1288,7 +1288,7 @@ section#sobre .frase-final strong {
     }
 
     section#sobre .pilar-imagem {
-        height: 97px;
+        height: 99px;
     }
 
     section#sobre .pilar-icone {
@@ -1457,7 +1457,7 @@ section#sobre .frase-final strong {
     }
 
     section#sobre .pilar-imagem {
-        height: 86px;
+        height: 88px;
     }
 
     section#sobre .pilar-icone {
@@ -2144,7 +2144,7 @@ section#projetos .conteudo h3 {
 
     color: var(--conteudoh3);
 
-    font-size: 1em;
+    font-size: calc(5px + 0.3em);
 
     font-weight: 700;
 
