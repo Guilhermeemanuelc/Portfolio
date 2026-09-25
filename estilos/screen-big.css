@@ -284,6 +284,10 @@ section#habilidades div.icons i {
                     /* Area Projetos  */
 
 
+section#projetos .projetos-background {
+    display: none;
+}
+
 
 
 section#projetos div.filtro{

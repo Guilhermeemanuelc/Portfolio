@@ -98,13 +98,13 @@
 
     --corh1projetos: white;
 
-    --fundoprojetos: linear-gradient(180deg,#01091a,#020c1f,#020817);
+    --fundoprojetos: linear-gradient(180deg,#050d1c28,#020c1f,#020817);
     --buttonfundo: rgba(255,255,255,.02);
     --buttonp: white;
     --buttonborder: rgba(255,255,255,.08);
     --fundocard: rgba(248, 7, 7, 0.03);
     --borderimagem: rgba(255, 255, 255, 0.164);
-    --opacity: .6;
+    --opacity: .3;
     --bordercard: rgba(255, 255, 255, 0.164);
     --conteudoh3: white;
     --conteudop: #b3b3b3;
@@ -194,7 +194,7 @@ body.light{
 
     --corh1habilidades: rgb(0, 0, 0);
 
-    --fundohabilidades: linear-gradient(180deg, #dadada 0%, #c7cbd1 50%, #ffffff 100%);
+    --fundohabilidades: linear-gradient(180deg, #8f8e8e 0%, #c7cbd1 50%, #9c9a9a 100%);
     --fundobolha: #979797;
     --border: rgba(9, 25, 49, 0.445);
     --corh2habilidades: rgb(0, 0, 0);
@@ -206,13 +206,13 @@ body.light{
 
     --corh1projetos: black;
 
-    --fundoprojetos: linear-gradient(180deg,#c9c9c9,#d4d4d4,#d3d7e0);
+    --fundoprojetos: linear-gradient(180deg,#c9c9c9,#d4d4d4,#a7a6a6);
     --buttonfundo: #c2c2c2;
     --buttonborder: rgba(29, 66, 230, 0.534);
     --buttonp: black;
     --fundocard: rgb(167, 167, 167);
     --borderimagem: rgb(243, 244, 247);
-    --opacity: .9;
+    --opacity: .3;
     --bordercard: rgba(221, 221, 221, 0.774);
     --conteudoh3: black;
     --conteudop: #424242;
@@ -1299,12 +1299,14 @@ section#projetos .projetos-background {
 
     inset: 0;
 
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    height: 220px;
 
     background:
-        url("../imagens/projetosIMG/computador.png")
-        center / cover no-repeat;
+        url("../imagens/projetosIMG/background.png")
+        center top / cover no-repeat;
 
     opacity: var(--opacity);
 
@@ -1347,7 +1349,7 @@ section#projetos .titulo-projetos h1 {
 
     color: var(--corh1projetos);
 
-    font-size: calc(2em);
+    font-size: calc(2.2em);
 
     line-height: 1.1;
 
