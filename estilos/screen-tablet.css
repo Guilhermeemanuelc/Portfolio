@@ -118,7 +118,9 @@
 
     --fundocontato: linear-gradient(180deg, #050816 0%, #070b1a 50%, #050816 100%);
     --fundocontatos: linear-gradient(to right, #0f1930, rgba(0, 0, 0, 0.288));
+    --contatoground: rgba(7, 19, 44, 0.514);
     --fundomensagem: linear-gradient(to right, #051835cb, rgba(1, 12, 37, 0.295));
+    --mensagemground: linear-gradient(to right, rgba(2, 6, 23, 0.95), rgba(5, 15, 35, 0.85));
     --fundofriends: linear-gradient(to right, #00030862, rgba(4, 19, 56, 0.979));
     --contatop: rgb(206, 206, 206);
 
@@ -225,7 +227,9 @@ body.light{
 
     --fundocontato: linear-gradient(180deg, #adb1c0 0%, #8f95aa 50%, #b2b6c9 100%);
     --fundocontatos: linear-gradient(to right, #95a3c4, rgba(255, 255, 255, 0.288));
+    --contatoground: rgba(186, 186, 187, 0.514);
     --fundomensagem: linear-gradient(to right, #a4aebecb, rgba(94, 94, 94, 0.295));
+    --mensagemground: linear-gradient(to right, rgba(209, 209, 212, 0.95), rgba(141, 143, 146, 0.85));
     --fundofriends: linear-gradient(to right, #94949462, rgba(170, 170, 170, 0.979));
     --contatop: black;
 
@@ -1830,7 +1834,7 @@ section#contato div.informacoes{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: rgba(7, 19, 44, 0.514);
+    background: var(--contatoground);
 }
 
 section#contato .contato-card{
@@ -1866,7 +1870,7 @@ section#contato div.icon{
 }
 
 #email{
-    background: #ff5c5c;
+    background: #424242;
 }
 
 #whatsapp{
@@ -1882,7 +1886,7 @@ section#contato div.icon{
 }
 
 section#contato div.informacoes h3 {
-    color: white;
+    color: var(--contatop);
     font-size: 12px;
     font-weight: 500;
 }
@@ -1902,7 +1906,7 @@ section#contato .form-group{
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
-    background: linear-gradient(to right, rgba(2, 6, 23, 0.95), rgba(5, 15, 35, 0.85));
+    background: var(--mensagemground);
 }
 
 section#contato div.form-group i{
